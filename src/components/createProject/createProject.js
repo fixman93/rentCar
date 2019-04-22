@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createProject } from '../../store/actions/projectAction'
 
+import NavBar from '../navbar/index'
 
 class createProjects extends Component {
 
@@ -15,6 +16,7 @@ class createProjects extends Component {
   render() {
     return (
       <div>
+        <NavBar />
         <form onSubmit={this.handleSubmit}>
           <input type='text' placeholder='name' />
           <button>Submit</button>
