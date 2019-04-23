@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
+import NavBar from '../navbar/index'
 
 class Dashboard extends Component {
   render() {
@@ -9,7 +10,7 @@ class Dashboard extends Component {
     const { projects } = this.props
     return (
       <div>
-        sdsa
+        <NavBar />
         {projects && projects.map((project, i) => {
           return (
             <div key={i}>{project.title}</div>
