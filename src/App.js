@@ -5,14 +5,14 @@ import CreateProjects from './components/createProject/createProject'
 import Login from './components/login/index'
 import Profile from './components/profile/index'
 import ProjectDetail from './components/project/ProjectDetail'
-import Nav from './components/navbar/index'
-import './App.css';
+import Home from './components/home/index'
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' component={Nav} />
+        <Route exact path='/' component={Home} />
         <Route path='/project/:id' component={ProjectDetail} />
         <Route path='/dashboard' component={Dashboard} />
         <Route path='/login' component={Login} />

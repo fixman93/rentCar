@@ -2,17 +2,12 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
-import { Redirect } from 'react-router-dom'
 import NavBar from '../navbar/index'
 
 class ProjectDetail extends Component {
 
   render() {
     const { project } = this.props
-    console.log('carname', project)
-    if (!this.props.auth.uid) {
-      return <Redirect to='/' />
-    }
     if (project) {
       return (
         <div>
@@ -38,7 +33,6 @@ const mapStateToProps = (state, ownProps) => {
   const project = projects ? projects[id] : null
   // console.log('state', state)
   return {
-    auth: state.firebase.auth,
     project: project
   }
 }
