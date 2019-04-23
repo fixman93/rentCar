@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 import { createProject } from '../../store/actions/projectAction'
 
 import NavBar from '../navbar/index'
@@ -24,6 +25,9 @@ class createProjects extends Component {
     this.props.history.push('/dashboard')
   }
   render() {
+    if (!this.props.auth.uid) {
+      return <Redirect to='/' />
+    }
     return (
       <div>
         <NavBar />
@@ -38,9 +42,15 @@ class createProjects extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  // console.log('state', state)
+  return {
+    auth: state.firebase.auth
+  }
+}
 const mapDispatchToProps = (dispatch) => {
   return {
     createProject: (project) => dispatch(createProject(project))
   }
 }
-export default connect(null, mapDispatchToProps)(createProjects)
+export default connect(mapStateToProps, mapDispatchToProps)(createProjects)

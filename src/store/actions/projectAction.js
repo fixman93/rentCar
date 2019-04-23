@@ -9,6 +9,7 @@ export const createProject = (project) => {
       createdAt: new Date(),
       authorFirstName: profile.firstName,
       authorLastName: profile.lastName,
+      authhorId: authorId,
       carName: project.carName,
       carPrice: project.carPrice,
       carDescription: project.carDescription
