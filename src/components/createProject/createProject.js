@@ -20,16 +20,17 @@ class createProjects extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault()
-    this.props.createProject(this.state.name)
+    this.props.createProject(this.state)
+    this.props.history.push('/dashboard')
   }
   render() {
     return (
       <div>
         <NavBar />
         <form onSubmit={this.handleSubmit}>
-          <input type='text' name='carName' placeholder='Car Name' />
-          <input type='text' name='carPrice' placeholder='Car Price' />
-          <textarea name='cadDescription' placeholder='Car Description' />
+          <input type='text' name='carName' value={this.state.carName} onChange={this.handleChange} placeholder='Car Name' />
+          <input type='text' name='carPrice' value={this.state.carPrice} onChange={this.handleChange} placeholder='Car Price' />
+          <textarea name='carDescription' value={this.state.carDescription} onChange={this.handleChange} placeholder='Car Description' />
           <button>Submit</button>
         </form>
       </div>

@@ -13,7 +13,10 @@ class Dashboard extends Component {
         <NavBar />
         {projects && projects.map((project, i) => {
           return (
-            <div key={i}>{project.title}</div>
+            <div key={i}>
+              <h3>{project.carName}</h3>
+              <span>{project.authorFirstName}</span>
+            </div>
           )
         })
         }
