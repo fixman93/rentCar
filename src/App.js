@@ -14,6 +14,7 @@ class App extends Component {
         <Route path='/dashboard' component={Dashboard} />
         <Route path='/login' component={Login} />
         <Route path='/profile' component={Profile} />
+        <Route path='/add-new-car' component={CreateProjects} />
       </Switch>
     );
   }

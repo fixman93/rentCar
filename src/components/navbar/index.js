@@ -23,6 +23,7 @@ class NavBar extends Component {
           <Nav className="mr-auto">
             <Nav.Link href="/profile">Profile</Nav.Link>
             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+            <Nav.Link href="/add-new-car">Add Car</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -33,15 +34,12 @@ class NavBar extends Component {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
-          {auth.uid ? <Navbar.Text>
-            <a href="#login">{profile.initial}</a>
-          </Navbar.Text> : null}
-          {auth.uid ? <Navbar.Text>
-            <a href="#login" onClick={this.logOut}> Logout</a>
-          </Navbar.Text> : <Navbar.Text>
+          <Nav className="">
+            {auth.uid ? <Nav.Link href="/profile">{profile.initial}</Nav.Link> : null}
+            {auth.uid ? <Nav.Link href="/" onClick={this.logOut}>Logout</Nav.Link> : <Navbar.Text>
               <a href="/login"> Sign In</a>
             </Navbar.Text>}
-
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     )

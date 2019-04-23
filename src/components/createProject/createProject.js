@@ -7,7 +7,16 @@ import NavBar from '../navbar/index'
 class createProjects extends Component {
 
   state = {
-    name: 'your name'
+    carName: '',
+    carPrice: '',
+    carDescription: ''
+
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
   }
   handleSubmit = (e) => {
     e.preventDefault()
@@ -18,7 +27,9 @@ class createProjects extends Component {
       <div>
         <NavBar />
         <form onSubmit={this.handleSubmit}>
-          <input type='text' placeholder='name' />
+          <input type='text' name='carName' placeholder='Car Name' />
+          <input type='text' name='carPrice' placeholder='Car Price' />
+          <textarea name='cadDescription' placeholder='Car Description' />
           <button>Submit</button>
         </form>
       </div>
