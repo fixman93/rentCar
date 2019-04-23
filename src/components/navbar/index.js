@@ -13,7 +13,7 @@ class NavBar extends Component {
     this.props.signOut()
   }
   render() {
-    const { auth } = this.props
+    const { auth, profile } = this.props
     console.log('status', auth)
     return (
       <Navbar bg="light" expand="lg">
@@ -34,7 +34,7 @@ class NavBar extends Component {
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
           {auth.uid ? <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
+            <a href="#login">{profile.initial}</a>
           </Navbar.Text> : null}
           {auth.uid ? <Navbar.Text>
             <a href="#login" onClick={this.logOut}> Logout</a>
@@ -50,9 +50,10 @@ class NavBar extends Component {
 
 
 const mapStateToProps = (state) => {
-  // console.log('state', state)
+  console.log('sssss', state)
   return {
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
+    profile: state.firebase.profile
   }
 }
 const mapDispatchToProps = (dispatch) => {

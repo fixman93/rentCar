@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { signIn, signOut } from '../../store/actions/authAction'
+import { signIn, signOut, signUp } from '../../store/actions/authAction'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Container from 'react-bootstrap/Container'
@@ -13,7 +13,8 @@ class Login extends Component {
   state = {
     email: '',
     password: '',
-    name: ''
+    firstName: '',
+    lastName: ''
   }
 
   componentWillMount() {
@@ -28,6 +29,10 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.signIn(this.state)
+  }
+  handleSignUp = (e) => {
+    e.preventDefault()
+    this.props.signUp(this.state)
   }
   render() {
     console.log(this.props.auth)
@@ -48,11 +53,13 @@ class Login extends Component {
               </form>
             </Tab>
             <Tab eventKey="register" title="Register">
-              <form onSubmit={this.handleSubmit}>
-                <input type='text' placeholder='Your name' name='name' onChange={this.handleChange} />
+              <form onSubmit={this.handleSignUp}>
+                <input type='text' placeholder='Your first name' name='firstName' onChange={this.handleChange} />
+                <input type='text' placeholder='Your last name' name='lastName' onChange={this.handleChange} />
                 <input type='email' placeholder='email' name='email' onChange={this.handleChange} />
                 <input type='password' placeholder='password' name='password' onChange={this.handleChange} />
-                <button>Login</button>
+                <button>Register</button>
+                {this.props.authError ? <p>{this.props.authError}</p> : null}
               </form>
             </Tab>
           </Tabs>
@@ -64,12 +71,14 @@ class Login extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
+    authError: state.auth.authError
   }
 }
 const mapDispatchToProps = (dispatch) => {
   return {
     signIn: (creds) => dispatch(signIn(creds)),
+    signUp: (creds) => dispatch(signUp(creds)),
     signOut: () => dispatch(signOut())
   }
 }
