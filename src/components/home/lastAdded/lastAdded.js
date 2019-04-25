@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col'
 
 import LastAddedItem from './lastAddedItem'
 
+import './index.scss'
 class LastAdded extends Component {
 
   render() {
@@ -12,6 +13,7 @@ class LastAdded extends Component {
     return (
       <section className='last-added'>
         <Container>
+          <h2 className='title-block text-center text-gray font-bold'>Najnovije za Vas:</h2>
           <Row>
             <Col sm={4}><LastAddedItem /></Col>
             <Col sm={4}><LastAddedItem /></Col>
