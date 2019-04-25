@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 155px 0;
+  text-align: center;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background: rgba(43,49,59,.48);
+  }
+  h1 {
+    font-size: 48px;
+    color: white;
+  }
+  .container {
+    position: relative;
+  }
+  .box-position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 150px);
+    height: calc(100% + 150px);
+    will-change: transform;
+    -webkit-animation: bgPos 100s linear infinite;
+    animation: bgPos 100s linear infinite;
+    -webkit-transform: translate3d(-75px,-75px,0) rotate(0.001deg);
+    transform: translate3d(-75px,-75px,0) rotate(0.001deg);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+ul.hero-links {
+  padding: 0;
+  a {
+    color: white;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    &:before {
+      content: "/";
+      color: #a7a7a7;
+      position: absolute;
+      right: -12px;
+    }
+  }
+}
+
+
+@-webkit-keyframes bgPos{
+  25%{-webkit-transform:translate3d(-150px,-150px,0) rotate(0.001deg);transform:translate3d(-150px,-150px,0) rotate(0.001deg)}
+  75%{-webkit-transform:translate3d(0,0,0) rotate(0.001deg);transform:translate3d(0,0,0) rotate(0.001deg)}
+}
+@keyframes bgPos{
+  25%{-webkit-transform:translate3d(-150px,-150px,0) rotate(0.001deg);transform:translate3d(-150px,-150px,0) rotate(0.001deg)}
+  75%{-webkit-transform:translate3d(0,0,0) rotate(0.001deg);transform:translate3d(0,0,0) rotate(0.001deg)}
+}
+
+/* home hero section */
+section.home-hero {
+  padding: 190px 0;
+  text-align: center;
+  background-position: center;
+  h1 {
+    font-size: 68px;
+    font-weight: bold;
+    color: white;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+
+
+/* Why Choose Us */
+.why-choose-us {
+  background: #333;
+  padding: 100px 0;
+  .box {
+    justify-content: center;
+    padding: 30px 14px;
+    min-height: 100%;
+    background: #333;
+    transition: all .2s ease;
+    z-index: 1;
+    border: 1px solid #5c5c5c;
+    &:before {
+      position: absolute;
+      content: '';
+      transition: all .2s ease;
+      z-index: -1;
+      top: 8px;
+      right: 8px;
+      bottom: 8px;
+      left: 8px;
+      border: 1px solid #5c5c5c;
+    }
+    h4 {
+      font-size: 24px;
+      color: white;
+      line-break: 1.3em;
+    }
+    p {
+      color: #9b9b9b;
+      margin-top: 10px;
+    }
+  }
+}

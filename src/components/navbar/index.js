@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { signOut } from '../../store/actions/authAction'
 
+import Logo from '../../assets/logo.png'
 
+import './index.scss'
 
 class NavBar extends Component {
 
@@ -13,46 +17,55 @@ class NavBar extends Component {
     this.props.signOut()
   }
   render() {
-    const { auth } = this.props
+    const { auth, profile } = this.props
     console.log('status', auth)
     return (
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/profile">Profile</Nav.Link>
-            <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-        <Navbar.Collapse className="justify-content-end">
-          {auth.uid ? <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
-          </Navbar.Text> : null}
-          {auth.uid ? <Navbar.Text>
-            <a href="#login" onClick={this.logOut}> Logout</a>
-          </Navbar.Text> : <Navbar.Text>
-              <a href="/login"> Sign In</a>
-            </Navbar.Text>}
-
-        </Navbar.Collapse>
-      </Navbar>
+      <div className='main-navbar'>
+        <div className='navbar-top'>
+          <Navbar expand="lg">
+            <Container>
+              <Navbar.Brand href="/"><img src={Logo} alt='logo' /></Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav2" />
+              <Navbar.Collapse id="basic-navbar-nav2" className='justify-content-end'>
+                <span className='info-top'><FontAwesomeIcon icon="clock" /> 09:00AM — 17:00PM</span>
+                <span className='info-top'><FontAwesomeIcon icon="phone" /> +381 63 140-64-25</span>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </div>
+        <div className='navbar-bottom'>
+          <Navbar expand="lg">
+            <Container>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                  <Nav.Link href="/profile">Profile</Nav.Link>
+                  <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+                  <Nav.Link href="/add-new-car">Add Car</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+              <Navbar.Collapse className="justify-content-end">
+                <Nav className="">
+                  {auth.uid ? <Nav.Link href="/profile">{profile.initial}</Nav.Link> : null}
+                  {auth.uid ? <Nav.Link href="/" onClick={this.logOut}>Logout</Nav.Link> : <Navbar.Text>
+                    <a href="/login"> Sign In</a>
+                  </Navbar.Text>}
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </div>
+      </div >
     )
   }
 }
 
 
 const mapStateToProps = (state) => {
-  // console.log('state', state)
+  console.log('sssss', state)
   return {
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
+    profile: state.firebase.profile
   }
 }
 const mapDispatchToProps = (dispatch) => {

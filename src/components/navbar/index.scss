@@ -1,0 +1,28 @@
+.navbar-bottom {
+  .navbar {
+    background-color: #363636;
+    padding: 0;
+    .navbar-nav {
+      a {
+        color: white;
+        padding: 20px 10px;
+        border-top: 3px solid transparent;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 10px;
+        &:hover {
+          border-top: 3px solid #247bdd;
+          background: #4b5055;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.info-top {
+  svg {
+    color: #247bdd;
+    margin-left: 25px;
+  }
+}
