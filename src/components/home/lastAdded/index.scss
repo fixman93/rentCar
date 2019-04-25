@@ -1,3 +1,30 @@
 .last-added {
   padding: 50px 0;
+  
+}
+
+.last-added-item {
+  margin-bottom: 30px;
+  a {
+    transition: all .3s ease-in-out;
+    &:hover img {
+      -webkit-transform: scale(1.04);
+      transform: scale(1.04);
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  h3 {
+    line-height: 1.2em;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 18px;
+  }
+  p {
+    color: #9b9b9b;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
