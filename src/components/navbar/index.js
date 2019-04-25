@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { signOut } from '../../store/actions/authAction'
 
 import Logo from '../../assets/logo.png'
@@ -20,21 +22,19 @@ class NavBar extends Component {
     return (
       <div className='main-navbar'>
         <div className='navbar-top'>
-          <Navbar bg="light" expand="lg">
+          <Navbar expand="lg">
             <Container>
               <Navbar.Brand href="/"><img src={Logo} alt='logo' /></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav2" />
               <Navbar.Collapse id="basic-navbar-nav2" className='justify-content-end'>
-                <Nav>
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">Link</Nav.Link>
-                </Nav>
+                <span className='info-top'><FontAwesomeIcon icon="clock" /> 09:00AM — 17:00PM</span>
+                <span className='info-top'><FontAwesomeIcon icon="phone" /> +381 63 140-64-25</span>
               </Navbar.Collapse>
             </Container>
-          </Navbar>;
+          </Navbar>
         </div>
         <div className='navbar-bottom'>
-          <Navbar bg="light" expand="lg">
+          <Navbar expand="lg">
             <Container>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
