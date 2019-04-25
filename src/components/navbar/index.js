@@ -39,8 +39,7 @@ class NavBar extends Component {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href="/profile">Profile</Nav.Link>
-                  <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+                  <Nav.Link href="/dashboard">Cars</Nav.Link>
                   <Nav.Link href="/add-new-car">Add Car</Nav.Link>
                 </Nav>
               </Navbar.Collapse>

@@ -3,6 +3,10 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Link } from 'react-router-dom'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 import NavBar from '../navbar/index'
 import moment from 'moment'
 import bg_cars from '../../assets/bg-cars.jpg'
@@ -16,6 +20,7 @@ class Dashboard extends Component {
     return (
       <div>
         <NavBar />
+
         <section className='hero'>
           <div className='container'>
             <h1>Classic Car Page</h1>
@@ -26,16 +31,24 @@ class Dashboard extends Component {
           </div>
           <div className='box-position' style={sectionStyle}></div>
         </section>
-        {projects && projects.map((project, i) => {
-          return (
-            <Link to={'/project/' + project.id} key={i}>
-              <h3>{project.carName}</h3>
-              <span>{project.authorFirstName}</span>
-              <em>{moment(project.createdAt.toDate()).calendar()}</em>
-            </Link>
-          )
-        })
-        }
+        <Container>
+          <Row>
+            {projects && projects.map((project, i) => {
+              return (
+
+                <Col sm={4} key={i}>
+                  <Link to={'/project/' + project.id} >
+                    <h3>{project.carName}</h3>
+                    <span>{project.authorFirstName}</span>
+                    <em>{moment(project.createdAt.toDate()).calendar()}</em>
+                  </Link>
+                </Col>
+
+              )
+            })
+            }
+          </Row>
+        </Container>
       </div>
     )
   }
