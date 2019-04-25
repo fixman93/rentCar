@@ -65,3 +65,38 @@ ul.hero-links {
 }
 
 
+
+/* Why Choose Us */
+.why-choose-us {
+  background: #333;
+  padding: 100px 0;
+  .box {
+    justify-content: center;
+    padding: 30px 14px;
+    min-height: 100%;
+    background: #333;
+    transition: all .2s ease;
+    z-index: 1;
+    border: 1px solid #5c5c5c;
+    &:before {
+      position: absolute;
+      content: '';
+      transition: all .2s ease;
+      z-index: -1;
+      top: 8px;
+      right: 8px;
+      bottom: 8px;
+      left: 8px;
+      border: 1px solid #5c5c5c;
+    }
+    h4 {
+      font-size: 24px;
+      color: white;
+      line-break: 1.3em;
+    }
+    p {
+      color: #9b9b9b;
+      margin-top: 10px;
+    }
+  }
+}

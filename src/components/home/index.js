@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
 import NavBar from '../navbar/index'
-import LastAdded from './lastAdded'
+import LastAdded from './lastAdded/lastAdded'
+import WhyChooseUs from './whyChooseUs'
+
 import hero_bg from '../../assets/home-hero.jpg'
 
 
@@ -22,6 +24,7 @@ class Home extends Component {
           </div>
         </section>
         <LastAdded />
+        <WhyChooseUs />
       </div>
     )
   }
