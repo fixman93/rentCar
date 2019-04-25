@@ -22,7 +22,7 @@ class NavBar extends Component {
         <div className='navbar-top'>
           <Navbar bg="light" expand="lg">
             <Container>
-              <Navbar.Brand href="#home"><img src={Logo} alt='logo' /></Navbar.Brand>
+              <Navbar.Brand href="/"><img src={Logo} alt='logo' /></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav2" />
               <Navbar.Collapse id="basic-navbar-nav2" className='justify-content-end'>
                 <Nav>
