@@ -5,8 +5,10 @@ import { createProject } from '../../store/actions/projectAction'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom'
 
 import NavBar from '../navbar/index'
+import bg_cars from '../../assets/bg-cars.jpg'
 
 class createProjects extends Component {
 
@@ -28,6 +30,9 @@ class createProjects extends Component {
     this.props.history.push('/dashboard')
   }
   render() {
+    const sectionStyle = {
+      backgroundImage: `url(${bg_cars})`
+    };
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
@@ -35,6 +40,16 @@ class createProjects extends Component {
     return (
       <div>
         <NavBar />
+        <section className='hero'>
+          <div className='container'>
+            <h1>Add Car</h1>
+            <ul className='hero-links'>
+              <li><Link to='/'>Home</Link> </li>
+              <li><Link to='/dashboard'>Cars</Link></li>
+            </ul>
+          </div>
+          <div className='box-position' style={sectionStyle}></div>
+        </section>
         <Container>
           <Form >
             <Form.Group controlId="formBasicEmail">
