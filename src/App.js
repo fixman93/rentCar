@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faClock } from '@fortawesome/free-solid-svg-icons'
-import { faaccusoft } from '@fortawesome/free-solid-svg-icons'
 
 import Dashboard from './components/dashboard/index'
 import CreateProjects from './components/createProject/createProject'
