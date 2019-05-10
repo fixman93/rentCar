@@ -17,6 +17,7 @@ class Dashboard extends Component {
       backgroundImage: `url(${bg_cars})`
     };
     const { projects } = this.props
+    console.log('aaa', projects)
     return (
       <div>
         <NavBar />
@@ -38,6 +39,7 @@ class Dashboard extends Component {
 
                 <Col sm={4} key={i}>
                   <Link to={'/project/' + project.id} >
+                    <img src={project.userImage} />
                     <h3>{project.carName}</h3>
                     <span>{project.authorFirstName}</span>
                     <em>{moment(project.createdAt.toDate()).calendar()}</em>

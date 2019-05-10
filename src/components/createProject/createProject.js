@@ -10,13 +10,22 @@ import { Link } from 'react-router-dom'
 import NavBar from '../navbar/index'
 import bg_cars from '../../assets/bg-cars.jpg'
 
+import './createProject.scss'
+
 class createProjects extends Component {
 
-  state = {
-    carName: '',
-    carPrice: '',
-    carDescription: ''
 
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      carName: '',
+      carPrice: '',
+      carDescription: '',
+      picture: null,
+      pictureUrl: null
+    }
+    this.displayPicture = this.displayPicture.bind(this)
   }
 
   handleChange = (e) => {
@@ -25,9 +34,23 @@ class createProjects extends Component {
     })
   }
   handleSubmit = (e) => {
+    console.log('submit')
     e.preventDefault()
     this.props.createProject(this.state)
     this.props.history.push('/dashboard')
+  }
+
+  displayPicture(event) {
+    let reader = new FileReader();
+    let file = event.target.files[0]
+    console.log('FILE:', file)
+    reader.onloadend = () => {
+      this.setState({
+        picture: file,
+        pictureUrl: reader.result
+      })
+    }
+    reader.readAsDataURL(file)
   }
   render() {
     const sectionStyle = {
@@ -37,6 +60,7 @@ class createProjects extends Component {
       return <Redirect to='/' />
     }
     console.log('staeeeeee', this.state)
+
     return (
       <div>
         <NavBar />
@@ -51,7 +75,7 @@ class createProjects extends Component {
           <div className='box-position' style={sectionStyle}></div>
         </section>
         <Container>
-          <Form >
+          <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Car Name</Form.Label>
               <Form.Control type="text" name='carName' value={this.state.carName} onChange={this.handleChange} placeholder="Car Name" />
@@ -70,8 +94,18 @@ class createProjects extends Component {
               <Form.Label>Example textarea</Form.Label>
               <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} placeholder='Car Description' />
             </Form.Group>
-            <Button onSubmit={this.handleSubmit} variant="primary">Submit</Button>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Car Price</Form.Label>
+              {/* <Form.Control type="file"  /> */}
+              <input type="file" name="img" multiple onChange={(event) => {
+                this.displayPicture(event)
+              }}></input>
+            </Form.Group>
+            <Button type='submit' variant="primary">Submit</Button>
           </Form>
+
+          {this.state.pictureUrl ? <div className='previewImage'><img src={this.state.pictureUrl} alt='img' /></div> : null}
+
         </Container>
       </div>
     )
