@@ -39,7 +39,7 @@ class Dashboard extends Component {
 
                 <Col sm={4} key={i}>
                   <Link to={'/project/' + project.id} >
-                    <img src={project.userImage} />
+                    <img src={project.userImage} alt='Car main image' />
                     <h3>{project.carName}</h3>
                     <span>{project.authorFirstName}</span>
                     <em>{moment(project.createdAt.toDate()).calendar()}</em>
