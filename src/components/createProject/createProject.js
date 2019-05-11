@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
+// import DateTimeRangePicker from '@wojtekmaj/react-datetimerange-picker'
+
 import { createProject } from '../../store/actions/projectAction'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
@@ -23,7 +27,11 @@ class createProjects extends Component {
       carPrice: '',
       carDescription: '',
       picture: null,
-      pictureUrl: null
+      pictureUrl: null,
+      carYear: '',
+      carType: '',
+      carModel: ''
+      // date: [new Date(), new Date()],
     }
     this.displayPicture = this.displayPicture.bind(this)
   }
@@ -52,6 +60,7 @@ class createProjects extends Component {
     }
     reader.readAsDataURL(file)
   }
+  onChange = date => this.setState({ date })
   render() {
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
@@ -61,10 +70,12 @@ class createProjects extends Component {
     }
     console.log('staeeeeee', this.state)
 
+
     return (
       <div>
         <NavBar />
         <section className='hero'>
+
           <div className='container'>
             <h1>Add Car</h1>
             <ul className='hero-links'>
@@ -94,6 +105,30 @@ class createProjects extends Component {
               <Form.Label>Example textarea</Form.Label>
               <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} placeholder='Car Description' />
             </Form.Group>
+            {/* <DateTimeRangePicker
+              onChange={this.onChange}
+              value={this.state.date}
+            /> */}
+            <Row>
+              <Col>
+                <Form.Group controlId="carYear">
+                  <Form.Label>Year</Form.Label>
+                  <Form.Control type="text" name='carYear' value={this.state.carYear} onChange={this.handleChange} placeholder='1999' />
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group controlId="carType">
+                  <Form.Label>Type</Form.Label>
+                  <Form.Control type="text" name='carType' value={this.state.carType} onChange={this.handleChange} placeholder='1999' />
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group controlId="carModel">
+                  <Form.Label>Model</Form.Label>
+                  <Form.Control type="text" name='carModel' value={this.state.carModel} onChange={this.handleChange} placeholder='1999' />
+                </Form.Group>
+              </Col>
+            </Row>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Car Price</Form.Label>
               {/* <Form.Control type="file"  /> */}
