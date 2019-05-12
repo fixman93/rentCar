@@ -32,6 +32,7 @@ class createProjects extends Component {
       carModel: '',
       picture: null,
       pictureUrl: null,
+      carDescription: ''
       // date: [new Date(), new Date()],
     }
     this.displayPicture = this.displayPicture.bind(this)
@@ -137,6 +138,10 @@ class createProjects extends Component {
               <input type="file" name="img" multiple onChange={(event) => {
                 this.displayPicture(event)
               }}></input>
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Description</Form.Label>
+              <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} />
             </Form.Group>
             <Button type='submit' variant="primary">Submit</Button>
           </Form>

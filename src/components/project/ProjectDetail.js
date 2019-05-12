@@ -3,8 +3,11 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import NavBar from '../navbar/index'
 
+import './index.scss'
 class ProjectDetail extends Component {
 
   render() {
@@ -14,8 +17,15 @@ class ProjectDetail extends Component {
         <div>
           <NavBar />
           <Container>
-            <h2>{project.carType}</h2>
-            <p>{project.carModel}</p>
+            <Row>
+              <Col>
+                <img src={project.userImage} alt='Car' />
+              </Col>
+              <Col>
+                <h4>{project.carType} {project.carModel}</h4>
+                <p>{project.carDescription}</p>
+              </Col>
+            </Row>
           </Container>
         </div>
       )

@@ -24,6 +24,7 @@ export const createProject = (project) => {
         carYear: project.carYear,
         carType: project.carType,
         carModel: project.carModel,
+        carDescription: project.carDescription,
         feedback: 0,
         // UserImage: downloadURL.metadata.fullPath
         userImage: 'https://via.placeholder.com/300'

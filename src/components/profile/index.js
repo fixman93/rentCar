@@ -7,7 +7,8 @@ import { Redirect } from 'react-router-dom'
 import NavBar from '../navbar/index'
 
 import Container from 'react-bootstrap/Container'
-
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 class Profile extends Component {
 
   render() {
@@ -30,18 +31,25 @@ class Profile extends Component {
 
     }
     return (
-      <div>
+      <div className='profile'>
         <NavBar />
         <Container>
           <h1>Profile</h1>
           <h2>{user.firstName} {user.lastName}</h2>
-          <ul>
+          <Row>
             {carListt.map((project, i) => {
               return (
-                <li key={i}>{project.carType}</li>
+                <Col sm={4} key={i}>
+                  <div className='profileItems'>
+                    <h3>{project.carType} {project.carModel}</h3>
+                    <em>REVIEW:</em>
+                    <span className='feedback'>{project.feedback}</span>
+
+                  </div>
+                </Col>
               )
             })}
-          </ul>
+          </Row>
         </Container>
       </div>
     )
