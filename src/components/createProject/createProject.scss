@@ -1,8 +1,3 @@
-.previewImage img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 6px;
-}
 
 .previewImage {
   border: 1px solid #949494;
@@ -10,4 +5,23 @@
   padding: 20px;
   margin-top: 30px;
   max-width: 400px;
+  img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+
+.list-elements span {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+}
+
+.list-elements span:after {
+  content: ",";
+}
+
+.list-elements span:last-child:after {
+  content: "";
 }

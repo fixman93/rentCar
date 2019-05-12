@@ -5,6 +5,8 @@ import { Redirect } from 'react-router-dom'
 
 import { createProject } from '../../store/actions/projectAction'
 import Container from 'react-bootstrap/Container'
+import InputGroup from 'react-bootstrap/InputGroup'
+import FormControl from 'react-bootstrap/FormControl'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
@@ -32,10 +34,13 @@ class createProjects extends Component {
       carModel: '',
       picture: null,
       pictureUrl: null,
-      carDescription: ''
+      carDescription: '',
+      carElement: '',
+      listElements: []
       // date: [new Date(), new Date()],
     }
     this.displayPicture = this.displayPicture.bind(this)
+    this.addElement = this.addElement.bind(this)
   }
 
   handleChange = (e) => {
@@ -66,6 +71,17 @@ class createProjects extends Component {
     }
     reader.readAsDataURL(file)
   }
+  addElement() {
+    console.log('NEW', this.state.carElement)
+    let newElements = this.state.carElement
+    let arrayElements = this.state.listElements
+    arrayElements.push(newElements)
+    this.setState({
+      carElement: '',
+      listElements: arrayElements
+    })
+
+  }
   // onChange = date => this.setState({ date })
   render() {
     const sectionStyle = {
@@ -74,7 +90,7 @@ class createProjects extends Component {
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
-
+    console.log('ELEMENTS', this.state.listElements)
     return (
       <div>
         <NavBar />
@@ -132,6 +148,10 @@ class createProjects extends Component {
                 </Form.Group>
               </Col>
             </Row>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Description</Form.Label>
+              <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} />
+            </Form.Group>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Car Price</Form.Label>
               {/* <Form.Control type="file"  /> */}
@@ -139,10 +159,26 @@ class createProjects extends Component {
                 this.displayPicture(event)
               }}></input>
             </Form.Group>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Description</Form.Label>
-              <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} />
+
+            <Form.Group >
+              <Form.Label>Spicification</Form.Label>
+              <InputGroup className="mb-3">
+                <FormControl
+                  type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='Extra field'
+                />
+                <InputGroup.Append>
+                  <Button variant="outline-secondary" className='add-elements' onClick={this.addElement}>Button</Button>
+                </InputGroup.Append>
+              </InputGroup>
+              <Form.Text className="text-muted list-elements">
+                {this.state.listElements && this.state.listElements.map((element, i) => {
+                  return (
+                    <span key={i}>{element}</span>
+                  )
+                })}
+              </Form.Text>
             </Form.Group>
+
             <Button type='submit' variant="primary">Submit</Button>
           </Form>
 
@@ -154,7 +190,6 @@ class createProjects extends Component {
 }
 
 const mapStateToProps = (state) => {
-  // console.log('state', state)
   return {
     auth: state.firebase.auth
   }

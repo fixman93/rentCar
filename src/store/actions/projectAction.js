@@ -26,6 +26,7 @@ export const createProject = (project) => {
         carModel: project.carModel,
         carDescription: project.carDescription,
         feedback: 0,
+        carStatistick: project.listElements,
         // UserImage: downloadURL.metadata.fullPath
         userImage: 'https://via.placeholder.com/300'
       }).then(() => {
