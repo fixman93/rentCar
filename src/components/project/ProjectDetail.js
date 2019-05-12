@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
+import Container from 'react-bootstrap/Container'
 import NavBar from '../navbar/index'
 
 class ProjectDetail extends Component {
@@ -12,8 +13,10 @@ class ProjectDetail extends Component {
       return (
         <div>
           <NavBar />
-          <h2>{project.carName}</h2>
-          <p>{project.carDescription}</p>
+          <Container>
+            <h2>{project.carType}</h2>
+            <p>{project.carModel}</p>
+          </Container>
         </div>
       )
     }

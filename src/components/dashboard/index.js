@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
+import { updateProject } from '../../store/actions/projectAction'
+
 import { compose } from 'redux'
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
@@ -11,7 +13,37 @@ import NavBar from '../navbar/index'
 import moment from 'moment'
 import bg_cars from '../../assets/bg-cars.jpg'
 
+import './index.scss'
 class Dashboard extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      feedback: 0,
+      carID: '0'
+    }
+    this.addFeedback = this.addFeedback.bind(this)
+  }
+
+  addFeedback = (id, feedback) => {
+    console.log('id:', id)
+    // this.setState({
+    //   feedback: feedback + 1,
+    //   carID: id
+    // }).then(() => {
+    //   console.log('eeeee', this.state)
+    // }).catch((err) => {
+    //   console.log(err)
+    // })
+
+    this.setState({
+      carID: id,
+      feedback: feedback + 1
+    }, () => {
+      console.log(this.state)
+      this.props.updateProject(this.state)
+    })
+  }
   render() {
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
@@ -37,12 +69,20 @@ class Dashboard extends Component {
               return (
 
                 <Col sm={4} key={i}>
-                  <Link to={'/project/' + project.id} >
-                    <img src={project.userImage} alt='Car' />
-                    <h3>{project.carType} {project.carModel}</h3>
-                    <p>{project.authorFirstName}</p>
-                    <em>{moment(project.createdAt.toDate()).calendar()}</em>
-                  </Link>
+                  <div className='mainBoxItem'>
+                    <Link to={'/project/' + project.id} >
+                      <div className='overflow-hidden'>
+                        <img src={project.userImage} alt='Car' />
+                      </div>
+                      <h3>{project.carType} {project.carModel}</h3>
+                    </Link>
+                    <div className='flex'>
+                      <p>{project.authorFirstName}</p>
+                      <em>{moment(project.createdAt.toDate()).calendar()}</em>
+                    </div>
+
+                    <span className='review-number' onClick={() => this.addFeedback(project.id, project.feedback)}>+1 ({project.feedback})</span>
+                  </div>
                 </Col>
 
               )
@@ -60,8 +100,14 @@ const mapStateToProps = (state) => {
     projects: state.firestore.ordered.project
   }
 }
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateProject: (project) => dispatch(updateProject(project))
+  }
+}
 export default compose(
-  connect(mapStateToProps),
+  connect(mapStateToProps, mapDispatchToProps),
   firestoreConnect([
     { collection: 'project', orderBy: ['createdAt', 'desc'] }
   ])

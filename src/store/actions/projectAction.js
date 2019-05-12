@@ -24,6 +24,7 @@ export const createProject = (project) => {
         carYear: project.carYear,
         carType: project.carType,
         carModel: project.carModel,
+        feedback: 0,
         // UserImage: downloadURL.metadata.fullPath
         userImage: 'https://via.placeholder.com/300'
       }).then(() => {
@@ -32,8 +33,15 @@ export const createProject = (project) => {
         dispatch({ type: 'CREATE_PROJECT_ERROR', err })
       })
     })
+  }
+}
 
-
-
+export const updateProject = (info) => {
+  console.log('aaaaaaaaaaaaa', info)
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore()
+    firestore.collection('project').doc(info.carID).update({
+      feedback: info.feedback
+    })
   }
 }

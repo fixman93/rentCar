@@ -6,14 +6,17 @@
 .last-added-item {
   margin-bottom: 30px;
   a {
-    transition: all .3s ease-in-out;
     &:hover img {
-      -webkit-transform: scale(1.04);
-      transform: scale(1.04);
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
   }
   img {
     max-width: 100%;
+    -webkit-transform: scale(1.04);
+      transform: scale(1.04);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   h3 {
     line-height: 1.2em;

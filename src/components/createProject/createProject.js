@@ -19,7 +19,9 @@ import './createProject.scss'
 class createProjects extends Component {
 
 
+  componentDidMount() {
 
+  }
   constructor(props) {
     super(props)
     this.state = {
@@ -29,7 +31,7 @@ class createProjects extends Component {
       carType: '',
       carModel: '',
       picture: null,
-      pictureUrl: null
+      pictureUrl: null,
       // date: [new Date(), new Date()],
     }
     this.displayPicture = this.displayPicture.bind(this)
@@ -41,10 +43,14 @@ class createProjects extends Component {
     })
   }
   handleSubmit = (e) => {
-    console.log('submit')
     e.preventDefault()
     this.props.createProject(this.state)
     this.props.history.push('/dashboard')
+  }
+
+  changeData = (e) => {
+    e.preventDefault()
+    this.props.updateProject()
   }
 
   displayPicture(event) {
@@ -59,7 +65,7 @@ class createProjects extends Component {
     }
     reader.readAsDataURL(file)
   }
-  onChange = date => this.setState({ date })
+  // onChange = date => this.setState({ date })
   render() {
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
@@ -67,8 +73,6 @@ class createProjects extends Component {
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
-    console.log('staeeeeee', this.state.currency)
-
 
     return (
       <div>
@@ -138,7 +142,6 @@ class createProjects extends Component {
           </Form>
 
           {this.state.pictureUrl ? <div className='previewImage'><img src={this.state.pictureUrl} alt='img' /></div> : null}
-
         </Container>
       </div>
     )
