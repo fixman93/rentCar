@@ -5,14 +5,14 @@ import Audi from '../../../assets/audi.jpg'
 class LastAddedItem extends Component {
 
   render() {
-
+    const { project } = this.props
     return (
       <section className='last-added-item'>
         <Link to='/'>
           <img src={Audi} alt='Car' />
         </Link>
-        <h3>Audi</h3>
-        <p>From $125 per day</p>
+        <h3>{project.carName}</h3>
+        <p>From ${project.carPrice} per day</p>
       </section>
     )
   }
