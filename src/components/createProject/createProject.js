@@ -27,7 +27,7 @@ class createProjects extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      currency: '',
+      currency: 'EUR',
       carPrice: '',
       carYear: '',
       carType: '',

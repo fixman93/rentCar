@@ -5,6 +5,8 @@ import { compose } from 'redux'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import NavBar from '../navbar/index'
 
 import './index.scss'
@@ -17,13 +19,22 @@ class ProjectDetail extends Component {
         <div>
           <NavBar />
           <Container>
-            <Row>
-              <Col>
+            <Row className='car-detail-page'>
+              <Col lg="6">
                 <img src={project.userImage} alt='Car' />
               </Col>
-              <Col>
+              <Col lg="6" className='car-detail-list'>
                 <h4>{project.carType} {project.carModel}</h4>
                 <p>{project.carDescription}</p>
+                <div className='divider divider-30'></div>
+                <ul>
+                  {project.carStatistick && project.carStatistick.map((items, i) => {
+                    return (
+                      <li key={i}><FontAwesomeIcon icon="check" /> {items}</li>
+                    )
+                  })}
+                </ul>
+                <div className='divider divider-30'></div>
               </Col>
             </Row>
           </Container>

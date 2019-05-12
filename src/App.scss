@@ -24,3 +24,16 @@ a:hover {
 .font-bold {
   font-weight: bold;
 }
+
+.divider-30 {
+  margin: 30px 0;
+}
+
+.divider {
+  font-size: 0;
+  line-height: 0;
+  height: 1px;
+  width: 100%;
+  background: #e1e1e1;
+}
+
