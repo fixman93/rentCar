@@ -12,7 +12,7 @@ class LastAddedItem extends Component {
           <img src={Audi} alt='Car' />
         </Link>
         <h3>{project.carType} {project.carModel}</h3>
-        <p>From ${project.carPrice} per day</p>
+        <p>From {project.carPrice} {project.Currency} per day</p>
       </section>
     )
   }

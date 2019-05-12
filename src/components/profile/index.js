@@ -38,7 +38,7 @@ class Profile extends Component {
           <ul>
             {carListt.map((project, i) => {
               return (
-                <li key={i}>{project.carName}</li>
+                <li key={i}>{project.carType}</li>
               )
             })}
           </ul>

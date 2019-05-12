@@ -67,7 +67,7 @@ class createProjects extends Component {
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
-    console.log('staeeeeee', this.state)
+    console.log('staeeeeee', this.state.currency)
 
 
     return (
