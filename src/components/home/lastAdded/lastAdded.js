@@ -17,15 +17,9 @@ class LastAdded extends Component {
           <Row>
             {projects && projects.map(project => {
               return (
-                <Col sm={4}><LastAddedItem /></Col>
+                <Col sm={4}><LastAddedItem project={project} /></Col>
               )
             })}
-
-            {/* <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col> */}
           </Row>
         </Container>
       </section>
