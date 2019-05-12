@@ -23,14 +23,13 @@ class createProjects extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      carName: '',
+      currency: '',
       carPrice: '',
-      carDescription: '',
-      picture: null,
-      pictureUrl: null,
       carYear: '',
       carType: '',
-      carModel: ''
+      carModel: '',
+      picture: null,
+      pictureUrl: null
       // date: [new Date(), new Date()],
     }
     this.displayPicture = this.displayPicture.bind(this)
@@ -87,28 +86,27 @@ class createProjects extends Component {
         </section>
         <Container>
           <Form onSubmit={this.handleSubmit}>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Car Name</Form.Label>
-              <Form.Control type="text" name='carName' value={this.state.carName} onChange={this.handleChange} placeholder="Car Name" />
-              {/* <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text> */}
-            </Form.Group>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Car Price</Form.Label>
-              <Form.Control type="text" name='carPrice' value={this.state.carPrice} onChange={this.handleChange} placeholder='Car Price' />
-              {/* <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text> */}
-            </Form.Group>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} placeholder='Car Description' />
-            </Form.Group>
-            {/* <DateTimeRangePicker
+            <Row>
+              <Col>
+                <Form.Group controlId="exampleForm.ControlSelect1">
+                  <Form.Label>Currency</Form.Label>
+                  <Form.Control as="select" onChange={this.handleChange} name='currency' value={this.state.currency}>
+                    <option>EUR</option>
+                    <option>BAM</option>
+                  </Form.Control>
+                </Form.Group>
+                {/* <DateTimeRangePicker
               onChange={this.onChange}
               value={this.state.date}
             /> */}
+              </Col>
+              <Col>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Car Price</Form.Label>
+                  <Form.Control type="number" name='carPrice' value={this.state.carPrice} onChange={this.handleChange} placeholder='Car Price' />
+                </Form.Group>
+              </Col>
+            </Row>
             <Row>
               <Col>
                 <Form.Group controlId="carYear">
