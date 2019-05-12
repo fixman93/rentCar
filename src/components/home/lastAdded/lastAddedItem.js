@@ -8,7 +8,7 @@ class LastAddedItem extends Component {
     const { project } = this.props
     return (
       <section className='last-added-item'>
-        <Link to='/'>
+        <Link to={'/project/' + project.id} >
           <img src={Audi} alt='Car' />
         </Link>
         <h3>{project.carType} {project.carModel}</h3>
