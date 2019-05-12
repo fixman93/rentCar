@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { firestoreConnect } from 'react-redux-firebase'
+import { compose } from 'redux'
 import NavBar from '../navbar/index'
 import LastAdded from './lastAdded/lastAdded'
 import WhyChooseUs from './whyChooseUs'
@@ -11,6 +13,7 @@ import './index.scss'
 class Home extends Component {
 
   render() {
+    const { projects } = this.props
     const herobg = {
       backgroundImage: `url(${hero_bg})`
     }
@@ -23,12 +26,21 @@ class Home extends Component {
             <p>From as low as $10 per day with limited time offer discounts</p>
           </div>
         </section>
-        <LastAdded />
+        <LastAdded projects={projects} />
         <WhyChooseUs />
       </div>
     )
   }
 }
 
-
-export default Home
+const mapStateToProps = (state) => {
+  return {
+    projects: state.firestore.ordered.project
+  }
+}
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'project', orderBy: ['createdAt', 'desc'], limit: 6 }
+  ])
+)(Home)
