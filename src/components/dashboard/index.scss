@@ -1,0 +1,61 @@
+.mainBoxItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: all .3s ease;
+}
+
+.mainBoxItem img:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.mainBoxItem {
+  box-shadow: 0px 0px 1px black;
+  padding: 15px;
+  margin-top: 40px;
+  position: relative;
+}
+
+
+.mainBoxItem .review-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 5px;
+  font-size: 14px;
+  border-radius: 6px;
+  background: #e46d49;
+  color: white;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.mainBoxItem .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainBoxItem .flex p {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mainBoxItem .flex em {
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.mainBoxItem h3 {
+  border-bottom: 1px solid #999;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
