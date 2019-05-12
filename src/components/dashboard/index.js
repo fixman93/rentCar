@@ -17,7 +17,6 @@ class Dashboard extends Component {
       backgroundImage: `url(${bg_cars})`
     };
     const { projects } = this.props
-    console.log('aaa', projects)
     return (
       <div>
         <NavBar />
@@ -40,8 +39,8 @@ class Dashboard extends Component {
                 <Col sm={4} key={i}>
                   <Link to={'/project/' + project.id} >
                     <img src={project.userImage} alt='Car' />
-                    <h3>{project.carName}</h3>
-                    <span>{project.authorFirstName}</span>
+                    <h3>{project.carType} {project.carModel}</h3>
+                    <p>{project.authorFirstName}</p>
                     <em>{moment(project.createdAt.toDate()).calendar()}</em>
                   </Link>
                 </Col>
@@ -57,7 +56,6 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log('this state', state)
   return {
     projects: state.firestore.ordered.project
   }
@@ -65,7 +63,6 @@ const mapStateToProps = (state) => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
-    // { collection: 'project', orderBy: ['createdAt', 'desc'], limit: 3 }
     { collection: 'project', orderBy: ['createdAt', 'desc'] }
   ])
 )(Dashboard)

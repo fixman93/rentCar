@@ -19,9 +19,11 @@ export const createProject = (project) => {
         authorFirstName: profile.firstName,
         authorLastName: profile.lastName,
         authhorId: authorId,
-        carName: project.carName,
+        Currency: project.currency,
         carPrice: project.carPrice,
-        carDescription: project.carDescription,
+        carYear: project.carYear,
+        carType: project.carType,
+        carModel: project.carModel,
         // UserImage: downloadURL.metadata.fullPath
         userImage: 'https://via.placeholder.com/300'
       }).then(() => {
