@@ -9,18 +9,17 @@ import './index.scss'
 class LastAdded extends Component {
 
   render() {
-
+    const { projects } = this.props
     return (
       <section className='last-added'>
         <Container>
           <h2 className='title-block text-center text-gray font-bold'>Najnovije za Vas:</h2>
           <Row>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
-            <Col sm={4}><LastAddedItem /></Col>
+            {projects && projects.map((project, i) => {
+              return (
+                <Col sm={4} key={i}><LastAddedItem project={project} /></Col>
+              )
+            })}
           </Row>
         </Container>
       </section>
