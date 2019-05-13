@@ -17,6 +17,7 @@ class Home extends Component {
     const herobg = {
       backgroundImage: `url(${hero_bg})`
     }
+    console.log('dsadasda', projects)
     return (
       <div className='home-page'>
         <NavBar />

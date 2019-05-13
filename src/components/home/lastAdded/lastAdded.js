@@ -15,9 +15,9 @@ class LastAdded extends Component {
         <Container>
           <h2 className='title-block text-center text-gray font-bold'>Najnovije za Vas:</h2>
           <Row>
-            {projects && projects.map(project => {
+            {projects && projects.map((project, i) => {
               return (
-                <Col sm={4}><LastAddedItem project={project} /></Col>
+                <Col sm={4} key={i}><LastAddedItem project={project} /></Col>
               )
             })}
           </Row>
