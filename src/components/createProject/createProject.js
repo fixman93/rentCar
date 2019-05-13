@@ -105,7 +105,7 @@ class createProjects extends Component {
           </div>
           <div className='box-position' style={sectionStyle}></div>
         </section>
-        <Container>
+        <Container className='add-new-car'>
           <Form onSubmit={this.handleSubmit}>
             <Row>
               <Col>
@@ -159,15 +159,12 @@ class createProjects extends Component {
                 this.displayPicture(event)
               }}></input>
             </Form.Group>
-
-            <Form.Group >
-              <Form.Label>Spicification</Form.Label>
+            <Form.Group className='car-specifications'>
+              <Form.Label>Spicifications</Form.Label>
               <InputGroup className="mb-3">
-                <FormControl
-                  type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='Extra field'
-                />
+                <FormControl type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='Extra field' />
                 <InputGroup.Append>
-                  <Button variant="outline-secondary" className='add-elements' onClick={this.addElement}>Button</Button>
+                  <Button variant="outline-secondary" className='add-elements' onClick={this.addElement}>+</Button>
                 </InputGroup.Append>
               </InputGroup>
               <Form.Text className="text-muted list-elements">

@@ -61,3 +61,13 @@
 .car-detail-page.row img {
   width: 100%;
 }
+
+.car-specifications input:focus {
+  box-shadow: none;
+  border-color: #495057;
+}
+
+.add-new-car {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

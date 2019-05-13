@@ -11,30 +11,32 @@ export const createProject = (project) => {
     const profile = getState().firebase.profile
     const authorId = getState().firebase.auth.uid
     console.log('oooooo', project)
-    storage.child(`profile/${new Date().getTime()}`).put(project.picture).then((downloadURL) => {
-      console.log('snapshot', downloadURL)
-      firestore.collection('project').add({
-        // ...project,
-        createdAt: new Date(),
-        authorFirstName: profile.firstName,
-        authorLastName: profile.lastName,
-        authhorId: authorId,
-        Currency: project.currency,
-        carPrice: project.carPrice,
-        carYear: project.carYear,
-        carType: project.carType,
-        carModel: project.carModel,
-        carDescription: project.carDescription,
-        feedback: 0,
-        carStatistick: project.listElements,
-        // UserImage: downloadURL.metadata.fullPath
-        userImage: 'https://via.placeholder.com/300'
-      }).then(() => {
-        dispatch({ type: 'CREATE_PROJECT', project })
-      }).catch((err) => {
-        dispatch({ type: 'CREATE_PROJECT_ERROR', err })
+    const newImageName = new Date().getTime()
+    storage.child(`profile/${newImageName}`).put(project.picture).then(() => {
+      storage.child(`profile/${newImageName}`).getDownloadURL().then(function (downloadURL) {
+        firestore.collection('project').add({
+          createdAt: new Date(),
+          authorFirstName: profile.firstName,
+          authorLastName: profile.lastName,
+          authhorId: authorId,
+          Currency: project.currency,
+          carPrice: project.carPrice,
+          carYear: project.carYear,
+          carType: project.carType,
+          carModel: project.carModel,
+          carDescription: project.carDescription,
+          feedback: 0,
+          carStatistick: project.listElements,
+          userImage: downloadURL
+        }).then(() => {
+          dispatch({ type: 'CREATE_PROJECT', project })
+        }).catch((err) => {
+          dispatch({ type: 'CREATE_PROJECT_ERROR', err })
+        })
       })
+
     })
+
   }
 }
 
@@ -47,3 +49,10 @@ export const updateProject = (info) => {
     })
   }
 }
+
+// storage.child(`profile/${new Date().getTime()}`).getDownloadURL().then(function (url) {
+//   console.log("URL", url)
+// }).catch(function (error) {
+//   // Handle any errors
+//   console.log('ERROR')
+// });
