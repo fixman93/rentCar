@@ -17,7 +17,8 @@ class Login extends Component {
     firstName: '',
     lastName: '',
     phoneNumber: '',
-    accountType: 'Company'
+    accountType: 'Company',
+    companyName: ''
   }
 
   componentWillMount() {
@@ -41,6 +42,13 @@ class Login extends Component {
     console.log(this.props.auth)
     if (this.props.auth.uid) {
       return <Redirect to='/' />
+    }
+    let company = null
+    if (this.state.accountType === 'Company') {
+      company = <Form.Group>
+        <Form.Label>Company Name</Form.Label>
+        <Form.Control type="text" name='companyName' value={this.state.companyName} onChange={this.handleChange} placeholder='Company Name' />
+      </Form.Group>
     }
     return (
       <div>
@@ -70,6 +78,7 @@ class Login extends Component {
                     <option>Personal</option>
                   </Form.Control>
                 </Form.Group>
+                {company}
                 <Form.Group controlId="formBasicfirstname">
                   <Form.Label>First Name</Form.Label>
                   <Form.Control type="text" name='firstName' value={this.state.firstName} onChange={this.handleChange} placeholder='Your first name' />

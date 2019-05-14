@@ -80,7 +80,12 @@ class ProjectDetail extends Component {
                   })}
                 </ul>
                 <div className='divider divider-30'></div>
-                <CarModal userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0} projectID={projectID} />
+                <CarModal
+                  userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0}
+                  projectID={projectID}
+                  carType={project.carType}
+                  carModel={project.carModel}
+                />
               </Col>
             </Row>
           </Container>

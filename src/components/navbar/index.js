@@ -40,7 +40,7 @@ class NavBar extends Component {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                   <Nav.Link href="/dashboard">Cars</Nav.Link>
-                  <Nav.Link href="/add-new-car">Add Car</Nav.Link>
+                  {auth.uid ? <Nav.Link href="/add-new-car">Add Car</Nav.Link> : null}
                 </Nav>
               </Navbar.Collapse>
               <Navbar.Collapse className="justify-content-end">

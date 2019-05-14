@@ -18,7 +18,9 @@ class CarModal extends Component {
   componentWillReceiveProps(newProps) {
     this.setState({
       userID: newProps.userID,
-      projectID: newProps.projectID
+      projectID: newProps.projectID,
+      carType: newProps.carType,
+      carModel: newProps.carModel
     })
   }
   constructor(props, context) {
@@ -30,7 +32,9 @@ class CarModal extends Component {
       yourCity: '',
       date: [new Date(), new Date()],
       userID: '',
-      projectID: ''
+      projectID: '',
+      carType: '',
+      carModel: ''
     };
   }
 

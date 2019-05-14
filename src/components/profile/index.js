@@ -64,6 +64,7 @@ class Profile extends Component {
                   <li key={i}>
                     <p>City: {message.city}</p>
                     <p>Phone Number: {message.phoneNumber}</p>
+                    <p>Car: {message.carType} {message.carModel}</p>
                     <p>
                       <b>FROM - TO:</b>
                       {message.date.map((date, i) => {

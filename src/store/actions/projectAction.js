@@ -10,7 +10,9 @@ export const createProject = (project) => {
     const firestore = getFirestore()
     const profile = getState().firebase.profile
     const authorId = getState().firebase.auth.uid
-    console.log('oooooo', project)
+    if (project.companyName !== 'Company') {
+      project.companyName = 'Personal'
+    }
     const newImageName = new Date().getTime()
     storage.child(`profile/${newImageName}`).put(project.picture).then(() => {
       storage.child(`profile/${newImageName}`).getDownloadURL().then(function (downloadURL) {
@@ -29,7 +31,8 @@ export const createProject = (project) => {
           carStatistick: project.listElements,
           userImage: downloadURL,
           carCity: project.carCity,
-          carCountry: project.carCountry
+          carCountry: project.carCountry,
+          companyName: project.companyName
         }).then(() => {
           dispatch({ type: 'CREATE_PROJECT', project })
         }).catch((err) => {
@@ -43,7 +46,6 @@ export const createProject = (project) => {
 }
 
 export const updateProject = (info) => {
-  console.log('aaaaaaaaaaaaa', info)
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     const firestore = getFirestore()
     firestore.collection('project').doc(info.carID).update({
@@ -62,9 +64,9 @@ export const sendMessageToClient = (message) => {
       date: message.date,
       OwnerID: message.userID,
       projectID: message.projectID,
-      messageStatus: 0
-    }).then((resp) => {
-      console.log('messID:', resp)
+      messageStatus: 0,
+      carType: message.carType,
+      carModel: message.carModel
     })
   }
 }

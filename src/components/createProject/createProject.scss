@@ -16,6 +16,12 @@
   display: inline-block;
   margin-right: 5px;
   position: relative;
+  background: #999;
+  border-radius: 25px;
+  padding: 3px 12px;
+  color: white;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .list-elements span:after {
@@ -70,4 +76,9 @@
 .add-new-car {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.car-specifications.form-group {
+  max-width: 300px;
+  margin: auto;
 }
