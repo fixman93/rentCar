@@ -12,9 +12,22 @@ import Col from 'react-bootstrap/Col'
 import './index.scss'
 class Profile extends Component {
 
+  componentWillReceiveProps(newProps) {
+    this.setState({
+      messages: newProps.messages
+    })
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      messages: []
+    }
+  }
   render() {
     console.log('auth:', this.props.auth)
     let { user, projects, auth } = this.props
+    let { messages } = this.state
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
@@ -29,6 +42,15 @@ class Profile extends Component {
       })
 
     }
+    let myMessages = []
+    if (messages) {
+      myMessages = Object.values(messages).filter((item) => {
+        console.log('I', item.OwnerID)
+        console.log('U', auth.uid)
+        return item.OwnerID === auth.uid
+      })
+    }
+    console.log('MYMESSAGES', myMessages)
     return (
       <div className='profile'>
         <Container className='profile-page'>
@@ -37,6 +59,22 @@ class Profile extends Component {
           <div className='user-info'>
             <p><span>Tel:</span> {user.phoneNumber}</p>
             <p><span>Email:</span> {auth.email}</p>
+          </div>
+          <div className='user-messages'>
+            <ul>
+              {myMessages ? myMessages.map((message, i) => {
+                return (
+                  <li key={i}>
+                    <p>City: {message.city}</p>
+                    <p>Phone Number: {message.phoneNumber}</p>
+                    <p>
+                      <span>From: {message.date[0].seconds}</span> <br />
+                      <span>To: {message.date[1].seconds}</span>
+                    </p>
+                  </li>
+                )
+              }) : null}
+            </ul>
           </div>
           <Row>
             {carListt.map((project, i) => {
@@ -66,7 +104,8 @@ const mapStateToProps = (state) => {
   return {
     auth: state.firebase.auth,
     user: state.firebase.profile,
-    projects: state.firestore.ordered.project
+    projects: state.firestore.ordered.project,
+    messages: state.firestore.data.messages
   }
 }
 
@@ -74,6 +113,7 @@ export default compose(
   connect(mapStateToProps),
   firestoreConnect([
     { collection: 'users' },
+    { collection: 'messages' },
     { collection: 'project', orderBy: ['createdAt', 'desc'] }
   ])
 )(Profile)

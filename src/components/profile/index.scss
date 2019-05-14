@@ -6,3 +6,24 @@
   max-width: 100%;
   margin-bottom: 20px;
 }
+
+.user-messages ul {
+  padding: 0;
+  list-style: none;
+}
+
+.user-messages ul p {
+  margin: 0;
+}
+
+.user-messages ul li {
+  border-bottom: 1px solid #999;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 24%;
+  border: 1px solid #999;
+  padding: 15px;
+  border-radius: 6px;
+  margin-right: 1%;
+}

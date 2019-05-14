@@ -26,7 +26,7 @@ class ProjectDetail extends Component {
     };
 
 
-    console.log('dasa', project)
+    console.log('MESSAGES', this.props.messages)
     let newUser = []
     if (users && project) {
 
@@ -104,6 +104,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
     project: project,
     users: state.firestore.data.users,
+    messages: state.firestore.data.messages
   }
 }
 export default compose(
@@ -111,6 +112,7 @@ export default compose(
   firestoreConnect([
     // { collection: 'project', orderBy: ['createdAt', 'desc'], limit: 3 }
     { collection: 'users' },
-    { collection: 'project' }
+    { collection: 'project' },
+    { collection: 'messages' }
   ])
 )(ProjectDetail)
