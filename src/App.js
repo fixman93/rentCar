@@ -8,7 +8,7 @@ import Dashboard from './components/dashboard/index'
 import CreateProjects from './components/createProject/createProject'
 import Login from './components/login/index'
 import Profile from './components/profile/index'
-import ProjectDetail from './components/project/ProjectDetail'
+import ProjectDetail from './components/carDetail/ProjectDetail'
 import Home from './components/home/index'
 import './App.scss';
 

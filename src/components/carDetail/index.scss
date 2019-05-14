@@ -1,0 +1,29 @@
+.profile .feedback {
+  width: 100px;
+  display: inline-block;
+  margin: auto;
+  margin-left: 15px;
+  text-align: center;
+  border-radius: 25px;
+  background: #ff8100;
+  color: white;
+}
+
+.profileItems {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.send-message-to-owner .react-datetimerange-picker {
+    margin: 20px 0;
+}
+
+.send-message-to-owner .react-datetimerange-picker .react-datetimerange-picker__inputGroup__input {
+    min-width: 20px;
+}
+
+.send-message-to-owner .react-datetimerange-picker .react-datetimerange-picker__inputGroup {
+    padding: 8px 10px;
+}

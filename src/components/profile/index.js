@@ -43,7 +43,7 @@ class Profile extends Component {
               return (
                 <Col sm={4} key={i}>
                   <div className='profileItems'>
-                    <img src={project.userImage} />
+                    <img src={project.userImage} alt='Car' />
                     <h3>{project.carType} {project.carModel}</h3>
                     <em>REVIEW:</em>
                     <span className='feedback'>{project.feedback}</span>

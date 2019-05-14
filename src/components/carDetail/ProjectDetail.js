@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import CarModal from './carModal'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './index.scss'
@@ -37,7 +38,13 @@ class ProjectDetail extends Component {
       })
 
     }
-    console.log('GLAVNI', newUser[0])
+    let projectID = ''
+    if (this.props.history) {
+
+      console.log('GLAVNI', this.props.match.params.id)
+      projectID = this.props.match.params.id
+    }
+
 
     if (project) {
       return (
@@ -60,6 +67,9 @@ class ProjectDetail extends Component {
               <Col lg="6" className='car-detail-list'>
                 <h4>{project.carType} {project.carModel}</h4>
                 <p> {newUser && newUser[0] && newUser[0].phoneNumber ? 'Tel: ' + newUser[0].phoneNumber : null}</p>
+                <p>{project && project.carPrice ? 'Price:' + project.carPrice + ' ' + project.Currency : null}</p>
+                <p>{project && project.carCountry ? 'Country:' + project.carCountry : null}</p>
+                <p>{project && project.carCountry ? ' City: ' + project.carCity : null}</p>
                 <p>{project.carDescription}</p>
                 <div className='divider divider-30'></div>
                 <ul>
@@ -70,6 +80,7 @@ class ProjectDetail extends Component {
                   })}
                 </ul>
                 <div className='divider divider-30'></div>
+                <CarModal userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0} projectID={projectID} />
               </Col>
             </Row>
           </Container>

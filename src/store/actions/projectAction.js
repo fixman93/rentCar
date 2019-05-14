@@ -27,7 +27,9 @@ export const createProject = (project) => {
           carDescription: project.carDescription,
           feedback: 0,
           carStatistick: project.listElements,
-          userImage: downloadURL
+          userImage: downloadURL,
+          carCity: project.carCity,
+          carCountry: project.carCountry
         }).then(() => {
           dispatch({ type: 'CREATE_PROJECT', project })
         }).catch((err) => {
@@ -50,9 +52,19 @@ export const updateProject = (info) => {
   }
 }
 
-// storage.child(`profile/${new Date().getTime()}`).getDownloadURL().then(function (url) {
-//   console.log("URL", url)
-// }).catch(function (error) {
-//   // Handle any errors
-//   console.log('ERROR')
-// });
+export const sendMessageToClient = (message) => {
+  console.log(message)
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore()
+    firestore.collection('messages').add({
+      phoneNumber: message.phoneNumber,
+      city: message.yourCity,
+      date: message.date,
+      OwnerID: message.userID,
+      projectID: message.projectID,
+      messageStatus: 0
+    }).then((resp) => {
+      console.log('messID:', resp)
+    })
+  }
+}
