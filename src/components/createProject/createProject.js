@@ -634,7 +634,7 @@ class createProjects extends Component {
               <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} />
             </Form.Group>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Car Price</Form.Label>
+              <Form.Label>Upload Image</Form.Label>
               {/* <Form.Control type="file"  /> */}
               <input type="file" name="img" multiple onChange={(event) => {
                 this.displayPicture(event)
