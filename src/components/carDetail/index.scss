@@ -21,9 +21,14 @@
 }
 
 .send-message-to-owner .react-datetimerange-picker .react-datetimerange-picker__inputGroup__input {
-    min-width: 20px;
+    min-width: 10px;
 }
 
 .send-message-to-owner .react-datetimerange-picker .react-datetimerange-picker__inputGroup {
     padding: 8px 10px;
+}
+
+.react-datetimerange-picker__calendar.react-datetimerange-picker__calendar--open {
+    top: 100% !important;
+    bottom: unset !important;
 }

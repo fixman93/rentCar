@@ -244,101 +244,101 @@ class createProjects extends Component {
                   <Form.Control as="select" onChange={this.handleChange} name='carType' value={this.state.carType}>
                     <option >Choose</option>
                     <option >Alfa Romeo</option>
-                    <option >Audi (9321)</option>
-                    <option >BMW (5868)</option>
-                    <option >Citroen (3109)</option>
-                    <option >Fiat (3823)</option>
-                    <option >Ford (4783)</option>
-                    <option >Hyundai (824)</option>
-                    <option >Jeep (362)</option>
-                    <option >Mazda (520)</option>
-                    <option >Mercedes-Benz (10892)</option>
-                    <option >Mitsubishi (436)</option>
-                    <option >Nissan (888)</option>
-                    <option >Opel (7811)</option>
-                    <option >Peugeot (6176)</option>
-                    <option >Renault (6095)</option>
-                    <option >Seat (1858)</option>
-                    <option >Škoda (3907)</option>
-                    <option >Toyota (968)</option>
-                    <option >Volkswagen (27131)</option>
-                    <option >Volvo (972)</option>
-                    <option >Zastava (297)</option>
-                    <option >Acura  (65)</option>
-                    <option >Aixam  (32)</option>
-                    <option >Alpina  (18)</option>
-                    <option >Asia Motors  (8)</option>
-                    <option >Aston Martin  (7)</option>
-                    <option >Austin  (13)</option>
-                    <option >Austin Healey  (3)</option>
-                    <option >Bentley  (2)</option>
-                    <option >Borgward  (1)</option>
-                    <option >Brilliance  (2)</option>
-                    <option >Bugatti  (3)</option>
-                    <option >Buick  (3)</option>
-                    <option >Cadillac  (11)</option>
-                    <option >Caterham  (1)</option>
-                    <option >Chevrolet  (334)</option>
-                    <option >Chrysler  (178)</option>
-                    <option >Cobra  (2)</option>
-                    <option >Corvette  (2)</option>
-                    <option >Dacia  (193)</option>
-                    <option >Daewoo  (210)</option>
-                    <option >Daihatsu  (49)</option>
-                    <option >DeTomaso  (0)</option>
-                    <option >Dodge  (78)</option>
-                    <option >Ferrari  (8)</option>
-                    <option >GMC  (23)</option>
-                    <option >Holden  (3)</option>
-                    <option >Honda  (195)</option>
-                    <option >Hummer  (22)</option>
-                    <option >Infiniti  (19)</option>
-                    <option >Isuzu  (78)</option>
-                    <option >Iveco  (48)</option>
-                    <option >Jaguar  (125)</option>
+                    <option >Audi </option>
+                    <option >BMW </option>
+                    <option >Citroen </option>
+                    <option >Fiat </option>
+                    <option >Ford </option>
+                    <option >Hyundai </option>
+                    <option >Jeep </option>
+                    <option >Mazda </option>
+                    <option >Mercedes-Benz </option>
+                    <option >Mitsubishi </option>
+                    <option >Nissan </option>
+                    <option >Opel </option>
+                    <option >Peugeot </option>
+                    <option >Renault </option>
+                    <option >Seat </option>
+                    <option >Škoda </option>
+                    <option >Toyota </option>
+                    <option >Volkswagen </option>
+                    <option >Volvo </option>
+                    <option >Zastava </option>
+                    <option >Acura  </option>
+                    <option >Aixam  </option>
+                    <option >Alpina  </option>
+                    <option >Asia Motors  </option>
+                    <option >Aston Martin  </option>
+                    <option >Austin  </option>
+                    <option >Austin Healey  </option>
+                    <option >Bentley  </option>
+                    <option >Borgward  </option>
+                    <option >Brilliance  </option>
+                    <option >Bugatti  </option>
+                    <option >Buick  </option>
+                    <option >Cadillac  </option>
+                    <option >Caterham  </option>
+                    <option >Chevrolet  </option>
+                    <option >Chrysler  </option>
+                    <option >Cobra  </option>
+                    <option >Corvette  </option>
+                    <option >Dacia  </option>
+                    <option >Daewoo  </option>
+                    <option >Daihatsu  </option>
+                    <option >DeTomaso  </option>
+                    <option >Dodge  </option>
+                    <option >Ferrari  </option>
+                    <option >GMC  </option>
+                    <option >Holden  </option>
+                    <option >Honda  </option>
+                    <option >Hummer  </option>
+                    <option >Infiniti  </option>
+                    <option >Isuzu  </option>
+                    <option >Iveco  </option>
+                    <option >Jaguar  </option>
                     <option >Kia  (521)</option>
-                    <option >Königsegg  (2)</option>
+                    <option >Königsegg  </option>
                     <option >Lada  (290)</option>
-                    <option >Lamborghini  (7)</option>
-                    <option >Lancia  (222)</option>
-                    <option >Land Rover  (424)</option>
-                    <option >Landwind  (1)</option>
-                    <option >Lexus  (21)</option>
-                    <option >Ligier  (1)</option>
-                    <option >Lincoln  (24)</option>
-                    <option >Lotus  (0)</option>
-                    <option >Mahindra  (4)</option>
-                    <option >Maserati  (14)</option>
-                    <option >Maybach  (3)</option>
-                    <option >MG  (10)</option>
-                    <option >MINI  (198)</option>
-                    <option >Morgan  (1)</option>
+                    <option >Lamborghini  </option>
+                    <option >Lancia  </option>
+                    <option >Land Rover  </option>
+                    <option >Landwind  </option>
+                    <option >Lexus  </option>
+                    <option >Ligier  </option>
+                    <option >Lincoln  </option>
+                    <option >Lotus  </option>
+                    <option >Mahindra  </option>
+                    <option >Maserati  </option>
+                    <option >Maybach  </option>
+                    <option >MG  </option>
+                    <option >MINI  </option>
+                    <option >Morgan  </option>
                     <option >NSU  (10)</option>
-                    <option >Oldsmobile  (6)</option>
-                    <option >Piaggio  (9)</option>
-                    <option >Plymouth  (4)</option>
-                    <option >Pontiac  (21)</option>
-                    <option >Porsche  (178)</option>
-                    <option >Proton  (4)</option>
-                    <option >Rolls Royce  (0)</option>
-                    <option >Rover  (130)</option>
-                    <option >Saab  (72)</option>
-                    <option >Santana  (4)</option>
-                    <option >Smart  (208)</option>
-                    <option >Spyker  (1)</option>
-                    <option >Ssangyong  (152)</option>
-                    <option >Subaru  (89)</option>
-                    <option >Suzuki  (451)</option>
-                    <option >Talbot  (1)</option>
-                    <option >Tata  (20)</option>
-                    <option >Trabant  (2)</option>
-                    <option >Triumph  (10)</option>
-                    <option >TVR  (23)</option>
-                    <option >Wartburg  (10)</option>
-                    <option >Wiesmann  (6)</option>
-                    <option >Drugi  (70)</option>
-                    <option >Great Wall  (16)</option>
-                    <option >Tesla  (1)</option>
+                    <option >Oldsmobile  </option>
+                    <option >Piaggio  </option>
+                    <option >Plymouth  </option>
+                    <option >Pontiac  </option>
+                    <option >Porsche  </option>
+                    <option >Proton  </option>
+                    <option >Rolls Royce  </option>
+                    <option >Rover  </option>
+                    <option >Saab  </option>
+                    <option >Santana  </option>
+                    <option >Smart  </option>
+                    <option >Spyker  </option>
+                    <option >Ssangyong  </option>
+                    <option >Subaru  </option>
+                    <option >Suzuki  </option>
+                    <option >Talbot  </option>
+                    <option >Tata  </option>
+                    <option >Trabant  </option>
+                    <option >Triumph  </option>
+                    <option >TVR  </option>
+                    <option >Wartburg  </option>
+                    <option >Wiesmann  </option>
+                    <option >Drugi  </option>
+                    <option >Great Wall  </option>
+                    <option >Tesla  </option>
                   </Form.Control>
                 </Form.Group>
               </Col>

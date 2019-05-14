@@ -41,7 +41,7 @@ class ProjectDetail extends Component {
     let projectID = ''
     if (this.props.history) {
 
-      console.log('GLAVNI', this.props.match.params.id)
+      console.log('GLAVNI', newUser[0])
       projectID = this.props.match.params.id
     }
 
@@ -70,6 +70,7 @@ class ProjectDetail extends Component {
                 <p>{project && project.carPrice ? 'Price:' + project.carPrice + ' ' + project.Currency : null}</p>
                 <p>{project && project.carCountry ? 'Country:' + project.carCountry : null}</p>
                 <p>{project && project.carCountry ? ' City: ' + project.carCity : null}</p>
+                <p>{newUser && newUser[0] && newUser[0].userAddress ? 'Address: ' + newUser[0].userAddress : null}</p>
                 <p>{project.carDescription}</p>
                 <div className='divider divider-30'></div>
                 <ul>

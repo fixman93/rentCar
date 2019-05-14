@@ -18,7 +18,8 @@ class Login extends Component {
     lastName: '',
     phoneNumber: '',
     accountType: 'Company',
-    companyName: ''
+    companyName: '',
+    userAddress: ''
   }
 
   componentWillMount() {
@@ -98,6 +99,10 @@ class Login extends Component {
                 <Form.Group>
                   <Form.Label>Phone Number</Form.Label>
                   <Form.Control type="text" name='phoneNumber' value={this.state.phoneNumber} onChange={this.handleChange} placeholder='Your phone number' />
+                </Form.Group>
+                <Form.Group controlId="formBasicfirstname">
+                  <Form.Label>Address</Form.Label>
+                  <Form.Control type="text" name='userAddress' value={this.state.userAddress} onChange={this.handleChange} placeholder='Address' />
                 </Form.Group>
                 <Button type='submit' variant="primary">Register</Button>
                 {this.props.authError ? <p>{this.props.authError}</p> : null}

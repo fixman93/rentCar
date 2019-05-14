@@ -81,10 +81,8 @@ class Dashboard extends Component {
                     <span className='review-number' onClick={() => this.addFeedback(project.id, project.feedback)}>+1 ({project.feedback})</span>
                   </div>
                 </Col>
-
               )
-            })
-            }
+            })}
           </Row>
         </Container>
       </div>
