@@ -9,7 +9,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import NavBar from '../navbar/index'
 import moment from 'moment'
 import bg_cars from '../../assets/bg-cars.jpg'
 
@@ -51,8 +50,6 @@ class Dashboard extends Component {
     const { projects } = this.props
     return (
       <div>
-        <NavBar />
-
         <section className='hero'>
           <div className='container'>
             <h1>Classic Car Page</h1>

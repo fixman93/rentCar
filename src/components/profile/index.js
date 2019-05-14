@@ -4,11 +4,12 @@ import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 
 import { Redirect } from 'react-router-dom'
-import NavBar from '../navbar/index'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+
+import './index.scss'
 class Profile extends Component {
 
   render() {
@@ -23,28 +24,32 @@ class Profile extends Component {
       const carList = projects
       carListt = carList.filter((item) => {
         console.log(item)
-        console.log('iiiiiii', auth.uid)
         return item.authhorId === auth.uid
 
       })
-      console.log('dsadsadas', carListt)
 
     }
     return (
       <div className='profile'>
-        <NavBar />
-        <Container>
+        <Container className='profile-page'>
           <h1>Profile</h1>
           <h2>{user.firstName} {user.lastName}</h2>
+          <div className='user-info'>
+            <p><span>Tel:</span> {user.phoneNumber}</p>
+            <p><span>Email:</span> {auth.email}</p>
+          </div>
           <Row>
             {carListt.map((project, i) => {
               return (
                 <Col sm={4} key={i}>
                   <div className='profileItems'>
+                    <img src={project.userImage} />
                     <h3>{project.carType} {project.carModel}</h3>
                     <em>REVIEW:</em>
                     <span className='feedback'>{project.feedback}</span>
-
+                    <p>Price: {project.carPrice} {project.Currency}</p>
+                    <p>Type: {project.carType} </p>
+                    <p>Model: {project.carModel}</p>
                   </div>
                 </Col>
               )

@@ -13,7 +13,6 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
 
-import NavBar from '../navbar/index'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './createProject.scss'
@@ -93,7 +92,6 @@ class createProjects extends Component {
     console.log('ELEMENTS', this.state.listElements)
     return (
       <div>
-        <NavBar />
         <section className='hero'>
 
           <div className='container'>

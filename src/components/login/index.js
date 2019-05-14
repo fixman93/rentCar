@@ -4,17 +4,19 @@ import { signIn, signOut, signUp } from '../../store/actions/authAction'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Container from 'react-bootstrap/Container'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 import { Redirect } from 'react-router-dom'
 
-import NavBar from '../navbar/index'
-
+import './index.scss'
 class Login extends Component {
 
   state = {
     email: '',
     password: '',
     firstName: '',
-    lastName: ''
+    lastName: '',
+    phoneNumber: ''
   }
 
   componentWillMount() {
@@ -41,26 +43,48 @@ class Login extends Component {
     }
     return (
       <div>
-        <NavBar />
-        <Container>
-          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+        <Container className='login-page'>
+          <Tabs defaultActiveKey="login" id="uncontrolled-tab-example">
             <Tab eventKey="login" title="Login">
               {/* <Sonnet /> */}
-              <form onSubmit={this.handleSubmit}>
-                <input type='email' placeholder='email' name='email' onChange={this.handleChange} />
-                <input type='password' placeholder='password' name='password' onChange={this.handleChange} />
-                <button>Login</button>
-              </form>
+
+              <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" name='email' value={this.state.userEmail} onChange={this.handleChange} placeholder='Your email' />
+                </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" name='password' value={this.state.password} onChange={this.handleChange} placeholder='Your password' />
+                </Form.Group>
+                <Button type='submit' variant="primary">Login</Button>
+              </Form>
             </Tab>
             <Tab eventKey="register" title="Register">
-              <form onSubmit={this.handleSignUp}>
-                <input type='text' placeholder='Your first name' name='firstName' onChange={this.handleChange} />
-                <input type='text' placeholder='Your last name' name='lastName' onChange={this.handleChange} />
-                <input type='email' placeholder='email' name='email' onChange={this.handleChange} />
-                <input type='password' placeholder='password' name='password' onChange={this.handleChange} />
-                <button>Register</button>
+              <Form onSubmit={this.handleSignUp}>
+                <Form.Group controlId="formBasicfirstname">
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control type="text" name='firstName' value={this.state.firstName} onChange={this.handleChange} placeholder='Your first name' />
+                </Form.Group>
+                <Form.Group controlId="formBasiclastname">
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control type="text" name='lastName' value={this.state.lastName} onChange={this.handleChange} placeholder='Your last name' />
+                </Form.Group>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" name='email' value={this.state.userEmail} onChange={this.handleChange} placeholder='Your email' />
+                </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" name='password' value={this.state.password} onChange={this.handleChange} placeholder='Your password' />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Phone Number</Form.Label>
+                  <Form.Control type="text" name='phoneNumber' value={this.state.phoneNumber} onChange={this.handleChange} placeholder='Your phone number' />
+                </Form.Group>
+                <Button type='submit' variant="primary">Register</Button>
                 {this.props.authError ? <p>{this.props.authError}</p> : null}
-              </form>
+              </Form>
             </Tab>
           </Tabs>
         </Container>
