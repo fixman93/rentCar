@@ -77,7 +77,7 @@ class Dashboard extends Component {
                       <p>{project.authorFirstName}</p>
                       <em>{moment(project.createdAt.toDate()).calendar()}</em>
                     </div>
-
+                    <span className='car-price'>{project.carPrice} {project.Currency}</span>
                     <span className='review-number' onClick={() => this.addFeedback(project.id, project.feedback)}>+1 ({project.feedback})</span>
                   </div>
                 </Col>

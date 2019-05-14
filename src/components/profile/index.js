@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
+import { Link } from 'react-router-dom'
 
 import { Redirect } from 'react-router-dom'
+import moment from 'moment'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -25,7 +27,6 @@ class Profile extends Component {
     }
   }
   render() {
-    console.log('auth:', this.props.auth)
     let { user, projects, auth } = this.props
     let { messages } = this.state
     if (!this.props.auth.uid) {
@@ -36,17 +37,13 @@ class Profile extends Component {
 
       const carList = projects
       carListt = carList.filter((item) => {
-        console.log(item)
         return item.authhorId === auth.uid
-
       })
-
     }
+    console.log('sdsa', messages)
     let myMessages = []
     if (messages) {
       myMessages = Object.values(messages).filter((item) => {
-        console.log('I', item.OwnerID)
-        console.log('U', auth.uid)
         return item.OwnerID === auth.uid
       })
     }
@@ -68,8 +65,12 @@ class Profile extends Component {
                     <p>City: {message.city}</p>
                     <p>Phone Number: {message.phoneNumber}</p>
                     <p>
-                      <span>From: {message.date[0].seconds}</span> <br />
-                      <span>To: {message.date[1].seconds}</span>
+                      <b>FROM - TO:</b>
+                      {message.date.map((date, i) => {
+                        return (
+                          <span key={i}>{moment(date.toDate()).calendar()}</span>
+                        )
+                      })}
                     </p>
                   </li>
                 )
@@ -80,14 +81,16 @@ class Profile extends Component {
             {carListt.map((project, i) => {
               return (
                 <Col sm={4} key={i}>
-                  <div className='profileItems'>
-                    <img src={project.userImage} alt='Car' />
-                    <h3>{project.carType} {project.carModel}</h3>
+                  <div className='mainBoxItem'>
+                    <Link to={'/project/' + project.id} >
+                      <div className='overflow-hidden'>
+                        <img src={project.userImage} alt='Car' />
+                      </div>
+                      <h3>{project.carType} {project.carModel}</h3>
+                    </Link>
+                    <span className='car-price'>{project.carPrice} {project.Currency}</span>
                     <em>REVIEW:</em>
                     <span className='feedback'>{project.feedback}</span>
-                    <p>Price: {project.carPrice} {project.Currency}</p>
-                    <p>Type: {project.carType} </p>
-                    <p>Model: {project.carModel}</p>
                   </div>
                 </Col>
               )

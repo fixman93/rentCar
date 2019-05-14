@@ -16,7 +16,8 @@ class Login extends Component {
     password: '',
     firstName: '',
     lastName: '',
-    phoneNumber: ''
+    phoneNumber: '',
+    accountType: 'Company'
   }
 
   componentWillMount() {
@@ -62,6 +63,13 @@ class Login extends Component {
             </Tab>
             <Tab eventKey="register" title="Register">
               <Form onSubmit={this.handleSignUp}>
+                <Form.Group controlId="exampleForm.ControlSelect1">
+                  <Form.Label>Account Type</Form.Label>
+                  <Form.Control as="select" onChange={this.handleChange} name='accountType' value={this.state.accountType}>
+                    <option>Company</option>
+                    <option>Personal</option>
+                  </Form.Control>
+                </Form.Group>
                 <Form.Group controlId="formBasicfirstname">
                   <Form.Label>First Name</Form.Label>
                   <Form.Control type="text" name='firstName' value={this.state.firstName} onChange={this.handleChange} placeholder='Your first name' />
