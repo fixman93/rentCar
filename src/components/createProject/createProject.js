@@ -616,7 +616,7 @@ class createProjects extends Component {
             <Form.Group className='car-specifications'>
               <Form.Label>Spicifications</Form.Label>
               <InputGroup className="mb-3">
-                <FormControl type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='Extra field' />
+                <FormControl type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='GPS, NAVI, MMI etc...' />
                 <InputGroup.Append>
                   <Button variant="outline-secondary" className='add-elements' onClick={this.addElement}>+</Button>
                 </InputGroup.Append>
@@ -654,7 +654,7 @@ class createProjects extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    auth: state.firebase.auth
+    auth: state.firebase.aut
   }
 }
 const mapDispatchToProps = (dispatch) => {
