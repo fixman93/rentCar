@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-// import DateTimeRangePicker from '@wojtekmaj/react-datetimerange-picker'
 
 import { createProject } from '../../store/actions/projectAction'
 import Container from 'react-bootstrap/Container'
@@ -38,7 +37,6 @@ class createProjects extends Component {
       listElements: [],
       carCountry: 'Afghanistan',
       carCity: ''
-      // date: [new Date(), new Date()],
     }
     this.displayPicture = this.displayPicture.bind(this)
     this.addElement = this.addElement.bind(this)
@@ -83,11 +81,11 @@ class createProjects extends Component {
     })
 
   }
-  // onChange = date => this.setState({ date })
   render() {
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
     };
+    console.log('aaaaaaaaaaaaaa', this.props)
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
@@ -116,10 +114,6 @@ class createProjects extends Component {
                     <option>BAM</option>
                   </Form.Control>
                 </Form.Group>
-                {/* <DateTimeRangePicker
-              onChange={this.onChange}
-              value={this.state.date}
-            /> */}
               </Col>
               <Col>
                 <Form.Group controlId="formBasicEmail">
@@ -654,7 +648,7 @@ class createProjects extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    auth: state.firebase.aut
+    auth: state.firebase.auth
   }
 }
 const mapDispatchToProps = (dispatch) => {
