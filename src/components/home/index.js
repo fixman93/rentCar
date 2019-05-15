@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
-import NavBar from '../navbar/index'
 import LastAdded from './lastAdded/lastAdded'
 import WhyChooseUs from './whyChooseUs'
 
@@ -20,7 +19,6 @@ class Home extends Component {
     console.log('dsadasda', projects)
     return (
       <div className='home-page'>
-        <NavBar />
         <section className='home-hero' style={herobg}>
           <div className='content'>
             <h1>Find the Best Car</h1>

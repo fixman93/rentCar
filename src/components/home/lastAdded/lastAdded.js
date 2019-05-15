@@ -13,7 +13,7 @@ class LastAdded extends Component {
     return (
       <section className='last-added'>
         <Container>
-          <h2 className='title-block text-center text-gray font-bold'>Najnovije za Vas:</h2>
+          <h2 className='title-block text-center text-gray font-bold'>You might like:</h2>
           <Row>
             {projects && projects.map((project, i) => {
               return (

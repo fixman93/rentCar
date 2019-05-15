@@ -9,7 +9,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import NavBar from '../navbar/index'
 import moment from 'moment'
 import bg_cars from '../../assets/bg-cars.jpg'
 
@@ -51,8 +50,6 @@ class Dashboard extends Component {
     const { projects } = this.props
     return (
       <div>
-        <NavBar />
-
         <section className='hero'>
           <div className='container'>
             <h1>Classic Car Page</h1>
@@ -80,14 +77,12 @@ class Dashboard extends Component {
                       <p>{project.authorFirstName}</p>
                       <em>{moment(project.createdAt.toDate()).calendar()}</em>
                     </div>
-
+                    <span className='car-price'>{project.carPrice} {project.Currency}</span>
                     <span className='review-number' onClick={() => this.addFeedback(project.id, project.feedback)}>+1 ({project.feedback})</span>
                   </div>
                 </Col>
-
               )
-            })
-            }
+            })}
           </Row>
         </Container>
       </div>

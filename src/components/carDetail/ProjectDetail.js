@@ -8,21 +8,47 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import NavBar from '../navbar/index'
+import CarModal from './carModal'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './index.scss'
 class ProjectDetail extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+    }
+  }
   render() {
-    const { project } = this.props
+    const { project, users } = this.props
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
     };
+
+
+    console.log('MESSAGES', this.props.messages)
+    let newUser = []
+    if (users && project) {
+
+      const carList = users
+      newUser = Object.values(carList).filter((item) => {
+        console.log('item', item.id)
+        console.log('item', project.authhorId)
+        return item.id === project.authhorId
+      })
+
+    }
+    let projectID = ''
+    if (this.props.history) {
+
+      console.log('GLAVNI', newUser[0])
+      projectID = this.props.match.params.id
+    }
+
+
     if (project) {
       return (
         <div>
-          <NavBar />
           <section className='hero'>
             <div className='container'>
               <h1>{project.carType}</h1>
@@ -40,6 +66,11 @@ class ProjectDetail extends Component {
               </Col>
               <Col lg="6" className='car-detail-list'>
                 <h4>{project.carType} {project.carModel}</h4>
+                <p> {newUser && newUser[0] && newUser[0].phoneNumber ? 'Tel: ' + newUser[0].phoneNumber : null}</p>
+                <p>{project && project.carPrice ? 'Price:' + project.carPrice + ' ' + project.Currency : null}</p>
+                <p>{project && project.carCountry ? 'Country:' + project.carCountry : null}</p>
+                <p>{project && project.carCountry ? ' City: ' + project.carCity : null}</p>
+                <p>{newUser && newUser[0] && newUser[0].userAddress ? 'Address: ' + newUser[0].userAddress : null}</p>
                 <p>{project.carDescription}</p>
                 <div className='divider divider-30'></div>
                 <ul>
@@ -50,6 +81,12 @@ class ProjectDetail extends Component {
                   })}
                 </ul>
                 <div className='divider divider-30'></div>
+                <CarModal
+                  userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0}
+                  projectID={projectID}
+                  carType={project.carType}
+                  carModel={project.carModel}
+                />
               </Col>
             </Row>
           </Container>
@@ -66,17 +103,22 @@ class ProjectDetail extends Component {
 
 
 const mapStateToProps = (state, ownProps) => {
+  console.log('USER:', state)
   const id = ownProps.match.params.id
   const projects = state.firestore.data.project
   const project = projects ? projects[id] : null
   return {
-    project: project
+    project: project,
+    users: state.firestore.data.users,
+    messages: state.firestore.data.messages
   }
 }
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
     // { collection: 'project', orderBy: ['createdAt', 'desc'], limit: 3 }
-    { collection: 'project' }
+    { collection: 'users' },
+    { collection: 'project' },
+    { collection: 'messages' }
   ])
 )(ProjectDetail)

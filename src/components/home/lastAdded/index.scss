@@ -13,10 +13,12 @@
   }
   img {
     max-width: 100%;
-    -webkit-transform: scale(1.04);
-      transform: scale(1.04);
-    -webkit-transition: all .3s ease-in-out;
+    transform: scale(1.04);
     transition: all .3s ease-in-out;
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
   }
   h3 {
     line-height: 1.2em;
