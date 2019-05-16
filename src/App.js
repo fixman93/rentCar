@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { faPhone, faClock, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faClock, faCheck, faCamera } from '@fortawesome/free-solid-svg-icons'
 import NavBar from './components/navbar'
 import Dashboard from './components/dashboard/index'
 import CreateProjects from './components/createProject/createProject'
@@ -15,6 +15,7 @@ import './App.scss';
 library.add(faPhone)
 library.add(faClock)
 library.add(faCheck)
+library.add(faCamera)
 
 class App extends Component {
   render() {

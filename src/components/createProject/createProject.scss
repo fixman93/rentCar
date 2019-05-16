@@ -82,3 +82,26 @@
   max-width: 300px;
   margin: auto;
 }
+
+.add-new-car #uploadMainImage {
+  visibility: hidden;
+  position: absolute;
+}
+
+.add-new-car .fa-camera {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  border: 1px solid #585151;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+.errorField {
+  color: red;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

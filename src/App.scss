@@ -13,6 +13,18 @@ a:hover {
   line-height: 1;
 }
 
+button.btn.btn-primary {
+  color: #fff;
+  background-color: #247bdd;
+  border-color: #247bdd;
+  box-shadow: none;
+  border-radius: 0;
+  min-width: 200px;
+  padding: 14px 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .text-center {
   text-align: center;
 }
