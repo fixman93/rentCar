@@ -76,9 +76,49 @@
 .add-new-car {
   padding-top: 40px;
   padding-bottom: 40px;
+  max-width: 640px;
 }
 
 .car-specifications.form-group {
   max-width: 300px;
-  margin: auto;
+}
+
+.add-new-car #uploadMainImage {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+
+}
+
+.add-new-car .fa-camera {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  border: 1px solid #585151;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+.errorField {
+  color: red;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.uploadrow {
+  display: flex;
+  align-items: center;
+}
+
+.uploadrow span {
+  margin-left: 20px;
+  color: #333;
+}
+
+label.transmission.form-label {
+  width: 100%;
 }

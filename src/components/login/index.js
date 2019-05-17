@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { signIn, signOut, signUp } from '../../store/actions/authAction'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
@@ -98,7 +100,11 @@ class Login extends Component {
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>Phone Number</Form.Label>
-                  <Form.Control type="text" name='phoneNumber' value={this.state.phoneNumber} onChange={this.handleChange} placeholder='Your phone number' />
+                  <PhoneInput
+                    placeholder="Enter phone number"
+                    value={this.state.phoneNumber}
+                    className='form-control'
+                    onChange={phoneNumber => this.setState({ phoneNumber })} />
                 </Form.Group>
                 <Form.Group controlId="formBasicfirstname">
                   <Form.Label>Address</Form.Label>

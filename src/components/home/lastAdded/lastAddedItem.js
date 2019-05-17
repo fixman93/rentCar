@@ -10,8 +10,12 @@ class LastAddedItem extends Component {
         <Link to={'/project/' + project.id} >
           <img src={project.userImage} alt='Car' />
         </Link>
-        <h3>{project.carType} {project.carModel}</h3>
-        <p>From {project.carPrice} {project.Currency} per day</p>
+        <h3>{project.carType} {project.carModel} <span>{project.carYear}</span></h3>
+        <div className='vihicle-price'>
+          <div className='currency'>{project.Currency}</div>
+          <div className='price'>{project.carPrice}</div>
+          <span>per day</span>
+        </div>
       </section>
     )
   }
