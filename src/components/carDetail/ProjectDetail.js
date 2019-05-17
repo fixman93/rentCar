@@ -66,11 +66,12 @@ class ProjectDetail extends Component {
               </Col>
               <Col lg="6" className='car-detail-list'>
                 <h4>{project.carType} {project.carModel}</h4>
-                <p> {newUser && newUser[0] && newUser[0].phoneNumber ? 'Tel: ' + newUser[0].phoneNumber : null}</p>
-                <p>{project && project.carPrice ? 'Price:' + project.carPrice + ' ' + project.Currency : null}</p>
-                <p>{project && project.carCountry ? 'Country:' + project.carCountry : null}</p>
-                <p>{project && project.carCountry ? ' City: ' + project.carCity : null}</p>
-                <p>{newUser && newUser[0] && newUser[0].userAddress ? 'Address: ' + newUser[0].userAddress : null}</p>
+                <p> {newUser && newUser[0] && newUser[0].phoneNumber ? <span><b>Tel:</b>   {newUser[0].phoneNumber}</span> : null}</p>
+                <p>{project && project.carPrice ? <span><b>Price:</b> {project.carPrice + ' ' + project.Currency}</span> : null}</p>
+                <p>{project && project.carCountry ? <span><b>Country:</b>  {project.carCountry}</span> : null}</p>
+                <p>{project && project.carCountry ? <span><b>City:</b>  {project.carCity}</span> : null}</p>
+                <p>{project && project.transmision ? <span><b>Transmision:</b> {project.transmision}</span> : null}</p>
+                <p>{newUser && newUser[0] && newUser[0].userAddress ? <span><b>Address:</b>  {newUser[0].userAddress}</span> : null}</p>
                 <p>{project.carDescription}</p>
                 <div className='divider divider-30'></div>
                 <ul>

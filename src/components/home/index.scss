@@ -148,6 +148,26 @@ section.home-hero form {
   width: 40px;
 }
 
+.home-page section.home-hero form .empty-link {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: transparent;
+  border: 0;
+  min-width: auto;
+  border-radius: 999em;
+  background-color: #969696;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.home-page section.home-hero form .empty-link img {
+  width: 40px;
+}
+
 .home-page section.home-hero form input {
   border-radius: 0;
   border: 0;
@@ -160,7 +180,7 @@ section.home-hero form .form-group {
   background: white;
   border-radius: 45px;
   text-align: left;
-  padding: 0px 30px;
+  padding: 0px 30px 0 21px;
 }
 
 section.home-hero form .form-group label {

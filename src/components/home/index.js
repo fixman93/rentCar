@@ -29,16 +29,7 @@ class Home extends Component {
   }
   handleChangeSelect = (searcCity) => {
     this.setState({ searcCity });
-    console.log(`Option selected:`, searcCity);
   }
-  // handleSubmit(e) {
-  //   e.preventDefault()
-  //   // this.context.router.push({ //browserHistory.push should also work here
-  //   //   pathname: SearchPage,
-  //   //   state: this.state.searcCity
-  //   // });
-  //   this.context.router.history.push(`/search/${this.state.searchCity}`)
-  // }
 
   render() {
     const { projects } = this.props
@@ -46,8 +37,7 @@ class Home extends Component {
       backgroundImage: `url(${hero_bg})`
     }
     let searchCities = null
-    let value = ''
-    let label = ''
+
     if (projects) {
       searchCities = projects && projects.map((item) => {
         return {
@@ -62,7 +52,7 @@ class Home extends Component {
         <section className='home-hero' style={herobg}>
           <div className='content'>
             <h1>Find the Best Car</h1>
-            <p>From as low as $10 per day with limited time offer discounts</p>
+            <p>Book unforgettable cars from local hosts around the world</p>
             <Form onSubmit={this.handleSubmit}>
               <Form.Group>
                 <Form.Label>Where</Form.Label>
@@ -73,7 +63,7 @@ class Home extends Component {
                 />
                 {this.state.searcCity !== null ? <Link to={'/search/' + this.state.searcCity.value} >
                   <img src={search_icon} alt='Search' />
-                </Link> : null}
+                </Link> : <span className='empty-link'><img src={search_icon} alt='Search' /></span>}
               </Form.Group>
             </Form>
           </div>
