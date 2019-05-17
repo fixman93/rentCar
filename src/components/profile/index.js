@@ -90,8 +90,8 @@ class Profile extends Component {
                       <h3>{project.carType} {project.carModel}</h3>
                     </Link>
                     <span className='car-price'>{project.carPrice} {project.Currency}</span>
-                    <em>REVIEW:</em>
-                    <span className='feedback'>{project.feedback}</span>
+                    {/* <em>REVIEW:</em>
+                    <span className='feedback'>{project.feedback}</span> */}
                   </div>
                 </Col>
               )

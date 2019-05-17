@@ -10,6 +10,7 @@ import Login from './components/login/index'
 import Profile from './components/profile/index'
 import ProjectDetail from './components/carDetail/ProjectDetail'
 import Home from './components/home/index'
+import Search from './components/home/Search/Search'
 import './App.scss';
 
 library.add(faPhone)
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path='/login' component={Login} />
           <Route path='/profile' component={Profile} />
           <Route path='/add-new-car' component={CreateProjects} />
+          <Route path='/search/:id' component={Search} />
         </Switch>
       </div>
     );

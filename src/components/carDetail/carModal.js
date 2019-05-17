@@ -16,7 +16,6 @@ class CarModal extends Component {
 
 
   componentWillReceiveProps(newProps) {
-    alert('test')
     this.setState({
       userID: newProps.userID,
       projectID: newProps.projectID,
@@ -29,6 +28,7 @@ class CarModal extends Component {
 
     this.state = {
       lgShow: false,
+      reserved: true,
       phoneNumber: '',
       yourEmail: '',
       date: [new Date(), new Date()],
@@ -48,6 +48,11 @@ class CarModal extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.sendMessageToClient(this.state)
+    this.setState({
+      lgShow: false
+    })
+
+    this.props.reserved(this.state.reserved)
   }
 
   onChange = date => this.setState({ date })

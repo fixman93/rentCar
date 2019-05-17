@@ -18,6 +18,15 @@ class ProjectDetail extends Component {
     super(props)
     this.state = {
     }
+    this.orderFinished = this.orderFinished.bind(this)
+  }
+
+  orderFinished(order) {
+    if (order) {
+      this.setState({
+        orderFinished: true
+      })
+    }
   }
   render() {
     const { project, users } = this.props
@@ -60,17 +69,19 @@ class ProjectDetail extends Component {
             <div className='box-position' style={sectionStyle}></div>
           </section>
           <Container>
+            {this.state.orderFinished ? <div className='congratulation'><FontAwesomeIcon icon="check" /> <b>Congratulation!</b> Seller will contact you soon.</div> : null}
             <Row className='car-detail-page'>
               <Col lg="6">
                 <img src={project.userImage} alt='Car' />
               </Col>
               <Col lg="6" className='car-detail-list'>
                 <h4>{project.carType} {project.carModel}</h4>
-                <p> {newUser && newUser[0] && newUser[0].phoneNumber ? 'Tel: ' + newUser[0].phoneNumber : null}</p>
-                <p>{project && project.carPrice ? 'Price:' + project.carPrice + ' ' + project.Currency : null}</p>
-                <p>{project && project.carCountry ? 'Country:' + project.carCountry : null}</p>
-                <p>{project && project.carCountry ? ' City: ' + project.carCity : null}</p>
-                <p>{newUser && newUser[0] && newUser[0].userAddress ? 'Address: ' + newUser[0].userAddress : null}</p>
+                <p> {newUser && newUser[0] && newUser[0].phoneNumber ? <span><b>Tel:</b>   {newUser[0].phoneNumber}</span> : null}</p>
+                <p>{project && project.carPrice ? <span><b>Price:</b> {project.carPrice + ' ' + project.Currency}</span> : null}</p>
+                <p>{project && project.carCountry ? <span><b>Country:</b>  {project.carCountry}</span> : null}</p>
+                <p>{project && project.carCountry ? <span><b>City:</b>  {project.carCity}</span> : null}</p>
+                <p>{project && project.transmision ? <span><b>Transmision:</b> {project.transmision}</span> : null}</p>
+                <p>{newUser && newUser[0] && newUser[0].userAddress ? <span><b>Address:</b>  {newUser[0].userAddress}</span> : null}</p>
                 <p>{project.carDescription}</p>
                 <div className='divider divider-30'></div>
                 <ul>
@@ -86,6 +97,7 @@ class ProjectDetail extends Component {
                   projectID={projectID}
                   carType={project.carType}
                   carModel={project.carModel}
+                  reserved={this.orderFinished}
                 />
               </Col>
             </Row>
