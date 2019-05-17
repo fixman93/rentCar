@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 
 import { firestoreConnect } from 'react-redux-firebase'
 import Form from 'react-bootstrap/Form'
@@ -51,6 +52,14 @@ class Home extends Component {
     console.log('dsadasda', searchCities)
     return (
       <div className='home-page'>
+        <Helmet>
+          <title>Homepage || take-vehicle</title>
+          <meta name="keywords" content="Car, Renta, Rentacar, Rent a car, find car" />
+          <meta
+            name="description"
+            content="Rent a car to enjoy on your drive"
+          />
+        </Helmet>
         <section className='home-hero' style={herobg}>
           <div className='content'>
             <h1>Find the Best Car</h1>
