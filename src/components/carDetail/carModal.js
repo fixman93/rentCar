@@ -16,7 +16,6 @@ class CarModal extends Component {
 
 
   componentWillReceiveProps(newProps) {
-    alert('test')
     this.setState({
       userID: newProps.userID,
       projectID: newProps.projectID,

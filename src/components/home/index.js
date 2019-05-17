@@ -1,28 +1,81 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
+
 import { firestoreConnect } from 'react-redux-firebase'
+import Form from 'react-bootstrap/Form'
+import Select from 'react-select';
 import { compose } from 'redux'
 import LastAdded from './lastAdded/lastAdded'
 import WhyChooseUs from './whyChooseUs'
-
 import hero_bg from '../../assets/home-hero.jpg'
-
+import search_icon from '../../assets/search_glass@2x.png'
 
 import './index.scss'
+
 class Home extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      searcCity: null
+    }
+  }
+  handleChange = (e) => {
+    console.log(e.target.value)
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+  handleChangeSelect = (searcCity) => {
+    this.setState({ searcCity });
+    console.log(`Option selected:`, searcCity);
+  }
+  // handleSubmit(e) {
+  //   e.preventDefault()
+  //   // this.context.router.push({ //browserHistory.push should also work here
+  //   //   pathname: SearchPage,
+  //   //   state: this.state.searcCity
+  //   // });
+  //   this.context.router.history.push(`/search/${this.state.searchCity}`)
+  // }
 
   render() {
     const { projects } = this.props
     const herobg = {
       backgroundImage: `url(${hero_bg})`
     }
-    console.log('dsadasda', projects)
+    let searchCities = null
+    let value = ''
+    let label = ''
+    if (projects) {
+      searchCities = projects && projects.map((item) => {
+        return {
+          value: item.carCity,
+          label: item.carCity
+        }
+      })
+    }
+    console.log('dsadasda', searchCities)
     return (
       <div className='home-page'>
         <section className='home-hero' style={herobg}>
           <div className='content'>
             <h1>Find the Best Car</h1>
             <p>From as low as $10 per day with limited time offer discounts</p>
+            <Form onSubmit={this.handleSubmit}>
+              <Form.Group>
+                <Form.Label>Where</Form.Label>
+                <Select
+                  value={this.state.searcCity}
+                  onChange={this.handleChangeSelect}
+                  options={searchCities ? searchCities : [{ value: 'empty' }]}
+                />
+                {this.state.searcCity !== null ? <Link to={'/search/' + this.state.searcCity.value} >
+                  <img src={search_icon} alt='Search' />
+                </Link> : null}
+              </Form.Group>
+            </Form>
           </div>
         </section>
         <LastAdded projects={projects} />
