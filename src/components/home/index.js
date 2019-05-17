@@ -37,7 +37,6 @@ class Home extends Component {
       backgroundImage: `url(${hero_bg})`
     }
     let searchCities = null
-
     if (projects) {
       searchCities = projects && projects.map((item) => {
         return {
@@ -45,7 +44,10 @@ class Home extends Component {
           label: item.carCity
         }
       })
+      searchCities = [...new Map(searchCities.map(obj => [JSON.stringify(obj), obj])).values()];
     }
+
+
     console.log('dsadasda', searchCities)
     return (
       <div className='home-page'>

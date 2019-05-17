@@ -78,6 +78,16 @@ class createProjects extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
+    if (this.state.carPrice.length === '' || this.state.picture === null || this.state.carModel === '' || this.state.carDescription === '') {
+      this.setState({
+        errorField: true
+      })
+    }
+    else {
+      this.setState({
+        errorField: false
+      })
+    }
   }
 
   handleChangeRadio = (e) => {
@@ -87,12 +97,10 @@ class createProjects extends Component {
     })
   }
 
-  formValidation = () => {
 
-  }
   handleSubmit = (e) => {
     e.preventDefault()
-    if (this.state.carPrice.length === '' || this.state.picture === null || this.state.carModel === '' || this.state.carElements > 0 || this.state.carDescription === '') {
+    if (this.state.carPrice.length === '' || this.state.picture === null || this.state.carModel === '' || this.state.carDescription === '') {
       this.setState({
         errorField: true
       })
@@ -409,8 +417,8 @@ class createProjects extends Component {
             </Form.Group>
 
 
-            {this.state.errorField ? <div className='errorField'>Please check your fields</div> : null}
-            <Button type='submit' variant="primary">Submit</Button>
+            {/* {this.state.errorField ? <div className='errorField'>Please check your fields</div> : null} */}
+            <Button disabled={this.state.errorField ? true : false} type='submit' variant="primary">Submit</Button>
           </Form>
           {this.state.pictureUrl ? <div className='previewImage'><img src={this.state.pictureUrl} alt='img' /></div> : null}
         </Container>

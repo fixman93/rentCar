@@ -18,6 +18,15 @@ class ProjectDetail extends Component {
     super(props)
     this.state = {
     }
+    this.orderFinished = this.orderFinished.bind(this)
+  }
+
+  orderFinished(order) {
+    if (order) {
+      this.setState({
+        orderFinished: true
+      })
+    }
   }
   render() {
     const { project, users } = this.props
@@ -60,6 +69,7 @@ class ProjectDetail extends Component {
             <div className='box-position' style={sectionStyle}></div>
           </section>
           <Container>
+            {this.state.orderFinished ? <div className='congratulation'><FontAwesomeIcon icon="check" /> <b>Congratulation!</b> Seller will contact you soon.</div> : null}
             <Row className='car-detail-page'>
               <Col lg="6">
                 <img src={project.userImage} alt='Car' />
@@ -87,6 +97,7 @@ class ProjectDetail extends Component {
                   projectID={projectID}
                   carType={project.carType}
                   carModel={project.carModel}
+                  reserved={this.orderFinished}
                 />
               </Col>
             </Row>
