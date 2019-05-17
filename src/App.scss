@@ -49,3 +49,36 @@ button.btn.btn-primary {
   background: #e1e1e1;
 }
 
+.form-group label {
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: none;
+  color: #231f20;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 3px;
+}
+
+.form-group label {
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: none;
+  color: #231f20;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 3px;
+}
+
+.form-control {
+  height: 35px;
+  padding: 3px 10px;
+  font-size: 13px;
+  border: 1px solid #c7c7c7;
+  color: #231f20;
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.form-group .add-elements {
+  padding: 0 10px;
+  border-color: #c7c7c7;
+}

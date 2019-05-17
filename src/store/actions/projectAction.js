@@ -32,7 +32,9 @@ export const createProject = (project) => {
           userImage: downloadURL,
           carCity: project.carCity,
           carCountry: project.carCountry,
-          companyName: project.companyName
+          companyName: project.companyName,
+          carAddress: project.carAddress,
+          transmision: project.transmision
         }).then(() => {
           dispatch({ type: 'CREATE_PROJECT', project })
         }).catch((err) => {
@@ -55,12 +57,12 @@ export const updateProject = (info) => {
 }
 
 export const sendMessageToClient = (message) => {
-  console.log(message)
+  console.log('sendmessage', message)
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     const firestore = getFirestore()
     firestore.collection('messages').add({
       phoneNumber: message.phoneNumber,
-      city: message.yourCity,
+      Email: message.yourEmail,
       date: message.date,
       OwnerID: message.userID,
       projectID: message.projectID,

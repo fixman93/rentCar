@@ -76,7 +76,7 @@ class ProjectDetail extends Component {
                 <ul>
                   {project.carStatistick && project.carStatistick.map((items, i) => {
                     return (
-                      <li key={i}><FontAwesomeIcon icon="check" /> {items}</li>
+                      <li key={i}><FontAwesomeIcon icon="check" /> {items.value}</li>
                     )
                   })}
                 </ul>

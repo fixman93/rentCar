@@ -62,7 +62,7 @@ class Profile extends Component {
               {myMessages ? myMessages.map((message, i) => {
                 return (
                   <li key={i}>
-                    <p>City: {message.city}</p>
+                    <p>City: {message.Email}</p>
                     <p>Phone Number: {message.phoneNumber}</p>
                     <p>Car: {message.carType} {message.carModel}</p>
                     <p>

@@ -4,11 +4,10 @@ import { Redirect } from 'react-router-dom'
 
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Select from 'react-select';
 
 import { createProject } from '../../store/actions/projectAction'
 import Container from 'react-bootstrap/Container'
-import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
@@ -18,6 +17,23 @@ import { Link } from 'react-router-dom'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './createProject.scss'
+
+const options = [
+  { value: 'GPS', label: 'GPS' },
+  { value: 'Audio Input', label: 'Audio Input' },
+  { value: 'Bike Rack', label: 'Bike Rack' },
+  { value: 'Ski Rack', label: 'Ski Rack' },
+  { value: 'Convertible', label: 'Convertible' },
+  { value: 'All-wheel drive', label: 'All-wheel drive' },
+  { value: 'Bluetooth', label: 'Bluetooth' },
+  { value: 'Pet friendly', label: 'Pet friendly' },
+  { value: 'Child seat', label: 'Child seat' },
+  { value: 'USB input', label: 'USB input' },
+  { value: 'Tool pass', label: 'Tool pass' },
+  { value: 'Snow tires or chains', label: 'Snow tires or chains' },
+  { value: 'Heated seats', label: 'Heated seats' },
+  { value: 'Sunroof', label: 'Sunroof' }
+];
 
 class createProjects extends Component {
 
@@ -40,6 +56,8 @@ class createProjects extends Component {
       listElements: [],
       carCountry: 'Afghanistan',
       carCity: '',
+      transmision: '',
+      carAddress: ''
     }
     this.displayPicture = this.displayPicture.bind(this)
     this.addElement = this.addElement.bind(this)
@@ -48,13 +66,24 @@ class createProjects extends Component {
   selectCountry(val) {
     this.setState({ carCountry: val });
   }
-
+  handleChangeSelect = (listElements) => {
+    this.setState({ listElements });
+    console.log(`Option selected:`, listElements);
+  }
   selectRegion(val) {
     this.setState({ carCity: val });
   }
   handleChange = (e) => {
+    console.log(e.target.value)
     this.setState({
       [e.target.name]: e.target.value
+    })
+  }
+
+  handleChangeRadio = (e) => {
+    console.log(e.target.id)
+    this.setState({
+      transmision: e.target.id
     })
   }
 
@@ -103,13 +132,20 @@ class createProjects extends Component {
       carElement: '',
       listElements: arrayElements
     })
-
+  }
+  getYears = () => {
+    const year = new Date().getFullYear();
+    return (
+      Array.from(new Array(90), (v, i) =>
+        <option key={i} value={year - i}>{year - i}</option>
+      )
+    )
   }
   render() {
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
     };
-    console.log('aaaaaaaaaaaaaa', this.state.picture)
+    console.log('aaaaaaaaaaaaaa', this.state.transmision)
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
@@ -129,135 +165,25 @@ class createProjects extends Component {
         </section>
         <Container className='add-new-car'>
           <Form onSubmit={this.handleSubmit}>
-
             <Row>
               <Col>
                 <Form.Group>
-                  <Form.Label>Currency</Form.Label>
-                  <Form.Control as="select" onChange={this.handleChange} name='currency' value={this.state.currency}>
-                    <option>EUR</option>
-                    <option>BAM</option>
-                  </Form.Control>
-                </Form.Group>
-              </Col>
-              <Col>
-                <Form.Group>
-                  <Form.Label>Car Price</Form.Label>
-                  <Form.Control type="number" name='carPrice' value={this.state.carPrice} onChange={this.handleChange} placeholder='Car Price' />
+                  <Form.Label>Where is your car located?</Form.Label>
+                  <Form.Control type="text" name='carAddress' value={this.state.carAddress} onChange={this.handleChange} placeholder='Enter address' />
                 </Form.Group>
               </Col>
             </Row>
             <Row>
-              <Col>
+              <Col xs={12} md={4}>
                 <Form.Group>
                   <Form.Label>Year</Form.Label>
                   <Form.Control as="select" name='carYear' value={this.state.carYear} onChange={this.handleChange}>
                     <option >Choose</option>
-                    <option >2019</option>
-                    <option >2018</option>
-                    <option >2017</option>
-                    <option >2016</option>
-                    <option >2015</option>
-                    <option >
-                      2014
-		</option>
-                    <option >
-                      2013
-		</option>
-                    <option >
-                      2012
-		</option>
-                    <option >
-                      2011
-		</option>
-                    <option >
-                      2010
-		</option>
-                    <option >
-                      2009
-		</option>
-                    <option >
-                      2008
-		</option>
-                    <option >
-                      2007
-		</option>
-                    <option >
-                      2006
-		</option>
-                    <option >
-                      2005
-		</option>
-                    <option >
-                      2004
-		</option>
-                    <option >
-                      2003
-		</option>
-                    <option >
-                      2002
-		</option>
-                    <option >
-                      2001
-		</option>
-                    <option >
-                      2000
-		</option>
-                    <option >
-                      1999
-		</option>
-                    <option >
-                      1998
-		</option>
-                    <option >
-                      1997
-		</option>
-                    <option >
-                      1996
-		</option>
-                    <option >
-                      1995
-		</option>
-                    <option >
-                      1994
-		</option>
-                    <option >
-                      1993
-		</option>
-                    <option >
-                      1992
-		</option>
-                    <option >
-                      1991
-		</option>
-                    <option >
-                      1990
-		</option>
-                    <option >
-                      1985
-		</option>
-                    <option >
-                      1980
-		</option>
-                    <option >
-                      1975
-		</option>
-                    <option >
-                      1970
-		</option>
-                    <option >
-                      1965
-		</option>
-                    <option >
-                      1960
-		</option>
-                    <option >
-                      1900
-		</option>
+                    {this.getYears()}
                   </Form.Control>
                 </Form.Group>
               </Col>
-              <Col>
+              <Col xs={12} md={4}>
                 <Form.Group>
                   <Form.Label>Brand</Form.Label>
                   <Form.Control as="select" onChange={this.handleChange} name='carType' value={this.state.carType}>
@@ -361,7 +287,7 @@ class createProjects extends Component {
                   </Form.Control>
                 </Form.Group>
               </Col>
-              <Col>
+              <Col xs={12} md={4}>
                 <Form.Group>
                   <Form.Label>Model</Form.Label>
                   <Form.Control type="text" name='carModel' value={this.state.carModel} onChange={this.handleChange} placeholder='Model' />
@@ -371,6 +297,51 @@ class createProjects extends Component {
             <Row>
               <Col>
                 <Form.Group>
+                  <Form.Label className='transmission'>Transmission</Form.Label>
+                  <Form.Check
+                    type='radio'
+                    label='Automatic'
+                    name='transmision'
+                    id='automatic'
+                    inline
+                    onChange={this.handleChangeRadio}
+                  />
+                  <Form.Check
+                    type='radio'
+                    label='Manual'
+                    name='transmision'
+                    id='manual'
+                    inline
+                    onChange={this.handleChangeRadio}
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={3}>
+                <Form.Group>
+                  <Form.Label>Currency</Form.Label>
+                  <Form.Control as="select" onChange={this.handleChange} name='currency' value={this.state.currency}>
+                    <option>EUR</option>
+                    <option>USD</option>
+                    <option>BAM</option>
+                    <option>RSD</option>
+                    <option>HRK</option>
+                  </Form.Control>
+                </Form.Group>
+              </Col>
+              <Col xs={12} md={3}>
+                <Form.Group>
+                  <Form.Label>Car Price</Form.Label>
+                  <Form.Control type="number" name='carPrice' value={this.state.carPrice} onChange={this.handleChange} placeholder='Car Price' />
+                </Form.Group>
+              </Col>
+              <Col></Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={3}>
+                <Form.Group>
                   <Form.Label>Country</Form.Label>
                   <CountryDropdown
                     value={this.state.carCountry}
@@ -378,7 +349,7 @@ class createProjects extends Component {
                     className='form-control' />
                 </Form.Group>
               </Col>
-              <Col>
+              <Col xs={12} md={3}>
                 <Form.Group>
                   <Form.Label>City</Form.Label>
                   <RegionDropdown
@@ -389,33 +360,54 @@ class createProjects extends Component {
                 </Form.Group>
               </Col>
             </Row>
-            <Form.Group className='car-specifications'>
-              <Form.Label>Spicifications</Form.Label>
-              <InputGroup className="mb-3">
-                <FormControl type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='GPS, NAVI, MMI etc...' />
-                <InputGroup.Append>
-                  <Button variant="outline-secondary" className='add-elements' onClick={this.addElement}>+</Button>
-                </InputGroup.Append>
-              </InputGroup>
-              <Form.Text className="text-muted list-elements">
-                {this.state.listElements && this.state.listElements.map((element, i) => {
-                  return (
-                    <span key={i}>{element}</span>
-                  )
-                })}
-              </Form.Text>
-            </Form.Group>
+            <Row>
+              <Col xs={12} md={12}>
+                <Form.Group>
+                  <Form.Label>Car features</Form.Label>
+                  <Select
+                    value={this.state.listElements}
+                    onChange={this.handleChangeSelect}
+                    options={options}
+                    isMulti
+                  />
+                </Form.Group>
+              </Col>
+              {/* <Col xs={12} md={6}>
+                <Form.Group className='car-specifications'>
+                  <Form.Label>Car features</Form.Label>
+                  <InputGroup className="mb-3">
+                    <FormControl type="text" name='carElement' value={this.state.carElement} onChange={this.handleChange} placeholder='GPS, NAVI, MMI etc...' />
+                    <InputGroup.Append>
+                      <Button variant="outline-secondary" className='add-elements' onClick={this.addElement}>+</Button>
+                    </InputGroup.Append>
+                  </InputGroup>
+                  <Form.Text className="text-muted list-elements">
+                    {this.state.listElements && this.state.listElements.map((element, i) => {
+                      return (
+                        <span key={i}>{element}</span>
+                      )
+                    })}
+                  </Form.Text>
+                </Form.Group>
+              </Col> */}
+            </Row>
+            <Row>
+              <Col>
+                <Form.Group>
+                  <Form.Label>Profile Photo</Form.Label>
+                  {/* <Form.Control type="file"  /> */}
+                  <input type="file" name="img" accept="image/x-png,image/gif,image/jpeg" id='uploadMainImage' className='hidden' onChange={(event) => {
+                    this.displayPicture(event)
+                  }} />
+                  <Form.Label htmlFor='uploadMainImage' className='uploadrow'><FontAwesomeIcon icon="camera" /></Form.Label>
+                </Form.Group>
+              </Col>
+            </Row>
             <Form.Group>
-              <Form.Label>Description</Form.Label>
+              <Form.Label>Car Descritpion</Form.Label>
               <Form.Control as="textarea" rows="3" name='carDescription' value={this.state.carDescription} onChange={this.handleChange} />
             </Form.Group>
-            <Form.Group >
-              <Form.Label htmlFor='uploadMainImage'><FontAwesomeIcon icon="camera" /></Form.Label>
-              {/* <Form.Control type="file"  /> */}
-              <input type="file" name="img" id='uploadMainImage' className='hidden' onChange={(event) => {
-                this.displayPicture(event)
-              }}></input>
-            </Form.Group>
+
 
             {this.state.errorField ? <div className='errorField'>Please check your fields</div> : null}
             <Button type='submit' variant="primary">Submit</Button>

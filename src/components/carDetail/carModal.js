@@ -16,6 +16,7 @@ class CarModal extends Component {
 
 
   componentWillReceiveProps(newProps) {
+    alert('test')
     this.setState({
       userID: newProps.userID,
       projectID: newProps.projectID,
@@ -29,7 +30,7 @@ class CarModal extends Component {
     this.state = {
       lgShow: false,
       phoneNumber: '',
-      yourCity: '',
+      yourEmail: '',
       date: [new Date(), new Date()],
       userID: '',
       projectID: '',
@@ -52,7 +53,8 @@ class CarModal extends Component {
   onChange = date => this.setState({ date })
   render() {
     let lgClose = () => this.setState({ lgShow: false });
-    console.log('date', this.props.userID)
+    console.log('STATE', this.state)
+    console.log('PROPS', this.props)
     return (
       (
         <div>
@@ -84,8 +86,8 @@ class CarModal extends Component {
                     </Col>
                     <Col>
                       <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Where you from</Form.Label>
-                        <Form.Control type="text" name='yourCity' value={this.state.yourCity} onChange={this.handleChange} placeholder='City' />
+                        <Form.Label>Your Email</Form.Label>
+                        <Form.Control type="email" name='yourEmail' value={this.state.yourEmail} onChange={this.handleChange} placeholder='Enter email' />
                       </Form.Group>
                     </Col>
                   </Row>
