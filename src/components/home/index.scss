@@ -118,3 +118,96 @@ section.home-hero {
     }
   }
 }
+
+/* Hero Search form */
+
+section.home-hero form {
+  max-width: 390px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.home-page section.home-hero form a {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: transparent;
+  border: 0;
+  min-width: auto;
+  border-radius: 999em;
+  background-color: #59d389;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.home-page section.home-hero form a img {
+  width: 40px;
+}
+
+.home-page section.home-hero form .empty-link {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: transparent;
+  border: 0;
+  min-width: auto;
+  border-radius: 999em;
+  background-color: #969696;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.home-page section.home-hero form .empty-link img {
+  width: 40px;
+}
+
+.home-page section.home-hero form input {
+  border-radius: 0;
+  border: 0;
+  padding: 0 30px 10px 0;
+  font-size: 17px;
+  background: transparent;
+}
+
+section.home-hero form .form-group {
+  background: white;
+  border-radius: 45px;
+  text-align: left;
+  padding: 0px 30px 0 21px;
+}
+
+section.home-hero form .form-group label {
+  margin-bottom: 0;
+}
+
+.css-bg1rzq-control {
+  border: 0;
+}
+
+.css-bg1rzq-control div {
+  border: 0;
+  box-shadow: none;
+}
+
+.css-1pcexqc-container div {
+  border: 0;
+  box-shadow: none;
+  min-height: 1px;
+}
+
+.css-1pcexqc-container .css-1hwfws3 {
+  padding: 0;
+}
+
+.home-hero .css-1wy0on6 {
+  display: none;
+}
+
+/* End of Hero Search form */

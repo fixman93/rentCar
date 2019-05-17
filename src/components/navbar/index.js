@@ -25,7 +25,7 @@ class NavBar extends Component {
           <Navbar expand="lg">
             <Container>
               <Navbar.Brand href="/"><img src={Logo} alt='logo' /></Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav2" />
+              {/* <Navbar.Toggle cl aria-controls="basic-navbar-nav2" /> */}
               <Navbar.Collapse id="basic-navbar-nav2" className='justify-content-end'>
                 <span className='info-top'><FontAwesomeIcon icon="clock" /> 09:00AM — 17:00PM</span>
                 <span className='info-top'><FontAwesomeIcon icon="phone" /> +381 63 140-64-25</span>
