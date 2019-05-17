@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Helmet } from "react-helmet";
+
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import LastAdded from './lastAdded/lastAdded'
@@ -19,6 +21,14 @@ class Home extends Component {
     console.log('dsadasda', projects)
     return (
       <div className='home-page'>
+        <Helmet>
+          <title>Homepage || take-vehicle</title>
+          <meta name="keywords" content="Car, Renta, Rentacar, Rent a car, find car" />
+          <meta
+            name="description"
+            content="Rent a car to enjoy on your drive"
+          />
+        </Helmet>
         <section className='home-hero' style={herobg}>
           <div className='content'>
             <h1>Find the Best Car</h1>
