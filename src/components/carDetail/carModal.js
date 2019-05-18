@@ -35,22 +35,43 @@ class CarModal extends Component {
       userID: '',
       projectID: '',
       carType: '',
-      carModel: ''
+      carModel: '',
+      errorButton: true
     };
   }
 
   handleChange = (e) => {
+    const { phoneNumber, yourEmail } = this.state
     this.setState({
       [e.target.name]: e.target.value
     })
+    if (phoneNumber.length < 6 && yourEmail.length < 10) {
+      this.setState({
+        errorButton: true
+      })
+    }
+    else {
+      this.setState({
+        errorButton: false
+      })
+    }
   }
 
   handleSubmit = (e) => {
+    const { phoneNumber, yourEmail } = this.state
     e.preventDefault()
-    this.props.sendMessageToClient(this.state)
-    this.setState({
-      lgShow: false
-    })
+    if (phoneNumber === '' && yourEmail === '') {
+      this.setState({
+        errorButton: true
+      })
+    }
+    else {
+      this.props.sendMessageToClient(this.state)
+      this.setState({
+        lgShow: false
+      })
+    }
+
 
     this.props.reserved(this.state.reserved)
   }
@@ -104,7 +125,7 @@ class CarModal extends Component {
                       />
                     </Col>
                   </Row>
-                  <Button type='submit' variant="primary">Submit</Button>
+                  <Button disabled={this.state.errorButton ? true : false} type='submit' variant="primary">Submit</Button>
                 </Form>
               </Modal.Body>
             </Modal>
