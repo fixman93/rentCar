@@ -13,10 +13,10 @@ class Footer extends Component {
       <footer>
         <Container>
           <Row>
-            <Col>
+            <Col sm={12} md={4}>
               <img src={Logo} alt='logo' />
             </Col>
-            <Col>
+            <Col sm={12} md={4}>
               <p>ABOUT US</p>
               <ul>
                 <li>+381 63/140-64-25</li>
@@ -24,7 +24,7 @@ class Footer extends Component {
                 <li>Sijekovac 80, 74450 Bos. Brod BiH</li>
               </ul>
             </Col>
-            <Col>
+            <Col sm={12} md={4}>
               <p>QUICK LINKS</p>
               <ul>
                 <li><Link to="/">About Us</Link></li>
