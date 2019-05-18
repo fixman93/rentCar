@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Button from 'react-bootstrap/Button'
 
 import CarModal from './carModal'
 import bg_cars from '../../assets/bg-cars.jpg'
@@ -35,24 +36,20 @@ class ProjectDetail extends Component {
     };
 
 
-    console.log('MESSAGES', this.props.messages)
     let newUser = []
     if (users && project) {
 
       const carList = users
       newUser = Object.values(carList).filter((item) => {
-        console.log('item', item.id)
-        console.log('item', project.authhorId)
         return item.id === project.authhorId
       })
 
     }
     let projectID = ''
     if (this.props.history) {
-
-      console.log('GLAVNI', newUser[0])
       projectID = this.props.match.params.id
     }
+
 
 
     if (project) {
@@ -82,7 +79,7 @@ class ProjectDetail extends Component {
                 <p>{project && project.carCountry ? <span><b>City:</b>  {project.carCity}</span> : null}</p>
                 <p>{project && project.transmision ? <span><b>Transmision:</b> {project.transmision}</span> : null}</p>
                 <p>{newUser && newUser[0] && newUser[0].userAddress ? <span><b>Address:</b>  {newUser[0].userAddress}</span> : null}</p>
-                <p>{project.carDescription}</p>
+
                 <div className='divider divider-30'></div>
                 <ul>
                   {project.carStatistick && project.carStatistick.map((items, i) => {
@@ -92,13 +89,17 @@ class ProjectDetail extends Component {
                   })}
                 </ul>
                 <div className='divider divider-30'></div>
-                <CarModal
+                <div className='car-description'>
+                  <p>{project.carDescription}</p>
+                </div>
+                {this.props.auth && project && this.props.auth.uid === project.authhorId ? <Button disabled={true}>Rent This Car</Button> : <CarModal
                   userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0}
                   projectID={projectID}
                   carType={project.carType}
                   carModel={project.carModel}
                   reserved={this.orderFinished}
-                />
+                />}
+
               </Col>
             </Row>
           </Container>
@@ -115,11 +116,11 @@ class ProjectDetail extends Component {
 
 
 const mapStateToProps = (state, ownProps) => {
-  console.log('USER:', state)
   const id = ownProps.match.params.id
   const projects = state.firestore.data.project
   const project = projects ? projects[id] : null
   return {
+    auth: state.firebase.auth,
     project: project,
     users: state.firestore.data.users,
     messages: state.firestore.data.messages

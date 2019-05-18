@@ -17,7 +17,7 @@ class NavBar extends Component {
     this.props.signOut()
   }
   render() {
-    const { auth, profile } = this.props
+    const { auth } = this.props
     console.log('status', auth)
     return (
       <div className='main-navbar'>
@@ -45,7 +45,7 @@ class NavBar extends Component {
               </Navbar.Collapse>
               <Navbar.Collapse className="justify-content-end">
                 <Nav className="">
-                  {auth.uid ? <Nav.Link href="/profile">{profile.initial}</Nav.Link> : null}
+                  {auth.uid ? <Nav.Link href="/profile">Profile</Nav.Link> : null}
                   {auth.uid ? <Nav.Link href="/" onClick={this.logOut}>Logout</Nav.Link> : <Navbar.Text>
                     <a href="/login"> Sign In</a>
                   </Navbar.Text>}

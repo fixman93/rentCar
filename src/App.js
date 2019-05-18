@@ -4,6 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { faPhone, faClock, faCheck, faCamera } from '@fortawesome/free-solid-svg-icons'
 import NavBar from './components/navbar'
+import Footer from './components/footer'
 import Dashboard from './components/dashboard/index'
 import CreateProjects from './components/createProject/createProject'
 import Login from './components/login/index'
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path='/add-new-car' component={CreateProjects} />
           <Route path='/search/:id' component={Search} />
         </Switch>
+        <Footer />
       </div>
     );
   }

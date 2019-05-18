@@ -11,6 +11,7 @@ import LastAdded from './lastAdded/lastAdded'
 import WhyChooseUs from './whyChooseUs'
 import hero_bg from '../../assets/home-hero.jpg'
 import search_icon from '../../assets/search_glass@2x.png'
+import home_bg from '../../assets/home_bg.png'
 
 import './index.scss'
 
@@ -36,6 +37,9 @@ class Home extends Component {
     const { projects } = this.props
     const herobg = {
       backgroundImage: `url(${hero_bg})`
+    }
+    const homebg = {
+      backgroundImage: `url(${home_bg})`
     }
     let searchCities = null
     if (projects) {
@@ -79,7 +83,7 @@ class Home extends Component {
             </Form>
           </div>
         </section>
-        <LastAdded projects={projects} />
+        <LastAdded projects={projects} homebg={homebg} />
         <WhyChooseUs />
       </div>
     )

@@ -57,7 +57,8 @@ class createProjects extends Component {
       carCountry: 'Afghanistan',
       carCity: '',
       transmision: '',
-      carAddress: ''
+      carAddress: '',
+      errorField: true
     }
     this.displayPicture = this.displayPicture.bind(this)
     this.addElement = this.addElement.bind(this)

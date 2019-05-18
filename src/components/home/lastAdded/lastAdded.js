@@ -8,10 +8,11 @@ import LastAddedItem from './lastAddedItem'
 import './index.scss'
 class LastAdded extends Component {
 
+  // style={homebg} add background to section
   render() {
     const { projects } = this.props
     return (
-      <section className='last-added'>
+      <section className='last-added'  >
         <Container>
           <h2 className='title-block text-gray'>You might like:</h2>
           <Row>
