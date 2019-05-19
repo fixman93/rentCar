@@ -45,7 +45,7 @@ class CarModal extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
-    if (phoneNumber.length < 6 && yourEmail.length < 10) {
+    if (phoneNumber.length < 6 || yourEmail.length < 10) {
       this.setState({
         errorButton: true
       })
