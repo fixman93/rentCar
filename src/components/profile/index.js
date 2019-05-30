@@ -66,7 +66,7 @@ class Profile extends Component {
                     <p>Phone Number: {message.phoneNumber}</p>
                     <p>Car: {message.carType} {message.carModel}</p>
                     <p>
-                      <b>FROM - UNTIL:</b>
+                      <b>FROM - TO:</b>
                       {message.date.map((date, i) => {
                         return (
                           <span key={i}>{moment(date.toDate()).calendar()}</span>
