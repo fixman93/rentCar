@@ -93,7 +93,10 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",

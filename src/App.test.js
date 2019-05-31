@@ -1,9 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import Adapter from 'enzyme-adapter-react-16';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+import { shallow, configure } from 'enzyme'
+
+import App from './App'
+
+configure({ adapter: new Adapter() });
+
+describe('App', () => {
+  const app = shallow(<App />)
+  it('render propertly', () => {
+    expect(app).toMatchSnapshot()
+  })
+
+  it('contains a  NavBar component', () => {
+    expect(app.find('Connect(NavBar)').exists()).toBe(true)
+  })
+
+  it('contains a connect oot component', () => {
+    expect(app.find('Footer').exists()).toBe(true)
+  })
+})
