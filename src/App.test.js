@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 
 describe('App', () => {
   const app = shallow(<App />)
-  it('render propertly', () => {
+  it('render propertly App', () => {
     expect(app).toMatchSnapshot()
   })
 
@@ -17,7 +17,7 @@ describe('App', () => {
     expect(app.find('Connect(NavBar)').exists()).toBe(true)
   })
 
-  it('contains a connect oot component', () => {
+  it('contains a Footer component', () => {
     expect(app.find('Footer').exists()).toBe(true)
   })
 })

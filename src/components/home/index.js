@@ -15,7 +15,7 @@ import home_bg from '../../assets/home_bg.png'
 
 import './index.scss'
 
-class Home extends Component {
+export class Home extends Component {
 
   constructor(props) {
     super(props)
@@ -24,13 +24,13 @@ class Home extends Component {
     }
   }
   handleChange = (e) => {
-    console.log(e.target.value)
     this.setState({
       [e.target.name]: e.target.value
     })
   }
   handleChangeSelect = (searcCity) => {
     this.setState({ searcCity });
+    console.log('city', this.state.searcCity)
   }
 
   render() {
@@ -72,6 +72,7 @@ class Home extends Component {
               <Form.Group>
                 <Form.Label>Where</Form.Label>
                 <Select
+                  className='search-cities'
                   value={this.state.searcCity}
                   onChange={this.handleChangeSelect}
                   options={searchCities ? searchCities : [{ value: 'empty' }]}
