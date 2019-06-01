@@ -23,11 +23,12 @@ export class Home extends Component {
       searcCity: null
     }
   }
-  handleChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
+  // handleChange = (e) => {
+  //   console.log(e.target.value)
+  //   this.setState({
+  //     [e.target.name]: e.target.value
+  //   })
+  // }
   handleChangeSelect = (searcCity) => {
     this.setState({ searcCity });
     console.log('city', this.state.searcCity)

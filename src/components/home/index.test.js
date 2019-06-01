@@ -12,6 +12,7 @@ describe('Homepage', () => {
   it('render homepage', () => {
     expect(home).toMatchSnapshot()
   })
+
   describe('When change select type', () => {
     const city = 'Novi Sad'
     beforeEach(() => {
@@ -21,4 +22,5 @@ describe('Homepage', () => {
       expect(home.state().searcCity.target.value).toEqual(city)
     })
   })
+
 })

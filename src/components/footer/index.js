@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Logo from '../../assets/logo.png'
 
 import './index.scss'
-class Footer extends Component {
+export class Footer extends Component {
   render() {
     return (
       <footer>
