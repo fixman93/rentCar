@@ -6,9 +6,8 @@ import Col from 'react-bootstrap/Col'
 import LastAddedItem from './lastAddedItem'
 
 import './index.scss'
-class LastAdded extends Component {
+export class LastAdded extends Component {
 
-  // style={homebg} add background to section
   render() {
     const { projects } = this.props
     return (
