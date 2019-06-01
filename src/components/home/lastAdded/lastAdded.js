@@ -17,7 +17,7 @@ export class LastAdded extends Component {
           <Row>
             {projects && projects.map((project, i) => {
               return (
-                <Col sm={4} key={i}><LastAddedItem project={project} /></Col>
+                <Col sm={4} key={i}><LastAddedItem className='LastAddedItem' project={project} /></Col>
               )
             })}
           </Row>

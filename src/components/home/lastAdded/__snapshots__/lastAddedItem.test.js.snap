@@ -3,7 +3,13 @@
 exports[`lastAddedItem render lastAddedItem 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <LastAddedItem />,
+  Symbol(enzyme.__unrendered__): <LastAddedItem
+    project={
+      Object {
+        "Currency": 20,
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -24,6 +30,11 @@ ShallowWrapper {
         <div
           className="vihicle-price"
         >
+          <div
+            className="currency"
+          >
+            20
+          </div>
           <span>
             per day
           </span>
@@ -41,7 +52,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            null,
+            <div
+              className="currency"
+            >
+              20
+            </div>,
             null,
             <span>
               per day
@@ -51,7 +66,18 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          null,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 20,
+              "className": "currency",
+            },
+            "ref": null,
+            "rendered": 20,
+            "type": "div",
+          },
           null,
           Object {
             "instance": null,
@@ -82,6 +108,11 @@ ShallowWrapper {
           <div
             className="vihicle-price"
           >
+            <div
+              className="currency"
+            >
+              20
+            </div>
             <span>
               per day
             </span>
@@ -99,7 +130,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              null,
+              <div
+                className="currency"
+              >
+                20
+              </div>,
               null,
               <span>
                 per day
@@ -109,7 +144,18 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 20,
+                "className": "currency",
+              },
+              "ref": null,
+              "rendered": 20,
+              "type": "div",
+            },
             null,
             Object {
               "instance": null,
