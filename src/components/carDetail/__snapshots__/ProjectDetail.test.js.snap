@@ -1,0 +1,1395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectDetail render projectDetail 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProjectDetail
+    auth={
+      Object {
+        "uid": 2,
+      }
+    }
+    project={
+      Object {
+        "authhorId": 1,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section
+          className="hero"
+        >
+          <div
+            className="container"
+          >
+            <h1 />
+            <ul
+              className="hero-links"
+            >
+              <li>
+                <Link
+                  to="/"
+                >
+                  Home
+                </Link>
+                 
+              </li>
+              <li>
+                <Link
+                  to="/dashboard"
+                >
+                  Cars
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="box-position"
+            style={
+              Object {
+                "backgroundImage": "url(bg-cars.jpg)",
+              }
+            }
+          />
+        </section>,
+        <ForwardRef
+          as="div"
+          fluid={false}
+        >
+          <ForwardRef(render)
+            className="car-detail-page"
+          >
+            <ForwardRef
+              as="div"
+              lg="6"
+            >
+              <img
+                alt="Car"
+              />
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              className="car-detail-list"
+              lg="6"
+            >
+              <h4>
+                 
+              </h4>
+              <p>
+                 
+              </p>
+              <p />
+              <p />
+              <p />
+              <p />
+              <p />
+              <div
+                className="divider divider-30"
+              />
+              <ul />
+              <div
+                className="divider divider-30"
+              />
+              <div
+                className="car-description"
+              >
+                <p />
+              </div>
+              <Connect(CarModal)
+                projectID=""
+                reserved={[Function]}
+                userID={0}
+              />
+            </ForwardRef>
+          </ForwardRef(render)>
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="container"
+            >
+              <h1 />
+              <ul
+                className="hero-links"
+              >
+                <li>
+                  <Link
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                   
+                </li>
+                <li>
+                  <Link
+                    to="/dashboard"
+                  >
+                    Cars
+                  </Link>
+                </li>
+              </ul>
+            </div>,
+            <div
+              className="box-position"
+              style={
+                Object {
+                  "backgroundImage": "url(bg-cars.jpg)",
+                }
+              }
+            />,
+          ],
+          "className": "hero",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1 />,
+                <ul
+                  className="hero-links"
+                >
+                  <li>
+                    <Link
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                     
+                  </li>
+                  <li>
+                    <Link
+                      to="/dashboard"
+                    >
+                      Cars
+                    </Link>
+                  </li>
+                </ul>,
+              ],
+              "className": "container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li>
+                      <Link
+                        to="/"
+                      >
+                        Home
+                      </Link>
+                       
+                    </li>,
+                    <li>
+                      <Link
+                        to="/dashboard"
+                      >
+                        Cars
+                      </Link>
+                    </li>,
+                  ],
+                  "className": "hero-links",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <Link
+                          to="/"
+                        >
+                          Home
+                        </Link>,
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Home",
+                          "to": "/",
+                        },
+                        "ref": null,
+                        "rendered": "Home",
+                        "type": [Function],
+                      },
+                      " ",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Link
+                        to="/dashboard"
+                      >
+                        Cars
+                      </Link>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Cars",
+                        "to": "/dashboard",
+                      },
+                      "ref": null,
+                      "rendered": "Cars",
+                      "type": [Function],
+                    },
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "box-position",
+              "style": Object {
+                "backgroundImage": "url(bg-cars.jpg)",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "div",
+          "children": Array [
+            null,
+            <ForwardRef(render)
+              className="car-detail-page"
+            >
+              <ForwardRef
+                as="div"
+                lg="6"
+              >
+                <img
+                  alt="Car"
+                />
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+                className="car-detail-list"
+                lg="6"
+              >
+                <h4>
+                   
+                </h4>
+                <p>
+                   
+                </p>
+                <p />
+                <p />
+                <p />
+                <p />
+                <p />
+                <div
+                  className="divider divider-30"
+                />
+                <ul />
+                <div
+                  className="divider divider-30"
+                />
+                <div
+                  className="car-description"
+                >
+                  <p />
+                </div>
+                <Connect(CarModal)
+                  projectID=""
+                  reserved={[Function]}
+                  userID={0}
+                />
+              </ForwardRef>
+            </ForwardRef(render)>,
+          ],
+          "fluid": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          null,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef
+                  as="div"
+                  lg="6"
+                >
+                  <img
+                    alt="Car"
+                  />
+                </ForwardRef>,
+                <ForwardRef
+                  as="div"
+                  className="car-detail-list"
+                  lg="6"
+                >
+                  <h4>
+                     
+                  </h4>
+                  <p>
+                     
+                  </p>
+                  <p />
+                  <p />
+                  <p />
+                  <p />
+                  <p />
+                  <div
+                    className="divider divider-30"
+                  />
+                  <ul />
+                  <div
+                    className="divider divider-30"
+                  />
+                  <div
+                    className="car-description"
+                  >
+                    <p />
+                  </div>
+                  <Connect(CarModal)
+                    projectID=""
+                    reserved={[Function]}
+                    userID={0}
+                  />
+                </ForwardRef>,
+              ],
+              "className": "car-detail-page",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <img
+                    alt="Car"
+                  />,
+                  "lg": "6",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Car",
+                    "src": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": Array [
+                    <h4>
+                       
+                    </h4>,
+                    <p>
+                       
+                    </p>,
+                    <p />,
+                    <p />,
+                    <p />,
+                    <p />,
+                    <p />,
+                    <div
+                      className="divider divider-30"
+                    />,
+                    <ul />,
+                    <div
+                      className="divider divider-30"
+                    />,
+                    <div
+                      className="car-description"
+                    >
+                      <p />
+                    </div>,
+                    <Connect(CarModal)
+                      projectID=""
+                      reserved={[Function]}
+                      userID={0}
+                    />,
+                  ],
+                  "className": "car-detail-list",
+                  "lg": "6",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        undefined,
+                        " ",
+                        undefined,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                      " ",
+                      undefined,
+                    ],
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        null,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      null,
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "divider divider-30",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "ul",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "divider divider-30",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <p />,
+                      "className": "car-description",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "carModel": undefined,
+                      "carType": undefined,
+                      "projectID": "",
+                      "reserved": [Function],
+                      "userID": 0,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "Bootstrap(Row)",
+              "propTypes": undefined,
+              "render": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "div",
+            "fluid": false,
+          },
+          "displayName": "Container",
+          "render": [Function],
+        },
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section
+            className="hero"
+          >
+            <div
+              className="container"
+            >
+              <h1 />
+              <ul
+                className="hero-links"
+              >
+                <li>
+                  <Link
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                   
+                </li>
+                <li>
+                  <Link
+                    to="/dashboard"
+                  >
+                    Cars
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="box-position"
+              style={
+                Object {
+                  "backgroundImage": "url(bg-cars.jpg)",
+                }
+              }
+            />
+          </section>,
+          <ForwardRef
+            as="div"
+            fluid={false}
+          >
+            <ForwardRef(render)
+              className="car-detail-page"
+            >
+              <ForwardRef
+                as="div"
+                lg="6"
+              >
+                <img
+                  alt="Car"
+                />
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+                className="car-detail-list"
+                lg="6"
+              >
+                <h4>
+                   
+                </h4>
+                <p>
+                   
+                </p>
+                <p />
+                <p />
+                <p />
+                <p />
+                <p />
+                <div
+                  className="divider divider-30"
+                />
+                <ul />
+                <div
+                  className="divider divider-30"
+                />
+                <div
+                  className="car-description"
+                >
+                  <p />
+                </div>
+                <Connect(CarModal)
+                  projectID=""
+                  reserved={[Function]}
+                  userID={0}
+                />
+              </ForwardRef>
+            </ForwardRef(render)>
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="container"
+              >
+                <h1 />
+                <ul
+                  className="hero-links"
+                >
+                  <li>
+                    <Link
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                     
+                  </li>
+                  <li>
+                    <Link
+                      to="/dashboard"
+                    >
+                      Cars
+                    </Link>
+                  </li>
+                </ul>
+              </div>,
+              <div
+                className="box-position"
+                style={
+                  Object {
+                    "backgroundImage": "url(bg-cars.jpg)",
+                  }
+                }
+              />,
+            ],
+            "className": "hero",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1 />,
+                  <ul
+                    className="hero-links"
+                  >
+                    <li>
+                      <Link
+                        to="/"
+                      >
+                        Home
+                      </Link>
+                       
+                    </li>
+                    <li>
+                      <Link
+                        to="/dashboard"
+                      >
+                        Cars
+                      </Link>
+                    </li>
+                  </ul>,
+                ],
+                "className": "container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        <Link
+                          to="/"
+                        >
+                          Home
+                        </Link>
+                         
+                      </li>,
+                      <li>
+                        <Link
+                          to="/dashboard"
+                        >
+                          Cars
+                        </Link>
+                      </li>,
+                    ],
+                    "className": "hero-links",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <Link
+                            to="/"
+                          >
+                            Home
+                          </Link>,
+                          " ",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Home",
+                            "to": "/",
+                          },
+                          "ref": null,
+                          "rendered": "Home",
+                          "type": [Function],
+                        },
+                        " ",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          to="/dashboard"
+                        >
+                          Cars
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Cars",
+                          "to": "/dashboard",
+                        },
+                        "ref": null,
+                        "rendered": "Cars",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "box-position",
+                "style": Object {
+                  "backgroundImage": "url(bg-cars.jpg)",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "div",
+            "children": Array [
+              null,
+              <ForwardRef(render)
+                className="car-detail-page"
+              >
+                <ForwardRef
+                  as="div"
+                  lg="6"
+                >
+                  <img
+                    alt="Car"
+                  />
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                  className="car-detail-list"
+                  lg="6"
+                >
+                  <h4>
+                     
+                  </h4>
+                  <p>
+                     
+                  </p>
+                  <p />
+                  <p />
+                  <p />
+                  <p />
+                  <p />
+                  <div
+                    className="divider divider-30"
+                  />
+                  <ul />
+                  <div
+                    className="divider divider-30"
+                  />
+                  <div
+                    className="car-description"
+                  >
+                    <p />
+                  </div>
+                  <Connect(CarModal)
+                    projectID=""
+                    reserved={[Function]}
+                    userID={0}
+                  />
+                </ForwardRef>
+              </ForwardRef(render)>,
+            ],
+            "fluid": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef
+                    as="div"
+                    lg="6"
+                  >
+                    <img
+                      alt="Car"
+                    />
+                  </ForwardRef>,
+                  <ForwardRef
+                    as="div"
+                    className="car-detail-list"
+                    lg="6"
+                  >
+                    <h4>
+                       
+                    </h4>
+                    <p>
+                       
+                    </p>
+                    <p />
+                    <p />
+                    <p />
+                    <p />
+                    <p />
+                    <div
+                      className="divider divider-30"
+                    />
+                    <ul />
+                    <div
+                      className="divider divider-30"
+                    />
+                    <div
+                      className="car-description"
+                    >
+                      <p />
+                    </div>
+                    <Connect(CarModal)
+                      projectID=""
+                      reserved={[Function]}
+                      userID={0}
+                    />
+                  </ForwardRef>,
+                ],
+                "className": "car-detail-page",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <img
+                      alt="Car"
+                    />,
+                    "lg": "6",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Car",
+                      "src": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "Col",
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": Array [
+                      <h4>
+                         
+                      </h4>,
+                      <p>
+                         
+                      </p>,
+                      <p />,
+                      <p />,
+                      <p />,
+                      <p />,
+                      <p />,
+                      <div
+                        className="divider divider-30"
+                      />,
+                      <ul />,
+                      <div
+                        className="divider divider-30"
+                      />,
+                      <div
+                        className="car-description"
+                      >
+                        <p />
+                      </div>,
+                      <Connect(CarModal)
+                        projectID=""
+                        reserved={[Function]}
+                        userID={0}
+                      />,
+                    ],
+                    "className": "car-detail-list",
+                    "lg": "6",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          undefined,
+                          " ",
+                          undefined,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                        " ",
+                        undefined,
+                      ],
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          " ",
+                          null,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        " ",
+                        null,
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": null,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": null,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": null,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": null,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": null,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "divider divider-30",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "ul",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "divider divider-30",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <p />,
+                        "className": "car-description",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "p",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "carModel": undefined,
+                        "carType": undefined,
+                        "projectID": "",
+                        "reserved": [Function],
+                        "userID": 0,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "Col",
+                    "render": [Function],
+                  },
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "Bootstrap(Row)",
+                "propTypes": undefined,
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "div",
+              "fluid": false,
+            },
+            "displayName": "Container",
+            "render": [Function],
+          },
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

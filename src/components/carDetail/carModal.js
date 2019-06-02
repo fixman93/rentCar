@@ -12,7 +12,7 @@ import { sendMessageToClient } from '../../store/actions/projectAction'
 
 
 
-class CarModal extends Component {
+export class CarModal extends Component {
 
 
   componentWillReceiveProps(newProps) {
@@ -36,7 +36,8 @@ class CarModal extends Component {
       projectID: '',
       carType: '',
       carModel: '',
-      errorButton: true
+      errorButton: true,
+      submitted: false
     };
   }
 
@@ -68,19 +69,16 @@ class CarModal extends Component {
     else {
       this.props.sendMessageToClient(this.state)
       this.setState({
-        lgShow: false
+        lgShow: false,
+        submitted: true
       })
     }
-
-
     this.props.reserved(this.state.reserved)
   }
 
   onChange = date => this.setState({ date })
   render() {
     let lgClose = () => this.setState({ lgShow: false });
-    console.log('STATE', this.state)
-    console.log('PROPS', this.props)
     return (
       (
         <div>
@@ -102,7 +100,7 @@ class CarModal extends Component {
               </Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <Form onSubmit={this.handleSubmit}>
+                <Form className='submit-click' onSubmit={this.handleSubmit}>
                   <Row>
                     <Col>
                       <Form.Group controlId="formBasicEmail">
@@ -120,6 +118,7 @@ class CarModal extends Component {
                   <Row>
                     <Col>
                       <DateTimeRangePicker
+                        className='dateTimeRangePicker'
                         onChange={this.onChange}
                         value={this.state.date}
                       />
