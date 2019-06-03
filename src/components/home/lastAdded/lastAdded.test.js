@@ -7,13 +7,15 @@ import { LastAdded } from './lastAdded'
 configure({ adapter: new Adapter() });
 
 describe('LastAdded', () => {
-  const lastAdded = shallow(<LastAdded />)
+  const props = { projects: {} }
+  const lastAdded = shallow(<LastAdded {...props} />)
+  console.log(lastAdded.debug());
   it('render LastAdded', () => {
     expect(lastAdded).toMatchSnapshot()
   })
 
   it('creates an LastAddedItem', () => {
-    expect(lastAdded.find('.LastAddedItem').exists()).toBe(false)
+    expect(lastAdded.find('<Col>').exists()).toBe(true)
   })
 
 

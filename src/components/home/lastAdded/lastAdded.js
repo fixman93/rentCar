@@ -8,18 +8,23 @@ import LastAddedItem from './lastAddedItem'
 import './index.scss'
 export class LastAdded extends Component {
 
-  render() {
+  renderItems = () => {
     const { projects } = this.props
+    return projects && projects.map((project, i) => {
+      return (
+        <Col sm={4} key={i}><LastAddedItem className='LastAddedItem' project={project} /></Col>
+      )
+    })
+
+  }
+  render() {
+
     return (
       <section className='last-added'  >
         <Container>
           <h2 className='title-block text-gray'>You might like:</h2>
           <Row>
-            {projects && projects.map((project, i) => {
-              return (
-                <Col sm={4} key={i}><LastAddedItem className='LastAddedItem' project={project} /></Col>
-              )
-            })}
+            {this.renderItems()}
           </Row>
         </Container>
       </section>
