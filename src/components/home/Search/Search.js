@@ -20,7 +20,6 @@ class Search extends Component {
         return item.carCity === this.props.match.params.id
       })
     }
-    console.log('PROJECT', carListt)
     // console.log('PROJECT', projects)
     // console.log('PROPS', this.props.match.params.id)
     return (

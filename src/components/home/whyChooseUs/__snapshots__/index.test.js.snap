@@ -1,0 +1,900 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WhyChooseUs render WhyChooseUs 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WhyChooseUs />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ForwardRef
+        as="div"
+        fluid={false}
+      >
+        <h2
+          className="title-block text-center"
+        >
+          Why Choose Us?
+        </h2>
+        <ForwardRef(render)>
+          <ForwardRef
+            as="div"
+            sm={4}
+          >
+            <div
+              className="box"
+            >
+              <h4>
+                Premium Service
+              </h4>
+              <p>
+                Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+              </p>
+            </div>
+          </ForwardRef>
+          <ForwardRef
+            as="div"
+            sm={4}
+          >
+            <div
+              className="box"
+            >
+              <h4>
+                Variety of Locations
+              </h4>
+              <p>
+                We have a variety of car rental offices located throughout the USA in almost all 50 states.
+              </p>
+            </div>
+          </ForwardRef>
+          <ForwardRef
+            as="div"
+            sm={4}
+          >
+            <div
+              className="box"
+            >
+              <h4>
+                Qualified Team
+              </h4>
+              <p>
+                You can fully rely on our team of professionals who are always ready to help you.
+              </p>
+            </div>
+          </ForwardRef>
+        </ForwardRef(render)>
+      </ForwardRef>,
+      "className": "why-choose-us",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "as": "div",
+        "children": Array [
+          <h2
+            className="title-block text-center"
+          >
+            Why Choose Us?
+          </h2>,
+          <ForwardRef(render)>
+            <ForwardRef
+              as="div"
+              sm={4}
+            >
+              <div
+                className="box"
+              >
+                <h4>
+                  Premium Service
+                </h4>
+                <p>
+                  Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                </p>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              sm={4}
+            >
+              <div
+                className="box"
+              >
+                <h4>
+                  Variety of Locations
+                </h4>
+                <p>
+                  We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                </p>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              sm={4}
+            >
+              <div
+                className="box"
+              >
+                <h4>
+                  Qualified Team
+                </h4>
+                <p>
+                  You can fully rely on our team of professionals who are always ready to help you.
+                </p>
+              </div>
+            </ForwardRef>
+          </ForwardRef(render)>,
+        ],
+        "fluid": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Why Choose Us?",
+            "className": "title-block text-center",
+          },
+          "ref": null,
+          "rendered": "Why Choose Us?",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                as="div"
+                sm={4}
+              >
+                <div
+                  className="box"
+                >
+                  <h4>
+                    Premium Service
+                  </h4>
+                  <p>
+                    Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                  </p>
+                </div>
+              </ForwardRef>,
+              <ForwardRef
+                as="div"
+                sm={4}
+              >
+                <div
+                  className="box"
+                >
+                  <h4>
+                    Variety of Locations
+                  </h4>
+                  <p>
+                    We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                  </p>
+                </div>
+              </ForwardRef>,
+              <ForwardRef
+                as="div"
+                sm={4}
+              >
+                <div
+                  className="box"
+                >
+                  <h4>
+                    Qualified Team
+                  </h4>
+                  <p>
+                    You can fully rely on our team of professionals who are always ready to help you.
+                  </p>
+                </div>
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": <div
+                  className="box"
+                >
+                  <h4>
+                    Premium Service
+                  </h4>
+                  <p>
+                    Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                  </p>
+                </div>,
+                "sm": 4,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h4>
+                      Premium Service
+                    </h4>,
+                    <p>
+                      Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                    </p>,
+                  ],
+                  "className": "box",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Premium Service",
+                    },
+                    "ref": null,
+                    "rendered": "Premium Service",
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Rent Car provides high-quality service to everyone who is looking for reliable car rentals.",
+                    },
+                    "ref": null,
+                    "rendered": "Rent Car provides high-quality service to everyone who is looking for reliable car rentals.",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "Col",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": <div
+                  className="box"
+                >
+                  <h4>
+                    Variety of Locations
+                  </h4>
+                  <p>
+                    We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                  </p>
+                </div>,
+                "sm": 4,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h4>
+                      Variety of Locations
+                    </h4>,
+                    <p>
+                      We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                    </p>,
+                  ],
+                  "className": "box",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Variety of Locations",
+                    },
+                    "ref": null,
+                    "rendered": "Variety of Locations",
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "We have a variety of car rental offices located throughout the USA in almost all 50 states.",
+                    },
+                    "ref": null,
+                    "rendered": "We have a variety of car rental offices located throughout the USA in almost all 50 states.",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "Col",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": <div
+                  className="box"
+                >
+                  <h4>
+                    Qualified Team
+                  </h4>
+                  <p>
+                    You can fully rely on our team of professionals who are always ready to help you.
+                  </p>
+                </div>,
+                "sm": 4,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h4>
+                      Qualified Team
+                    </h4>,
+                    <p>
+                      You can fully rely on our team of professionals who are always ready to help you.
+                    </p>,
+                  ],
+                  "className": "box",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Qualified Team",
+                    },
+                    "ref": null,
+                    "rendered": "Qualified Team",
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "You can fully rely on our team of professionals who are always ready to help you.",
+                    },
+                    "ref": null,
+                    "rendered": "You can fully rely on our team of professionals who are always ready to help you.",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "Col",
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "Bootstrap(Row)",
+            "propTypes": undefined,
+            "render": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "as": "div",
+          "fluid": false,
+        },
+        "displayName": "Container",
+        "render": [Function],
+      },
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ForwardRef
+          as="div"
+          fluid={false}
+        >
+          <h2
+            className="title-block text-center"
+          >
+            Why Choose Us?
+          </h2>
+          <ForwardRef(render)>
+            <ForwardRef
+              as="div"
+              sm={4}
+            >
+              <div
+                className="box"
+              >
+                <h4>
+                  Premium Service
+                </h4>
+                <p>
+                  Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                </p>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              sm={4}
+            >
+              <div
+                className="box"
+              >
+                <h4>
+                  Variety of Locations
+                </h4>
+                <p>
+                  We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                </p>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              sm={4}
+            >
+              <div
+                className="box"
+              >
+                <h4>
+                  Qualified Team
+                </h4>
+                <p>
+                  You can fully rely on our team of professionals who are always ready to help you.
+                </p>
+              </div>
+            </ForwardRef>
+          </ForwardRef(render)>
+        </ForwardRef>,
+        "className": "why-choose-us",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "div",
+          "children": Array [
+            <h2
+              className="title-block text-center"
+            >
+              Why Choose Us?
+            </h2>,
+            <ForwardRef(render)>
+              <ForwardRef
+                as="div"
+                sm={4}
+              >
+                <div
+                  className="box"
+                >
+                  <h4>
+                    Premium Service
+                  </h4>
+                  <p>
+                    Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                  </p>
+                </div>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+                sm={4}
+              >
+                <div
+                  className="box"
+                >
+                  <h4>
+                    Variety of Locations
+                  </h4>
+                  <p>
+                    We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                  </p>
+                </div>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+                sm={4}
+              >
+                <div
+                  className="box"
+                >
+                  <h4>
+                    Qualified Team
+                  </h4>
+                  <p>
+                    You can fully rely on our team of professionals who are always ready to help you.
+                  </p>
+                </div>
+              </ForwardRef>
+            </ForwardRef(render)>,
+          ],
+          "fluid": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Why Choose Us?",
+              "className": "title-block text-center",
+            },
+            "ref": null,
+            "rendered": "Why Choose Us?",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef
+                  as="div"
+                  sm={4}
+                >
+                  <div
+                    className="box"
+                  >
+                    <h4>
+                      Premium Service
+                    </h4>
+                    <p>
+                      Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                    </p>
+                  </div>
+                </ForwardRef>,
+                <ForwardRef
+                  as="div"
+                  sm={4}
+                >
+                  <div
+                    className="box"
+                  >
+                    <h4>
+                      Variety of Locations
+                    </h4>
+                    <p>
+                      We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                    </p>
+                  </div>
+                </ForwardRef>,
+                <ForwardRef
+                  as="div"
+                  sm={4}
+                >
+                  <div
+                    className="box"
+                  >
+                    <h4>
+                      Qualified Team
+                    </h4>
+                    <p>
+                      You can fully rely on our team of professionals who are always ready to help you.
+                    </p>
+                  </div>
+                </ForwardRef>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <div
+                    className="box"
+                  >
+                    <h4>
+                      Premium Service
+                    </h4>
+                    <p>
+                      Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                    </p>
+                  </div>,
+                  "sm": 4,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h4>
+                        Premium Service
+                      </h4>,
+                      <p>
+                        Rent Car provides high-quality service to everyone who is looking for reliable car rentals.
+                      </p>,
+                    ],
+                    "className": "box",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Premium Service",
+                      },
+                      "ref": null,
+                      "rendered": "Premium Service",
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Rent Car provides high-quality service to everyone who is looking for reliable car rentals.",
+                      },
+                      "ref": null,
+                      "rendered": "Rent Car provides high-quality service to everyone who is looking for reliable car rentals.",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <div
+                    className="box"
+                  >
+                    <h4>
+                      Variety of Locations
+                    </h4>
+                    <p>
+                      We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                    </p>
+                  </div>,
+                  "sm": 4,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h4>
+                        Variety of Locations
+                      </h4>,
+                      <p>
+                        We have a variety of car rental offices located throughout the USA in almost all 50 states.
+                      </p>,
+                    ],
+                    "className": "box",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Variety of Locations",
+                      },
+                      "ref": null,
+                      "rendered": "Variety of Locations",
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "We have a variety of car rental offices located throughout the USA in almost all 50 states.",
+                      },
+                      "ref": null,
+                      "rendered": "We have a variety of car rental offices located throughout the USA in almost all 50 states.",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <div
+                    className="box"
+                  >
+                    <h4>
+                      Qualified Team
+                    </h4>
+                    <p>
+                      You can fully rely on our team of professionals who are always ready to help you.
+                    </p>
+                  </div>,
+                  "sm": 4,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h4>
+                        Qualified Team
+                      </h4>,
+                      <p>
+                        You can fully rely on our team of professionals who are always ready to help you.
+                      </p>,
+                    ],
+                    "className": "box",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Qualified Team",
+                      },
+                      "ref": null,
+                      "rendered": "Qualified Team",
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "You can fully rely on our team of professionals who are always ready to help you.",
+                      },
+                      "ref": null,
+                      "rendered": "You can fully rely on our team of professionals who are always ready to help you.",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "Bootstrap(Row)",
+              "propTypes": undefined,
+              "render": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "div",
+            "fluid": false,
+          },
+          "displayName": "Container",
+          "render": [Function],
+        },
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

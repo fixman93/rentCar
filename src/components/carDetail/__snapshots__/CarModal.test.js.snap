@@ -1,0 +1,3358 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarModal render carModal 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CarModal />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ForwardRef
+        role="toolbar"
+      >
+        <ForwardRef
+          active={false}
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+          variant="primary"
+        >
+          Rent This Car
+        </ForwardRef>
+        <ForwardRef(render)
+          aria-labelledby="example-modal-sizes-title-lg"
+          className="send-message-to-owner"
+          onHide={[Function]}
+          show={false}
+          size="lg"
+        >
+          <ForwardRef
+            closeButton={true}
+            closeLabel="Close"
+          >
+            <ForwardRef
+              id="example-modal-sizes-title-lg"
+            >
+              Contact info
+            </ForwardRef>
+          </ForwardRef>
+          <ForwardRef>
+            <ForwardRef
+              as="form"
+              className="submit-click"
+              inline={false}
+              onSubmit={[Function]}
+            >
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                >
+                  <ForwardRef
+                    as="div"
+                    controlId="formBasicEmail"
+                  >
+                    <ForwardRef
+                      column={false}
+                      srOnly={false}
+                    >
+                      Your Phone Number
+                    </ForwardRef>
+                    <ForwardRef
+                      as="input"
+                      name="phoneNumber"
+                      onChange={[Function]}
+                      placeholder="Phone Number"
+                      type="text"
+                      value=""
+                    />
+                  </ForwardRef>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <ForwardRef
+                    as="div"
+                    controlId="formBasicEmail"
+                  >
+                    <ForwardRef
+                      column={false}
+                      srOnly={false}
+                    >
+                      Your Email
+                    </ForwardRef>
+                    <ForwardRef
+                      as="input"
+                      name="yourEmail"
+                      onChange={[Function]}
+                      placeholder="Enter email"
+                      type="email"
+                      value=""
+                    />
+                  </ForwardRef>
+                </ForwardRef>
+              </ForwardRef(render)>
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                >
+                  <DateTimeRangePicker
+                    calendarIcon={
+                      <svg
+                        height="19"
+                        viewBox="0 0 19 19"
+                        width="19"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          stroke="black"
+                          strokeWidth="2"
+                        >
+                          <rect
+                            fill="none"
+                            height="15"
+                            width="15"
+                            x="2"
+                            y="2"
+                          />
+                          <line
+                            x1="6"
+                            x2="6"
+                            y1="0"
+                            y2="4"
+                          />
+                          <line
+                            x1="13"
+                            x2="13"
+                            y1="0"
+                            y2="4"
+                          />
+                        </g>
+                      </svg>
+                    }
+                    className="dateTimeRangePicker"
+                    clearIcon={
+                      <svg
+                        height="19"
+                        viewBox="0 0 19 19"
+                        width="19"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          stroke="black"
+                          strokeWidth="2"
+                        >
+                          <line
+                            x1="4"
+                            x2="15"
+                            y1="4"
+                            y2="15"
+                          />
+                          <line
+                            x1="15"
+                            x2="4"
+                            y1="4"
+                            y2="15"
+                          />
+                        </g>
+                      </svg>
+                    }
+                    isCalendarOpen={null}
+                    isClockOpen={null}
+                    maxDetail="minute"
+                    name="datetimerange"
+                    onChange={[Function]}
+                    value={
+                      Array [
+                        2019-06-04T09:14:48.993Z,
+                        2019-06-04T09:14:48.993Z,
+                      ]
+                    }
+                  />
+                </ForwardRef>
+              </ForwardRef(render)>
+              <ForwardRef
+                active={false}
+                disabled={true}
+                type="submit"
+                variant="primary"
+              >
+                Submit
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>
+        </ForwardRef(render)>
+      </ForwardRef>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef
+            active={false}
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+            variant="primary"
+          >
+            Rent This Car
+          </ForwardRef>,
+          <ForwardRef(render)
+            aria-labelledby="example-modal-sizes-title-lg"
+            className="send-message-to-owner"
+            onHide={[Function]}
+            show={false}
+            size="lg"
+          >
+            <ForwardRef
+              closeButton={true}
+              closeLabel="Close"
+            >
+              <ForwardRef
+                id="example-modal-sizes-title-lg"
+              >
+                Contact info
+              </ForwardRef>
+            </ForwardRef>
+            <ForwardRef>
+              <ForwardRef
+                as="form"
+                className="submit-click"
+                inline={false}
+                onSubmit={[Function]}
+              >
+                <ForwardRef(render)>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <ForwardRef
+                      as="div"
+                      controlId="formBasicEmail"
+                    >
+                      <ForwardRef
+                        column={false}
+                        srOnly={false}
+                      >
+                        Your Phone Number
+                      </ForwardRef>
+                      <ForwardRef
+                        as="input"
+                        name="phoneNumber"
+                        onChange={[Function]}
+                        placeholder="Phone Number"
+                        type="text"
+                        value=""
+                      />
+                    </ForwardRef>
+                  </ForwardRef>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <ForwardRef
+                      as="div"
+                      controlId="formBasicEmail"
+                    >
+                      <ForwardRef
+                        column={false}
+                        srOnly={false}
+                      >
+                        Your Email
+                      </ForwardRef>
+                      <ForwardRef
+                        as="input"
+                        name="yourEmail"
+                        onChange={[Function]}
+                        placeholder="Enter email"
+                        type="email"
+                        value=""
+                      />
+                    </ForwardRef>
+                  </ForwardRef>
+                </ForwardRef(render)>
+                <ForwardRef(render)>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <DateTimeRangePicker
+                      calendarIcon={
+                        <svg
+                          height="19"
+                          viewBox="0 0 19 19"
+                          width="19"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            stroke="black"
+                            strokeWidth="2"
+                          >
+                            <rect
+                              fill="none"
+                              height="15"
+                              width="15"
+                              x="2"
+                              y="2"
+                            />
+                            <line
+                              x1="6"
+                              x2="6"
+                              y1="0"
+                              y2="4"
+                            />
+                            <line
+                              x1="13"
+                              x2="13"
+                              y1="0"
+                              y2="4"
+                            />
+                          </g>
+                        </svg>
+                      }
+                      className="dateTimeRangePicker"
+                      clearIcon={
+                        <svg
+                          height="19"
+                          viewBox="0 0 19 19"
+                          width="19"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            stroke="black"
+                            strokeWidth="2"
+                          >
+                            <line
+                              x1="4"
+                              x2="15"
+                              y1="4"
+                              y2="15"
+                            />
+                            <line
+                              x1="15"
+                              x2="4"
+                              y1="4"
+                              y2="15"
+                            />
+                          </g>
+                        </svg>
+                      }
+                      isCalendarOpen={null}
+                      isClockOpen={null}
+                      maxDetail="minute"
+                      name="datetimerange"
+                      onChange={[Function]}
+                      value={
+                        Array [
+                          2019-06-04T09:14:48.993Z,
+                          2019-06-04T09:14:48.993Z,
+                        ]
+                      }
+                    />
+                  </ForwardRef>
+                </ForwardRef(render)>
+                <ForwardRef
+                  active={false}
+                  disabled={true}
+                  type="submit"
+                  variant="primary"
+                >
+                  Submit
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef(render)>,
+        ],
+        "role": "toolbar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "active": false,
+            "children": "Rent This Car",
+            "disabled": false,
+            "onClick": [Function],
+            "type": "button",
+            "variant": "primary",
+          },
+          "ref": null,
+          "rendered": "Rent This Car",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "active": false,
+              "disabled": false,
+              "type": "button",
+              "variant": "primary",
+            },
+            "displayName": "Button",
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "aria-labelledby": "example-modal-sizes-title-lg",
+            "children": Array [
+              <ForwardRef
+                closeButton={true}
+                closeLabel="Close"
+              >
+                <ForwardRef
+                  id="example-modal-sizes-title-lg"
+                >
+                  Contact info
+                </ForwardRef>
+              </ForwardRef>,
+              <ForwardRef>
+                <ForwardRef
+                  as="form"
+                  className="submit-click"
+                  inline={false}
+                  onSubmit={[Function]}
+                >
+                  <ForwardRef(render)>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <ForwardRef
+                        as="div"
+                        controlId="formBasicEmail"
+                      >
+                        <ForwardRef
+                          column={false}
+                          srOnly={false}
+                        >
+                          Your Phone Number
+                        </ForwardRef>
+                        <ForwardRef
+                          as="input"
+                          name="phoneNumber"
+                          onChange={[Function]}
+                          placeholder="Phone Number"
+                          type="text"
+                          value=""
+                        />
+                      </ForwardRef>
+                    </ForwardRef>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <ForwardRef
+                        as="div"
+                        controlId="formBasicEmail"
+                      >
+                        <ForwardRef
+                          column={false}
+                          srOnly={false}
+                        >
+                          Your Email
+                        </ForwardRef>
+                        <ForwardRef
+                          as="input"
+                          name="yourEmail"
+                          onChange={[Function]}
+                          placeholder="Enter email"
+                          type="email"
+                          value=""
+                        />
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef(render)>
+                  <ForwardRef(render)>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <DateTimeRangePicker
+                        calendarIcon={
+                          <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <rect
+                                fill="none"
+                                height="15"
+                                width="15"
+                                x="2"
+                                y="2"
+                              />
+                              <line
+                                x1="6"
+                                x2="6"
+                                y1="0"
+                                y2="4"
+                              />
+                              <line
+                                x1="13"
+                                x2="13"
+                                y1="0"
+                                y2="4"
+                              />
+                            </g>
+                          </svg>
+                        }
+                        className="dateTimeRangePicker"
+                        clearIcon={
+                          <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <line
+                                x1="4"
+                                x2="15"
+                                y1="4"
+                                y2="15"
+                              />
+                              <line
+                                x1="15"
+                                x2="4"
+                                y1="4"
+                                y2="15"
+                              />
+                            </g>
+                          </svg>
+                        }
+                        isCalendarOpen={null}
+                        isClockOpen={null}
+                        maxDetail="minute"
+                        name="datetimerange"
+                        onChange={[Function]}
+                        value={
+                          Array [
+                            2019-06-04T09:14:48.993Z,
+                            2019-06-04T09:14:48.993Z,
+                          ]
+                        }
+                      />
+                    </ForwardRef>
+                  </ForwardRef(render)>
+                  <ForwardRef
+                    active={false}
+                    disabled={true}
+                    type="submit"
+                    variant="primary"
+                  >
+                    Submit
+                  </ForwardRef>
+                </ForwardRef>
+              </ForwardRef>,
+            ],
+            "className": "send-message-to-owner",
+            "onHide": [Function],
+            "show": false,
+            "size": "lg",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef
+                  id="example-modal-sizes-title-lg"
+                >
+                  Contact info
+                </ForwardRef>,
+                "closeButton": true,
+                "closeLabel": "Close",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Contact info",
+                  "id": "example-modal-sizes-title-lg",
+                },
+                "ref": null,
+                "rendered": "Contact info",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "ModalTitle",
+                  "render": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "closeButton": false,
+                  "closeLabel": "Close",
+                },
+                "displayName": "ModalHeader",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef
+                  as="form"
+                  className="submit-click"
+                  inline={false}
+                  onSubmit={[Function]}
+                >
+                  <ForwardRef(render)>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <ForwardRef
+                        as="div"
+                        controlId="formBasicEmail"
+                      >
+                        <ForwardRef
+                          column={false}
+                          srOnly={false}
+                        >
+                          Your Phone Number
+                        </ForwardRef>
+                        <ForwardRef
+                          as="input"
+                          name="phoneNumber"
+                          onChange={[Function]}
+                          placeholder="Phone Number"
+                          type="text"
+                          value=""
+                        />
+                      </ForwardRef>
+                    </ForwardRef>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <ForwardRef
+                        as="div"
+                        controlId="formBasicEmail"
+                      >
+                        <ForwardRef
+                          column={false}
+                          srOnly={false}
+                        >
+                          Your Email
+                        </ForwardRef>
+                        <ForwardRef
+                          as="input"
+                          name="yourEmail"
+                          onChange={[Function]}
+                          placeholder="Enter email"
+                          type="email"
+                          value=""
+                        />
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef(render)>
+                  <ForwardRef(render)>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <DateTimeRangePicker
+                        calendarIcon={
+                          <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <rect
+                                fill="none"
+                                height="15"
+                                width="15"
+                                x="2"
+                                y="2"
+                              />
+                              <line
+                                x1="6"
+                                x2="6"
+                                y1="0"
+                                y2="4"
+                              />
+                              <line
+                                x1="13"
+                                x2="13"
+                                y1="0"
+                                y2="4"
+                              />
+                            </g>
+                          </svg>
+                        }
+                        className="dateTimeRangePicker"
+                        clearIcon={
+                          <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <line
+                                x1="4"
+                                x2="15"
+                                y1="4"
+                                y2="15"
+                              />
+                              <line
+                                x1="15"
+                                x2="4"
+                                y1="4"
+                                y2="15"
+                              />
+                            </g>
+                          </svg>
+                        }
+                        isCalendarOpen={null}
+                        isClockOpen={null}
+                        maxDetail="minute"
+                        name="datetimerange"
+                        onChange={[Function]}
+                        value={
+                          Array [
+                            2019-06-04T09:14:48.993Z,
+                            2019-06-04T09:14:48.993Z,
+                          ]
+                        }
+                      />
+                    </ForwardRef>
+                  </ForwardRef(render)>
+                  <ForwardRef
+                    active={false}
+                    disabled={true}
+                    type="submit"
+                    variant="primary"
+                  >
+                    Submit
+                  </ForwardRef>
+                </ForwardRef>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "form",
+                  "children": Array [
+                    <ForwardRef(render)>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <ForwardRef
+                          as="div"
+                          controlId="formBasicEmail"
+                        >
+                          <ForwardRef
+                            column={false}
+                            srOnly={false}
+                          >
+                            Your Phone Number
+                          </ForwardRef>
+                          <ForwardRef
+                            as="input"
+                            name="phoneNumber"
+                            onChange={[Function]}
+                            placeholder="Phone Number"
+                            type="text"
+                            value=""
+                          />
+                        </ForwardRef>
+                      </ForwardRef>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <ForwardRef
+                          as="div"
+                          controlId="formBasicEmail"
+                        >
+                          <ForwardRef
+                            column={false}
+                            srOnly={false}
+                          >
+                            Your Email
+                          </ForwardRef>
+                          <ForwardRef
+                            as="input"
+                            name="yourEmail"
+                            onChange={[Function]}
+                            placeholder="Enter email"
+                            type="email"
+                            value=""
+                          />
+                        </ForwardRef>
+                      </ForwardRef>
+                    </ForwardRef(render)>,
+                    <ForwardRef(render)>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <DateTimeRangePicker
+                          calendarIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  fill="none"
+                                  height="15"
+                                  width="15"
+                                  x="2"
+                                  y="2"
+                                />
+                                <line
+                                  x1="6"
+                                  x2="6"
+                                  y1="0"
+                                  y2="4"
+                                />
+                                <line
+                                  x1="13"
+                                  x2="13"
+                                  y1="0"
+                                  y2="4"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          className="dateTimeRangePicker"
+                          clearIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <line
+                                  x1="4"
+                                  x2="15"
+                                  y1="4"
+                                  y2="15"
+                                />
+                                <line
+                                  x1="15"
+                                  x2="4"
+                                  y1="4"
+                                  y2="15"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          isCalendarOpen={null}
+                          isClockOpen={null}
+                          maxDetail="minute"
+                          name="datetimerange"
+                          onChange={[Function]}
+                          value={
+                            Array [
+                              2019-06-04T09:14:48.993Z,
+                              2019-06-04T09:14:48.993Z,
+                            ]
+                          }
+                        />
+                      </ForwardRef>
+                    </ForwardRef(render)>,
+                    <ForwardRef
+                      active={false}
+                      disabled={true}
+                      type="submit"
+                      variant="primary"
+                    >
+                      Submit
+                    </ForwardRef>,
+                  ],
+                  "className": "submit-click",
+                  "inline": false,
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        <ForwardRef
+                          as="div"
+                        >
+                          <ForwardRef
+                            as="div"
+                            controlId="formBasicEmail"
+                          >
+                            <ForwardRef
+                              column={false}
+                              srOnly={false}
+                            >
+                              Your Phone Number
+                            </ForwardRef>
+                            <ForwardRef
+                              as="input"
+                              name="phoneNumber"
+                              onChange={[Function]}
+                              placeholder="Phone Number"
+                              type="text"
+                              value=""
+                            />
+                          </ForwardRef>
+                        </ForwardRef>,
+                        <ForwardRef
+                          as="div"
+                        >
+                          <ForwardRef
+                            as="div"
+                            controlId="formBasicEmail"
+                          >
+                            <ForwardRef
+                              column={false}
+                              srOnly={false}
+                            >
+                              Your Email
+                            </ForwardRef>
+                            <ForwardRef
+                              as="input"
+                              name="yourEmail"
+                              onChange={[Function]}
+                              placeholder="Enter email"
+                              type="email"
+                              value=""
+                            />
+                          </ForwardRef>
+                        </ForwardRef>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "as": "div",
+                          "children": <ForwardRef
+                            as="div"
+                            controlId="formBasicEmail"
+                          >
+                            <ForwardRef
+                              column={false}
+                              srOnly={false}
+                            >
+                              Your Phone Number
+                            </ForwardRef>
+                            <ForwardRef
+                              as="input"
+                              name="phoneNumber"
+                              onChange={[Function]}
+                              placeholder="Phone Number"
+                              type="text"
+                              value=""
+                            />
+                          </ForwardRef>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "as": "div",
+                            "children": Array [
+                              <ForwardRef
+                                column={false}
+                                srOnly={false}
+                              >
+                                Your Phone Number
+                              </ForwardRef>,
+                              <ForwardRef
+                                as="input"
+                                name="phoneNumber"
+                                onChange={[Function]}
+                                placeholder="Phone Number"
+                                type="text"
+                                value=""
+                              />,
+                            ],
+                            "controlId": "formBasicEmail",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Your Phone Number",
+                                "column": false,
+                                "srOnly": false,
+                              },
+                              "ref": null,
+                              "rendered": "Your Phone Number",
+                              "type": Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "defaultProps": Object {
+                                  "column": false,
+                                  "srOnly": false,
+                                },
+                                "displayName": "FormLabel",
+                                "render": [Function],
+                              },
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "as": "input",
+                                "name": "phoneNumber",
+                                "onChange": [Function],
+                                "placeholder": "Phone Number",
+                                "type": "text",
+                                "value": "",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "Feedback": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "defaultProps": Object {
+                                    "as": "div",
+                                    "type": "valid",
+                                  },
+                                  "displayName": "Feedback",
+                                  "propTypes": Object {
+                                    "as": [Function],
+                                    "type": [Function],
+                                  },
+                                  "render": [Function],
+                                },
+                                "defaultProps": Object {
+                                  "as": "input",
+                                },
+                                "displayName": "FormControl",
+                                "render": [Function],
+                              },
+                            },
+                          ],
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "as": "div",
+                            },
+                            "displayName": "FormGroup",
+                            "render": [Function],
+                          },
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "as": "div",
+                          },
+                          "displayName": "Col",
+                          "render": [Function],
+                        },
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "as": "div",
+                          "children": <ForwardRef
+                            as="div"
+                            controlId="formBasicEmail"
+                          >
+                            <ForwardRef
+                              column={false}
+                              srOnly={false}
+                            >
+                              Your Email
+                            </ForwardRef>
+                            <ForwardRef
+                              as="input"
+                              name="yourEmail"
+                              onChange={[Function]}
+                              placeholder="Enter email"
+                              type="email"
+                              value=""
+                            />
+                          </ForwardRef>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "as": "div",
+                            "children": Array [
+                              <ForwardRef
+                                column={false}
+                                srOnly={false}
+                              >
+                                Your Email
+                              </ForwardRef>,
+                              <ForwardRef
+                                as="input"
+                                name="yourEmail"
+                                onChange={[Function]}
+                                placeholder="Enter email"
+                                type="email"
+                                value=""
+                              />,
+                            ],
+                            "controlId": "formBasicEmail",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Your Email",
+                                "column": false,
+                                "srOnly": false,
+                              },
+                              "ref": null,
+                              "rendered": "Your Email",
+                              "type": Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "defaultProps": Object {
+                                  "column": false,
+                                  "srOnly": false,
+                                },
+                                "displayName": "FormLabel",
+                                "render": [Function],
+                              },
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "as": "input",
+                                "name": "yourEmail",
+                                "onChange": [Function],
+                                "placeholder": "Enter email",
+                                "type": "email",
+                                "value": "",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "Feedback": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "defaultProps": Object {
+                                    "as": "div",
+                                    "type": "valid",
+                                  },
+                                  "displayName": "Feedback",
+                                  "propTypes": Object {
+                                    "as": [Function],
+                                    "type": [Function],
+                                  },
+                                  "render": [Function],
+                                },
+                                "defaultProps": Object {
+                                  "as": "input",
+                                },
+                                "displayName": "FormControl",
+                                "render": [Function],
+                              },
+                            },
+                          ],
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "as": "div",
+                            },
+                            "displayName": "FormGroup",
+                            "render": [Function],
+                          },
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "as": "div",
+                          },
+                          "displayName": "Col",
+                          "render": [Function],
+                        },
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": undefined,
+                      "displayName": "Bootstrap(Row)",
+                      "propTypes": undefined,
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <ForwardRef
+                        as="div"
+                      >
+                        <DateTimeRangePicker
+                          calendarIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  fill="none"
+                                  height="15"
+                                  width="15"
+                                  x="2"
+                                  y="2"
+                                />
+                                <line
+                                  x1="6"
+                                  x2="6"
+                                  y1="0"
+                                  y2="4"
+                                />
+                                <line
+                                  x1="13"
+                                  x2="13"
+                                  y1="0"
+                                  y2="4"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          className="dateTimeRangePicker"
+                          clearIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <line
+                                  x1="4"
+                                  x2="15"
+                                  y1="4"
+                                  y2="15"
+                                />
+                                <line
+                                  x1="15"
+                                  x2="4"
+                                  y1="4"
+                                  y2="15"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          isCalendarOpen={null}
+                          isClockOpen={null}
+                          maxDetail="minute"
+                          name="datetimerange"
+                          onChange={[Function]}
+                          value={
+                            Array [
+                              2019-06-04T09:14:48.993Z,
+                              2019-06-04T09:14:48.993Z,
+                            ]
+                          }
+                        />
+                      </ForwardRef>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": "div",
+                        "children": <DateTimeRangePicker
+                          calendarIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  fill="none"
+                                  height="15"
+                                  width="15"
+                                  x="2"
+                                  y="2"
+                                />
+                                <line
+                                  x1="6"
+                                  x2="6"
+                                  y1="0"
+                                  y2="4"
+                                />
+                                <line
+                                  x1="13"
+                                  x2="13"
+                                  y1="0"
+                                  y2="4"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          className="dateTimeRangePicker"
+                          clearIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <line
+                                  x1="4"
+                                  x2="15"
+                                  y1="4"
+                                  y2="15"
+                                />
+                                <line
+                                  x1="15"
+                                  x2="4"
+                                  y1="4"
+                                  y2="15"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          isCalendarOpen={null}
+                          isClockOpen={null}
+                          maxDetail="minute"
+                          name="datetimerange"
+                          onChange={[Function]}
+                          value={
+                            Array [
+                              2019-06-04T09:14:48.993Z,
+                              2019-06-04T09:14:48.993Z,
+                            ]
+                          }
+                        />,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "calendarIcon": <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <rect
+                                fill="none"
+                                height="15"
+                                width="15"
+                                x="2"
+                                y="2"
+                              />
+                              <line
+                                x1="6"
+                                x2="6"
+                                y1="0"
+                                y2="4"
+                              />
+                              <line
+                                x1="13"
+                                x2="13"
+                                y1="0"
+                                y2="4"
+                              />
+                            </g>
+                          </svg>,
+                          "className": "dateTimeRangePicker",
+                          "clearIcon": <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <line
+                                x1="4"
+                                x2="15"
+                                y1="4"
+                                y2="15"
+                              />
+                              <line
+                                x1="15"
+                                x2="4"
+                                y1="4"
+                                y2="15"
+                              />
+                            </g>
+                          </svg>,
+                          "isCalendarOpen": null,
+                          "isClockOpen": null,
+                          "maxDetail": "minute",
+                          "name": "datetimerange",
+                          "onChange": [Function],
+                          "value": Array [
+                            2019-06-04T09:14:48.993Z,
+                            2019-06-04T09:14:48.993Z,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": "div",
+                        },
+                        "displayName": "Col",
+                        "render": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": undefined,
+                      "displayName": "Bootstrap(Row)",
+                      "propTypes": undefined,
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": false,
+                      "children": "Submit",
+                      "disabled": true,
+                      "type": "submit",
+                      "variant": "primary",
+                    },
+                    "ref": null,
+                    "rendered": "Submit",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "active": false,
+                        "disabled": false,
+                        "type": "button",
+                        "variant": "primary",
+                      },
+                      "displayName": "Button",
+                      "render": [Function],
+                    },
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "Check": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "Input": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "type": "checkbox",
+                      },
+                      "displayName": "FormCheckInput",
+                      "render": [Function],
+                    },
+                    "Label": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "type": "checkbox",
+                      },
+                      "displayName": "FormCheckLabel",
+                      "render": [Function],
+                    },
+                    "defaultProps": Object {
+                      "disabled": false,
+                      "inline": false,
+                      "isInvalid": false,
+                      "isValid": false,
+                      "title": "",
+                      "type": "checkbox",
+                    },
+                    "displayName": "FormCheck",
+                    "render": [Function],
+                  },
+                  "Control": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "Feedback": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": "div",
+                        "type": "valid",
+                      },
+                      "displayName": "Feedback",
+                      "propTypes": Object {
+                        "as": [Function],
+                        "type": [Function],
+                      },
+                      "render": [Function],
+                    },
+                    "defaultProps": Object {
+                      "as": "input",
+                    },
+                    "displayName": "FormControl",
+                    "render": [Function],
+                  },
+                  "Group": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "FormGroup",
+                    "render": [Function],
+                  },
+                  "Label": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "column": false,
+                      "srOnly": false,
+                    },
+                    "displayName": "FormLabel",
+                    "render": [Function],
+                  },
+                  "Row": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": undefined,
+                    "displayName": "FormRow",
+                    "render": [Function],
+                  },
+                  "Text": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "small",
+                    },
+                    "displayName": "FormText",
+                    "render": [Function],
+                  },
+                  "defaultProps": Object {
+                    "as": "form",
+                    "inline": false,
+                  },
+                  "displayName": "Form",
+                  "render": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "ModalBody",
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "BACKDROP_TRANSITION_DURATION": 150,
+            "Body": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "ModalBody",
+              "render": [Function],
+            },
+            "Dialog": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "ModalDialog",
+              "render": [Function],
+            },
+            "Footer": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "ModalFooter",
+              "render": [Function],
+            },
+            "Header": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "closeButton": false,
+                "closeLabel": "Close",
+              },
+              "displayName": "ModalHeader",
+              "render": [Function],
+            },
+            "TRANSITION_DURATION": 300,
+            "Title": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "ModalTitle",
+              "render": [Function],
+            },
+            "defaultProps": undefined,
+            "displayName": "Bootstrap(Modal)",
+            "propTypes": undefined,
+            "render": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "role": "toolbar",
+        },
+        "displayName": "ButtonToolbar",
+        "render": [Function],
+      },
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ForwardRef
+          role="toolbar"
+        >
+          <ForwardRef
+            active={false}
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+            variant="primary"
+          >
+            Rent This Car
+          </ForwardRef>
+          <ForwardRef(render)
+            aria-labelledby="example-modal-sizes-title-lg"
+            className="send-message-to-owner"
+            onHide={[Function]}
+            show={false}
+            size="lg"
+          >
+            <ForwardRef
+              closeButton={true}
+              closeLabel="Close"
+            >
+              <ForwardRef
+                id="example-modal-sizes-title-lg"
+              >
+                Contact info
+              </ForwardRef>
+            </ForwardRef>
+            <ForwardRef>
+              <ForwardRef
+                as="form"
+                className="submit-click"
+                inline={false}
+                onSubmit={[Function]}
+              >
+                <ForwardRef(render)>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <ForwardRef
+                      as="div"
+                      controlId="formBasicEmail"
+                    >
+                      <ForwardRef
+                        column={false}
+                        srOnly={false}
+                      >
+                        Your Phone Number
+                      </ForwardRef>
+                      <ForwardRef
+                        as="input"
+                        name="phoneNumber"
+                        onChange={[Function]}
+                        placeholder="Phone Number"
+                        type="text"
+                        value=""
+                      />
+                    </ForwardRef>
+                  </ForwardRef>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <ForwardRef
+                      as="div"
+                      controlId="formBasicEmail"
+                    >
+                      <ForwardRef
+                        column={false}
+                        srOnly={false}
+                      >
+                        Your Email
+                      </ForwardRef>
+                      <ForwardRef
+                        as="input"
+                        name="yourEmail"
+                        onChange={[Function]}
+                        placeholder="Enter email"
+                        type="email"
+                        value=""
+                      />
+                    </ForwardRef>
+                  </ForwardRef>
+                </ForwardRef(render)>
+                <ForwardRef(render)>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <DateTimeRangePicker
+                      calendarIcon={
+                        <svg
+                          height="19"
+                          viewBox="0 0 19 19"
+                          width="19"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            stroke="black"
+                            strokeWidth="2"
+                          >
+                            <rect
+                              fill="none"
+                              height="15"
+                              width="15"
+                              x="2"
+                              y="2"
+                            />
+                            <line
+                              x1="6"
+                              x2="6"
+                              y1="0"
+                              y2="4"
+                            />
+                            <line
+                              x1="13"
+                              x2="13"
+                              y1="0"
+                              y2="4"
+                            />
+                          </g>
+                        </svg>
+                      }
+                      className="dateTimeRangePicker"
+                      clearIcon={
+                        <svg
+                          height="19"
+                          viewBox="0 0 19 19"
+                          width="19"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            stroke="black"
+                            strokeWidth="2"
+                          >
+                            <line
+                              x1="4"
+                              x2="15"
+                              y1="4"
+                              y2="15"
+                            />
+                            <line
+                              x1="15"
+                              x2="4"
+                              y1="4"
+                              y2="15"
+                            />
+                          </g>
+                        </svg>
+                      }
+                      isCalendarOpen={null}
+                      isClockOpen={null}
+                      maxDetail="minute"
+                      name="datetimerange"
+                      onChange={[Function]}
+                      value={
+                        Array [
+                          2019-06-04T09:14:48.993Z,
+                          2019-06-04T09:14:48.993Z,
+                        ]
+                      }
+                    />
+                  </ForwardRef>
+                </ForwardRef(render)>
+                <ForwardRef
+                  active={false}
+                  disabled={true}
+                  type="submit"
+                  variant="primary"
+                >
+                  Submit
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef(render)>
+        </ForwardRef>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              active={false}
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+              variant="primary"
+            >
+              Rent This Car
+            </ForwardRef>,
+            <ForwardRef(render)
+              aria-labelledby="example-modal-sizes-title-lg"
+              className="send-message-to-owner"
+              onHide={[Function]}
+              show={false}
+              size="lg"
+            >
+              <ForwardRef
+                closeButton={true}
+                closeLabel="Close"
+              >
+                <ForwardRef
+                  id="example-modal-sizes-title-lg"
+                >
+                  Contact info
+                </ForwardRef>
+              </ForwardRef>
+              <ForwardRef>
+                <ForwardRef
+                  as="form"
+                  className="submit-click"
+                  inline={false}
+                  onSubmit={[Function]}
+                >
+                  <ForwardRef(render)>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <ForwardRef
+                        as="div"
+                        controlId="formBasicEmail"
+                      >
+                        <ForwardRef
+                          column={false}
+                          srOnly={false}
+                        >
+                          Your Phone Number
+                        </ForwardRef>
+                        <ForwardRef
+                          as="input"
+                          name="phoneNumber"
+                          onChange={[Function]}
+                          placeholder="Phone Number"
+                          type="text"
+                          value=""
+                        />
+                      </ForwardRef>
+                    </ForwardRef>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <ForwardRef
+                        as="div"
+                        controlId="formBasicEmail"
+                      >
+                        <ForwardRef
+                          column={false}
+                          srOnly={false}
+                        >
+                          Your Email
+                        </ForwardRef>
+                        <ForwardRef
+                          as="input"
+                          name="yourEmail"
+                          onChange={[Function]}
+                          placeholder="Enter email"
+                          type="email"
+                          value=""
+                        />
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef(render)>
+                  <ForwardRef(render)>
+                    <ForwardRef
+                      as="div"
+                    >
+                      <DateTimeRangePicker
+                        calendarIcon={
+                          <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <rect
+                                fill="none"
+                                height="15"
+                                width="15"
+                                x="2"
+                                y="2"
+                              />
+                              <line
+                                x1="6"
+                                x2="6"
+                                y1="0"
+                                y2="4"
+                              />
+                              <line
+                                x1="13"
+                                x2="13"
+                                y1="0"
+                                y2="4"
+                              />
+                            </g>
+                          </svg>
+                        }
+                        className="dateTimeRangePicker"
+                        clearIcon={
+                          <svg
+                            height="19"
+                            viewBox="0 0 19 19"
+                            width="19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              stroke="black"
+                              strokeWidth="2"
+                            >
+                              <line
+                                x1="4"
+                                x2="15"
+                                y1="4"
+                                y2="15"
+                              />
+                              <line
+                                x1="15"
+                                x2="4"
+                                y1="4"
+                                y2="15"
+                              />
+                            </g>
+                          </svg>
+                        }
+                        isCalendarOpen={null}
+                        isClockOpen={null}
+                        maxDetail="minute"
+                        name="datetimerange"
+                        onChange={[Function]}
+                        value={
+                          Array [
+                            2019-06-04T09:14:48.993Z,
+                            2019-06-04T09:14:48.993Z,
+                          ]
+                        }
+                      />
+                    </ForwardRef>
+                  </ForwardRef(render)>
+                  <ForwardRef
+                    active={false}
+                    disabled={true}
+                    type="submit"
+                    variant="primary"
+                  >
+                    Submit
+                  </ForwardRef>
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef(render)>,
+          ],
+          "role": "toolbar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "active": false,
+              "children": "Rent This Car",
+              "disabled": false,
+              "onClick": [Function],
+              "type": "button",
+              "variant": "primary",
+            },
+            "ref": null,
+            "rendered": "Rent This Car",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "active": false,
+                "disabled": false,
+                "type": "button",
+                "variant": "primary",
+              },
+              "displayName": "Button",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "aria-labelledby": "example-modal-sizes-title-lg",
+              "children": Array [
+                <ForwardRef
+                  closeButton={true}
+                  closeLabel="Close"
+                >
+                  <ForwardRef
+                    id="example-modal-sizes-title-lg"
+                  >
+                    Contact info
+                  </ForwardRef>
+                </ForwardRef>,
+                <ForwardRef>
+                  <ForwardRef
+                    as="form"
+                    className="submit-click"
+                    inline={false}
+                    onSubmit={[Function]}
+                  >
+                    <ForwardRef(render)>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <ForwardRef
+                          as="div"
+                          controlId="formBasicEmail"
+                        >
+                          <ForwardRef
+                            column={false}
+                            srOnly={false}
+                          >
+                            Your Phone Number
+                          </ForwardRef>
+                          <ForwardRef
+                            as="input"
+                            name="phoneNumber"
+                            onChange={[Function]}
+                            placeholder="Phone Number"
+                            type="text"
+                            value=""
+                          />
+                        </ForwardRef>
+                      </ForwardRef>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <ForwardRef
+                          as="div"
+                          controlId="formBasicEmail"
+                        >
+                          <ForwardRef
+                            column={false}
+                            srOnly={false}
+                          >
+                            Your Email
+                          </ForwardRef>
+                          <ForwardRef
+                            as="input"
+                            name="yourEmail"
+                            onChange={[Function]}
+                            placeholder="Enter email"
+                            type="email"
+                            value=""
+                          />
+                        </ForwardRef>
+                      </ForwardRef>
+                    </ForwardRef(render)>
+                    <ForwardRef(render)>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <DateTimeRangePicker
+                          calendarIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  fill="none"
+                                  height="15"
+                                  width="15"
+                                  x="2"
+                                  y="2"
+                                />
+                                <line
+                                  x1="6"
+                                  x2="6"
+                                  y1="0"
+                                  y2="4"
+                                />
+                                <line
+                                  x1="13"
+                                  x2="13"
+                                  y1="0"
+                                  y2="4"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          className="dateTimeRangePicker"
+                          clearIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <line
+                                  x1="4"
+                                  x2="15"
+                                  y1="4"
+                                  y2="15"
+                                />
+                                <line
+                                  x1="15"
+                                  x2="4"
+                                  y1="4"
+                                  y2="15"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          isCalendarOpen={null}
+                          isClockOpen={null}
+                          maxDetail="minute"
+                          name="datetimerange"
+                          onChange={[Function]}
+                          value={
+                            Array [
+                              2019-06-04T09:14:48.993Z,
+                              2019-06-04T09:14:48.993Z,
+                            ]
+                          }
+                        />
+                      </ForwardRef>
+                    </ForwardRef(render)>
+                    <ForwardRef
+                      active={false}
+                      disabled={true}
+                      type="submit"
+                      variant="primary"
+                    >
+                      Submit
+                    </ForwardRef>
+                  </ForwardRef>
+                </ForwardRef>,
+              ],
+              "className": "send-message-to-owner",
+              "onHide": [Function],
+              "show": false,
+              "size": "lg",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef
+                    id="example-modal-sizes-title-lg"
+                  >
+                    Contact info
+                  </ForwardRef>,
+                  "closeButton": true,
+                  "closeLabel": "Close",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Contact info",
+                    "id": "example-modal-sizes-title-lg",
+                  },
+                  "ref": null,
+                  "rendered": "Contact info",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": undefined,
+                    "displayName": "ModalTitle",
+                    "render": [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "closeButton": false,
+                    "closeLabel": "Close",
+                  },
+                  "displayName": "ModalHeader",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef
+                    as="form"
+                    className="submit-click"
+                    inline={false}
+                    onSubmit={[Function]}
+                  >
+                    <ForwardRef(render)>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <ForwardRef
+                          as="div"
+                          controlId="formBasicEmail"
+                        >
+                          <ForwardRef
+                            column={false}
+                            srOnly={false}
+                          >
+                            Your Phone Number
+                          </ForwardRef>
+                          <ForwardRef
+                            as="input"
+                            name="phoneNumber"
+                            onChange={[Function]}
+                            placeholder="Phone Number"
+                            type="text"
+                            value=""
+                          />
+                        </ForwardRef>
+                      </ForwardRef>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <ForwardRef
+                          as="div"
+                          controlId="formBasicEmail"
+                        >
+                          <ForwardRef
+                            column={false}
+                            srOnly={false}
+                          >
+                            Your Email
+                          </ForwardRef>
+                          <ForwardRef
+                            as="input"
+                            name="yourEmail"
+                            onChange={[Function]}
+                            placeholder="Enter email"
+                            type="email"
+                            value=""
+                          />
+                        </ForwardRef>
+                      </ForwardRef>
+                    </ForwardRef(render)>
+                    <ForwardRef(render)>
+                      <ForwardRef
+                        as="div"
+                      >
+                        <DateTimeRangePicker
+                          calendarIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  fill="none"
+                                  height="15"
+                                  width="15"
+                                  x="2"
+                                  y="2"
+                                />
+                                <line
+                                  x1="6"
+                                  x2="6"
+                                  y1="0"
+                                  y2="4"
+                                />
+                                <line
+                                  x1="13"
+                                  x2="13"
+                                  y1="0"
+                                  y2="4"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          className="dateTimeRangePicker"
+                          clearIcon={
+                            <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <line
+                                  x1="4"
+                                  x2="15"
+                                  y1="4"
+                                  y2="15"
+                                />
+                                <line
+                                  x1="15"
+                                  x2="4"
+                                  y1="4"
+                                  y2="15"
+                                />
+                              </g>
+                            </svg>
+                          }
+                          isCalendarOpen={null}
+                          isClockOpen={null}
+                          maxDetail="minute"
+                          name="datetimerange"
+                          onChange={[Function]}
+                          value={
+                            Array [
+                              2019-06-04T09:14:48.993Z,
+                              2019-06-04T09:14:48.993Z,
+                            ]
+                          }
+                        />
+                      </ForwardRef>
+                    </ForwardRef(render)>
+                    <ForwardRef
+                      active={false}
+                      disabled={true}
+                      type="submit"
+                      variant="primary"
+                    >
+                      Submit
+                    </ForwardRef>
+                  </ForwardRef>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "form",
+                    "children": Array [
+                      <ForwardRef(render)>
+                        <ForwardRef
+                          as="div"
+                        >
+                          <ForwardRef
+                            as="div"
+                            controlId="formBasicEmail"
+                          >
+                            <ForwardRef
+                              column={false}
+                              srOnly={false}
+                            >
+                              Your Phone Number
+                            </ForwardRef>
+                            <ForwardRef
+                              as="input"
+                              name="phoneNumber"
+                              onChange={[Function]}
+                              placeholder="Phone Number"
+                              type="text"
+                              value=""
+                            />
+                          </ForwardRef>
+                        </ForwardRef>
+                        <ForwardRef
+                          as="div"
+                        >
+                          <ForwardRef
+                            as="div"
+                            controlId="formBasicEmail"
+                          >
+                            <ForwardRef
+                              column={false}
+                              srOnly={false}
+                            >
+                              Your Email
+                            </ForwardRef>
+                            <ForwardRef
+                              as="input"
+                              name="yourEmail"
+                              onChange={[Function]}
+                              placeholder="Enter email"
+                              type="email"
+                              value=""
+                            />
+                          </ForwardRef>
+                        </ForwardRef>
+                      </ForwardRef(render)>,
+                      <ForwardRef(render)>
+                        <ForwardRef
+                          as="div"
+                        >
+                          <DateTimeRangePicker
+                            calendarIcon={
+                              <svg
+                                height="19"
+                                viewBox="0 0 19 19"
+                                width="19"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  stroke="black"
+                                  strokeWidth="2"
+                                >
+                                  <rect
+                                    fill="none"
+                                    height="15"
+                                    width="15"
+                                    x="2"
+                                    y="2"
+                                  />
+                                  <line
+                                    x1="6"
+                                    x2="6"
+                                    y1="0"
+                                    y2="4"
+                                  />
+                                  <line
+                                    x1="13"
+                                    x2="13"
+                                    y1="0"
+                                    y2="4"
+                                  />
+                                </g>
+                              </svg>
+                            }
+                            className="dateTimeRangePicker"
+                            clearIcon={
+                              <svg
+                                height="19"
+                                viewBox="0 0 19 19"
+                                width="19"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  stroke="black"
+                                  strokeWidth="2"
+                                >
+                                  <line
+                                    x1="4"
+                                    x2="15"
+                                    y1="4"
+                                    y2="15"
+                                  />
+                                  <line
+                                    x1="15"
+                                    x2="4"
+                                    y1="4"
+                                    y2="15"
+                                  />
+                                </g>
+                              </svg>
+                            }
+                            isCalendarOpen={null}
+                            isClockOpen={null}
+                            maxDetail="minute"
+                            name="datetimerange"
+                            onChange={[Function]}
+                            value={
+                              Array [
+                                2019-06-04T09:14:48.993Z,
+                                2019-06-04T09:14:48.993Z,
+                              ]
+                            }
+                          />
+                        </ForwardRef>
+                      </ForwardRef(render)>,
+                      <ForwardRef
+                        active={false}
+                        disabled={true}
+                        type="submit"
+                        variant="primary"
+                      >
+                        Submit
+                      </ForwardRef>,
+                    ],
+                    "className": "submit-click",
+                    "inline": false,
+                    "onSubmit": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          <ForwardRef
+                            as="div"
+                          >
+                            <ForwardRef
+                              as="div"
+                              controlId="formBasicEmail"
+                            >
+                              <ForwardRef
+                                column={false}
+                                srOnly={false}
+                              >
+                                Your Phone Number
+                              </ForwardRef>
+                              <ForwardRef
+                                as="input"
+                                name="phoneNumber"
+                                onChange={[Function]}
+                                placeholder="Phone Number"
+                                type="text"
+                                value=""
+                              />
+                            </ForwardRef>
+                          </ForwardRef>,
+                          <ForwardRef
+                            as="div"
+                          >
+                            <ForwardRef
+                              as="div"
+                              controlId="formBasicEmail"
+                            >
+                              <ForwardRef
+                                column={false}
+                                srOnly={false}
+                              >
+                                Your Email
+                              </ForwardRef>
+                              <ForwardRef
+                                as="input"
+                                name="yourEmail"
+                                onChange={[Function]}
+                                placeholder="Enter email"
+                                type="email"
+                                value=""
+                              />
+                            </ForwardRef>
+                          </ForwardRef>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "as": "div",
+                            "children": <ForwardRef
+                              as="div"
+                              controlId="formBasicEmail"
+                            >
+                              <ForwardRef
+                                column={false}
+                                srOnly={false}
+                              >
+                                Your Phone Number
+                              </ForwardRef>
+                              <ForwardRef
+                                as="input"
+                                name="phoneNumber"
+                                onChange={[Function]}
+                                placeholder="Phone Number"
+                                type="text"
+                                value=""
+                              />
+                            </ForwardRef>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "as": "div",
+                              "children": Array [
+                                <ForwardRef
+                                  column={false}
+                                  srOnly={false}
+                                >
+                                  Your Phone Number
+                                </ForwardRef>,
+                                <ForwardRef
+                                  as="input"
+                                  name="phoneNumber"
+                                  onChange={[Function]}
+                                  placeholder="Phone Number"
+                                  type="text"
+                                  value=""
+                                />,
+                              ],
+                              "controlId": "formBasicEmail",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "function",
+                                "props": Object {
+                                  "children": "Your Phone Number",
+                                  "column": false,
+                                  "srOnly": false,
+                                },
+                                "ref": null,
+                                "rendered": "Your Phone Number",
+                                "type": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "defaultProps": Object {
+                                    "column": false,
+                                    "srOnly": false,
+                                  },
+                                  "displayName": "FormLabel",
+                                  "render": [Function],
+                                },
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "function",
+                                "props": Object {
+                                  "as": "input",
+                                  "name": "phoneNumber",
+                                  "onChange": [Function],
+                                  "placeholder": "Phone Number",
+                                  "type": "text",
+                                  "value": "",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "Feedback": Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "defaultProps": Object {
+                                      "as": "div",
+                                      "type": "valid",
+                                    },
+                                    "displayName": "Feedback",
+                                    "propTypes": Object {
+                                      "as": [Function],
+                                      "type": [Function],
+                                    },
+                                    "render": [Function],
+                                  },
+                                  "defaultProps": Object {
+                                    "as": "input",
+                                  },
+                                  "displayName": "FormControl",
+                                  "render": [Function],
+                                },
+                              },
+                            ],
+                            "type": Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "defaultProps": Object {
+                                "as": "div",
+                              },
+                              "displayName": "FormGroup",
+                              "render": [Function],
+                            },
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "as": "div",
+                            },
+                            "displayName": "Col",
+                            "render": [Function],
+                          },
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "as": "div",
+                            "children": <ForwardRef
+                              as="div"
+                              controlId="formBasicEmail"
+                            >
+                              <ForwardRef
+                                column={false}
+                                srOnly={false}
+                              >
+                                Your Email
+                              </ForwardRef>
+                              <ForwardRef
+                                as="input"
+                                name="yourEmail"
+                                onChange={[Function]}
+                                placeholder="Enter email"
+                                type="email"
+                                value=""
+                              />
+                            </ForwardRef>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "as": "div",
+                              "children": Array [
+                                <ForwardRef
+                                  column={false}
+                                  srOnly={false}
+                                >
+                                  Your Email
+                                </ForwardRef>,
+                                <ForwardRef
+                                  as="input"
+                                  name="yourEmail"
+                                  onChange={[Function]}
+                                  placeholder="Enter email"
+                                  type="email"
+                                  value=""
+                                />,
+                              ],
+                              "controlId": "formBasicEmail",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "function",
+                                "props": Object {
+                                  "children": "Your Email",
+                                  "column": false,
+                                  "srOnly": false,
+                                },
+                                "ref": null,
+                                "rendered": "Your Email",
+                                "type": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "defaultProps": Object {
+                                    "column": false,
+                                    "srOnly": false,
+                                  },
+                                  "displayName": "FormLabel",
+                                  "render": [Function],
+                                },
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "function",
+                                "props": Object {
+                                  "as": "input",
+                                  "name": "yourEmail",
+                                  "onChange": [Function],
+                                  "placeholder": "Enter email",
+                                  "type": "email",
+                                  "value": "",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "Feedback": Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "defaultProps": Object {
+                                      "as": "div",
+                                      "type": "valid",
+                                    },
+                                    "displayName": "Feedback",
+                                    "propTypes": Object {
+                                      "as": [Function],
+                                      "type": [Function],
+                                    },
+                                    "render": [Function],
+                                  },
+                                  "defaultProps": Object {
+                                    "as": "input",
+                                  },
+                                  "displayName": "FormControl",
+                                  "render": [Function],
+                                },
+                              },
+                            ],
+                            "type": Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "defaultProps": Object {
+                                "as": "div",
+                              },
+                              "displayName": "FormGroup",
+                              "render": [Function],
+                            },
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "as": "div",
+                            },
+                            "displayName": "Col",
+                            "render": [Function],
+                          },
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": undefined,
+                        "displayName": "Bootstrap(Row)",
+                        "propTypes": undefined,
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <ForwardRef
+                          as="div"
+                        >
+                          <DateTimeRangePicker
+                            calendarIcon={
+                              <svg
+                                height="19"
+                                viewBox="0 0 19 19"
+                                width="19"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  stroke="black"
+                                  strokeWidth="2"
+                                >
+                                  <rect
+                                    fill="none"
+                                    height="15"
+                                    width="15"
+                                    x="2"
+                                    y="2"
+                                  />
+                                  <line
+                                    x1="6"
+                                    x2="6"
+                                    y1="0"
+                                    y2="4"
+                                  />
+                                  <line
+                                    x1="13"
+                                    x2="13"
+                                    y1="0"
+                                    y2="4"
+                                  />
+                                </g>
+                              </svg>
+                            }
+                            className="dateTimeRangePicker"
+                            clearIcon={
+                              <svg
+                                height="19"
+                                viewBox="0 0 19 19"
+                                width="19"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  stroke="black"
+                                  strokeWidth="2"
+                                >
+                                  <line
+                                    x1="4"
+                                    x2="15"
+                                    y1="4"
+                                    y2="15"
+                                  />
+                                  <line
+                                    x1="15"
+                                    x2="4"
+                                    y1="4"
+                                    y2="15"
+                                  />
+                                </g>
+                              </svg>
+                            }
+                            isCalendarOpen={null}
+                            isClockOpen={null}
+                            maxDetail="minute"
+                            name="datetimerange"
+                            onChange={[Function]}
+                            value={
+                              Array [
+                                2019-06-04T09:14:48.993Z,
+                                2019-06-04T09:14:48.993Z,
+                              ]
+                            }
+                          />
+                        </ForwardRef>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "as": "div",
+                          "children": <DateTimeRangePicker
+                            calendarIcon={
+                              <svg
+                                height="19"
+                                viewBox="0 0 19 19"
+                                width="19"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  stroke="black"
+                                  strokeWidth="2"
+                                >
+                                  <rect
+                                    fill="none"
+                                    height="15"
+                                    width="15"
+                                    x="2"
+                                    y="2"
+                                  />
+                                  <line
+                                    x1="6"
+                                    x2="6"
+                                    y1="0"
+                                    y2="4"
+                                  />
+                                  <line
+                                    x1="13"
+                                    x2="13"
+                                    y1="0"
+                                    y2="4"
+                                  />
+                                </g>
+                              </svg>
+                            }
+                            className="dateTimeRangePicker"
+                            clearIcon={
+                              <svg
+                                height="19"
+                                viewBox="0 0 19 19"
+                                width="19"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  stroke="black"
+                                  strokeWidth="2"
+                                >
+                                  <line
+                                    x1="4"
+                                    x2="15"
+                                    y1="4"
+                                    y2="15"
+                                  />
+                                  <line
+                                    x1="15"
+                                    x2="4"
+                                    y1="4"
+                                    y2="15"
+                                  />
+                                </g>
+                              </svg>
+                            }
+                            isCalendarOpen={null}
+                            isClockOpen={null}
+                            maxDetail="minute"
+                            name="datetimerange"
+                            onChange={[Function]}
+                            value={
+                              Array [
+                                2019-06-04T09:14:48.993Z,
+                                2019-06-04T09:14:48.993Z,
+                              ]
+                            }
+                          />,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "calendarIcon": <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  fill="none"
+                                  height="15"
+                                  width="15"
+                                  x="2"
+                                  y="2"
+                                />
+                                <line
+                                  x1="6"
+                                  x2="6"
+                                  y1="0"
+                                  y2="4"
+                                />
+                                <line
+                                  x1="13"
+                                  x2="13"
+                                  y1="0"
+                                  y2="4"
+                                />
+                              </g>
+                            </svg>,
+                            "className": "dateTimeRangePicker",
+                            "clearIcon": <svg
+                              height="19"
+                              viewBox="0 0 19 19"
+                              width="19"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                stroke="black"
+                                strokeWidth="2"
+                              >
+                                <line
+                                  x1="4"
+                                  x2="15"
+                                  y1="4"
+                                  y2="15"
+                                />
+                                <line
+                                  x1="15"
+                                  x2="4"
+                                  y1="4"
+                                  y2="15"
+                                />
+                              </g>
+                            </svg>,
+                            "isCalendarOpen": null,
+                            "isClockOpen": null,
+                            "maxDetail": "minute",
+                            "name": "datetimerange",
+                            "onChange": [Function],
+                            "value": Array [
+                              2019-06-04T09:14:48.993Z,
+                              2019-06-04T09:14:48.993Z,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "as": "div",
+                          },
+                          "displayName": "Col",
+                          "render": [Function],
+                        },
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": undefined,
+                        "displayName": "Bootstrap(Row)",
+                        "propTypes": undefined,
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "active": false,
+                        "children": "Submit",
+                        "disabled": true,
+                        "type": "submit",
+                        "variant": "primary",
+                      },
+                      "ref": null,
+                      "rendered": "Submit",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "active": false,
+                          "disabled": false,
+                          "type": "button",
+                          "variant": "primary",
+                        },
+                        "displayName": "Button",
+                        "render": [Function],
+                      },
+                    },
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "Check": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "Input": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "type": "checkbox",
+                        },
+                        "displayName": "FormCheckInput",
+                        "render": [Function],
+                      },
+                      "Label": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "type": "checkbox",
+                        },
+                        "displayName": "FormCheckLabel",
+                        "render": [Function],
+                      },
+                      "defaultProps": Object {
+                        "disabled": false,
+                        "inline": false,
+                        "isInvalid": false,
+                        "isValid": false,
+                        "title": "",
+                        "type": "checkbox",
+                      },
+                      "displayName": "FormCheck",
+                      "render": [Function],
+                    },
+                    "Control": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "Feedback": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": "div",
+                          "type": "valid",
+                        },
+                        "displayName": "Feedback",
+                        "propTypes": Object {
+                          "as": [Function],
+                          "type": [Function],
+                        },
+                        "render": [Function],
+                      },
+                      "defaultProps": Object {
+                        "as": "input",
+                      },
+                      "displayName": "FormControl",
+                      "render": [Function],
+                    },
+                    "Group": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": "div",
+                      },
+                      "displayName": "FormGroup",
+                      "render": [Function],
+                    },
+                    "Label": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "column": false,
+                        "srOnly": false,
+                      },
+                      "displayName": "FormLabel",
+                      "render": [Function],
+                    },
+                    "Row": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": undefined,
+                      "displayName": "FormRow",
+                      "render": [Function],
+                    },
+                    "Text": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": "small",
+                      },
+                      "displayName": "FormText",
+                      "render": [Function],
+                    },
+                    "defaultProps": Object {
+                      "as": "form",
+                      "inline": false,
+                    },
+                    "displayName": "Form",
+                    "render": [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "ModalBody",
+                  "render": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "BACKDROP_TRANSITION_DURATION": 150,
+              "Body": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "ModalBody",
+                "render": [Function],
+              },
+              "Dialog": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "displayName": "ModalDialog",
+                "render": [Function],
+              },
+              "Footer": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "ModalFooter",
+                "render": [Function],
+              },
+              "Header": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "closeButton": false,
+                  "closeLabel": "Close",
+                },
+                "displayName": "ModalHeader",
+                "render": [Function],
+              },
+              "TRANSITION_DURATION": 300,
+              "Title": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "ModalTitle",
+                "render": [Function],
+              },
+              "defaultProps": undefined,
+              "displayName": "Bootstrap(Modal)",
+              "propTypes": undefined,
+              "render": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "role": "toolbar",
+          },
+          "displayName": "ButtonToolbar",
+          "render": [Function],
+        },
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

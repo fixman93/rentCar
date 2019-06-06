@@ -13,7 +13,7 @@ import moment from 'moment'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './index.scss'
-class Dashboard extends Component {
+export class Dashboard extends Component {
 
   constructor(props) {
     super(props)
@@ -25,7 +25,7 @@ class Dashboard extends Component {
   }
 
   addFeedback = (id, feedback) => {
-    console.log('id:', id)
+    console.log('id:', id + 'aaaaaa' + feedback)
     // this.setState({
     //   feedback: feedback + 1,
     //   carID: id

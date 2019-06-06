@@ -9,11 +9,11 @@ import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'react-bootstrap/Button'
 
-import CarModal from './carModal'
+import CarModal from './CarModal'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './index.scss'
-class ProjectDetail extends Component {
+export class ProjectDetail extends Component {
 
   constructor(props) {
     super(props)
