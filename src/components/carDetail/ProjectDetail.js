@@ -45,9 +45,10 @@ export class ProjectDetail extends Component {
       })
 
     }
-    if (this.props.history) {
-      let projectID = this.props.match.params.id
-    }
+    // let projectID = ''
+    // if (this.props.history) {
+    //   letprojectID = this.props.match.params.id
+    // }
 
 
 
