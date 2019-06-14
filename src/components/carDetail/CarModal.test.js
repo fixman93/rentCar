@@ -1,21 +1,21 @@
-import React from 'react'
-import Adapter from 'enzyme-adapter-react-16';
+// import React from 'react'
+// import Adapter from 'enzyme-adapter-react-16';
 
-import { shallow, configure } from 'enzyme'
+// import { shallow, configure } from 'enzyme'
 
-import { CarModal } from './CarModal'
+// import { CarModal } from './CarModal'
 
-configure({ adapter: new Adapter() });
+// configure({ adapter: new Adapter() });
 
-describe('CarModal', () => {
+// describe('CarModal', () => {
 
-  const carmodal = shallow(<CarModal />)
-  it('render carModal', () => {
-    expect(carmodal).toMatchSnapshot()
-  })
-
-
+//   const carmodal = shallow(<CarModal />)
+//   it('render carModal', () => {
+//     expect(carmodal).toMatchSnapshot()
+//   })
 
 
 
-})
+
+
+// })
