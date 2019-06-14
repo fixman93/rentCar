@@ -8,7 +8,7 @@ configure({ adapter: new Adapter() });
 
 describe('Dashboard', () => {
   const mockRemove = jest.fn()
-  const props = { addFeedback: mockRemove, projects: {} }
+  const props = { addFeedback: mockRemove, projects: [] }
   const dashboard = shallow(<Dashboard {...props} />)
   console.log(dashboard.debug())
   it('render Dashboard', () => {
@@ -18,12 +18,10 @@ describe('Dashboard', () => {
   describe('Add feedback on click', () => {
     beforeEach(() => {
       dashboard.find('.review-number').simulate('click')
-    })
 
-    it('Call the `addFeedback` callback', () => {
-      expect(mockRemove).toHaveBeenCalledWith('1', '1')
+      it('Call the `addFeedback` callback', () => {
+        expect(mockRemove).toHaveBeenCalled()
+      })
     })
   })
-
-
 })
