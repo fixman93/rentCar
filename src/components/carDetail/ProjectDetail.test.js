@@ -15,8 +15,8 @@ describe('ProjectDetail', () => {
     expect(projectDetail).toMatchSnapshot()
   })
 
-  it('need to render `CarModal` ', () => {
-    expect(projectDetail.find('Connect(CarModal)').exists()).toBe(true)
-  })
+  // it('need to render `CarModal` ', () => {
+  //   expect(projectDetail.find('Connect(CarModal)').exists()).toBe(true)
+  // })
 
 })
