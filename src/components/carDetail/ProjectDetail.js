@@ -92,13 +92,15 @@ export class ProjectDetail extends Component {
                 <div className='car-description'>
                   <p>{project.carDescription}</p>
                 </div>
-                {this.props.auth && project && this.props.auth.uid === project.authhorId ? <Button disabled={true}>Rent This Car</Button> : <CarModal
+                {
+                  /* {this.props.auth && project && this.props.auth.uid === project.authhorId ? <Button disabled={true}>Rent This Car</Button> : <CarModal
                   userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0}
                   projectID={projectID}
                   carType={project.carType}
                   carModel={project.carModel}
                   reserved={this.orderFinished}
-                />}
+                />} */
+                }
 
               </Col>
             </Row>
