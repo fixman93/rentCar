@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProjectDetail render projectDetail 1`] = `ShallowWrapper {}`;
+exports[`ProjectDetail Render projectDetail 1`] = `ShallowWrapper {}`;
