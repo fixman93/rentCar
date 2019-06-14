@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'react-bootstrap/Button'
 
-import CarModal from './CarModal'
+// import CarModal from './CarModal'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './index.scss'
