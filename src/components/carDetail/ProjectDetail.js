@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 
 // import CarModal from './CarModal'
 import bg_cars from '../../assets/bg-cars.jpg'
@@ -45,9 +45,8 @@ export class ProjectDetail extends Component {
       })
 
     }
-    let projectID = ''
     if (this.props.history) {
-      projectID = this.props.match.params.id
+      let projectID = this.props.match.params.id
     }
 
 
