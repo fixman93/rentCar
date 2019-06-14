@@ -7,9 +7,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 
-import CarModal from './CarModal'
+// import CarModal from './CarModal'
 import bg_cars from '../../assets/bg-cars.jpg'
 
 import './index.scss'
@@ -45,10 +45,10 @@ export class ProjectDetail extends Component {
       })
 
     }
-    let projectID = ''
-    if (this.props.history) {
-      projectID = this.props.match.params.id
-    }
+    // let projectID = ''
+    // if (this.props.history) {
+    //   letprojectID = this.props.match.params.id
+    // }
 
 
 
@@ -92,13 +92,15 @@ export class ProjectDetail extends Component {
                 <div className='car-description'>
                   <p>{project.carDescription}</p>
                 </div>
-                {this.props.auth && project && this.props.auth.uid === project.authhorId ? <Button disabled={true}>Rent This Car</Button> : <CarModal
+                {
+                  /* {this.props.auth && project && this.props.auth.uid === project.authhorId ? <Button disabled={true}>Rent This Car</Button> : <CarModal
                   userID={newUser && newUser[0] && newUser[0].id ? newUser[0].id : 0}
                   projectID={projectID}
                   carType={project.carType}
                   carModel={project.carModel}
                   reserved={this.orderFinished}
-                />}
+                />} */
+                }
 
               </Col>
             </Row>

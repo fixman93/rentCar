@@ -15,7 +15,7 @@ describe('Dashboard', () => {
     expect(dashboard).toMatchSnapshot()
   })
 
-  describe('Add feedback on click', () => {
+  describe('addFeedback() on click', () => {
     beforeEach(() => {
       dashboard.find('.review-number').simulate('click')
 
