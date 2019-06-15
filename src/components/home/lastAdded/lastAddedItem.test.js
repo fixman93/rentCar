@@ -7,8 +7,10 @@ import { LastAddedItem } from './lastAddedItem'
 configure({ adapter: new Adapter() });
 
 describe('lastAddedItem', () => {
-  const props = { project: { Currency: 20 } }
+  const props = { project: { Currency: 20, id: 1 } }
   const lastAddedItem = shallow(<LastAddedItem {...props} />)
+  console.log('aaaa', lastAddedItem.instance().props)
+  // console.log('aaaaaa', lastAddedItem.debug())
   it('render lastAddedItem', () => {
     expect(lastAddedItem).toMatchSnapshot()
   })
