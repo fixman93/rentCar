@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 
 export class LastAddedItem extends Component {
 
   render() {
     const { project } = this.props
+    console.log('eeeeee', project)
     return (
       <section className='last-added-item'>
-        {project && project.id ? <Link to={'/project/' + project.id} >
-          <img src={project.userImage} alt='Car' />
-        </Link> : null}
+        {project && project.id ?
+          <Link to={'/project/' + project.id} >
+            <img src={project.userImage} alt='Car' />
+          </Link> : null}
         {project && project.carType ? <h3>{project.carType} {project.carModel} <span>{project.carYear}</span></h3> : null}
         <div className='vihicle-price'>
           {project && project.Currency ?
@@ -25,5 +28,9 @@ export class LastAddedItem extends Component {
   }
 }
 
+LastAddedItem.propTypes = {
+  project: PropTypes.object.isRequired
+};
 
-export default LastAddedItem
+
+export default LastAddedItem 

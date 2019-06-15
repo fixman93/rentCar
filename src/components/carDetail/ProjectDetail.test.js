@@ -11,7 +11,7 @@ describe('ProjectDetail', () => {
   const props = { project: { authhorId: 1 }, auth: { uid: 2 } }
   const projectDetail = shallow(<ProjectDetail {...props} />)
   // console.log(projectDetail.debug());
-  it('render projectDetail', () => {
+  it('Render projectDetail', () => {
     expect(projectDetail).toMatchSnapshot()
   })
 
