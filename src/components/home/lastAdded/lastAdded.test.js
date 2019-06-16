@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 describe('LastAdded', () => {
   // const props = { projects: {} }
   const lastAdded = shallow(<LastAdded />)
-  console.log(lastAdded.debug());
+  console.log('wwwwww', lastAdded.debug());
   it('render LastAdded', () => {
     expect(lastAdded).toMatchSnapshot()
   })
