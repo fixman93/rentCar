@@ -14,9 +14,4 @@ describe('LastAdded', () => {
     expect(lastAdded).toMatchSnapshot()
   })
 
-  // it('creates an LastAddedItem', () => {
-  //   expect(lastAdded.find('<Col>').exists()).toBe(true)
-  // })
-
-
 })
