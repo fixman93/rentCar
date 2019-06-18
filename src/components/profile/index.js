@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Link } from 'react-router-dom'
-import PaypalExpressBtn from 'react-paypal-express-checkout'
-import Cards from 'react-credit-cards'
+// import PaypalExpressBtn from 'react-paypal-express-checkout'
+// import Cards from 'react-credit-cards'
 
 import { Redirect } from 'react-router-dom'
 import moment from 'moment'
@@ -31,10 +31,10 @@ class Profile extends Component {
   render() {
     let { user, projects, auth } = this.props
     let { messages } = this.state
-    const client = {
-      sandbox: 'Af69ScQvAHLwi1MTc_djUvSfHTQhw0Q17zPKIIjE-JGfBcu1nKlJnXx0SNBBhILkROVVGUfs5yEXFvcK',
-      production: 'ATc2rw7BQ5v2OwapWj7pwjshkwE_RvYlsvHOLl654J2CthZ2EieVOBLMBBSd-peqCZGNYA8cOfdWFuOo',
-    }
+    // const client = {
+    //   sandbox: 'Af69ScQvAHLwi1MTc_djUvSfHTQhw0Q17zPKIIjE-JGfBcu1nKlJnXx0SNBBhILkROVVGUfs5yEXFvcK',
+    //   production: 'ATc2rw7BQ5v2OwapWj7pwjshkwE_RvYlsvHOLl654J2CthZ2EieVOBLMBBSd-peqCZGNYA8cOfdWFuOo',
+    // }
     if (!this.props.auth.uid) {
       return <Redirect to='/' />
     }
@@ -104,7 +104,7 @@ class Profile extends Component {
               )
             })}
           </Row>
-          <div className='paypal'>
+          {/* <div className='paypal'>
             <br />
             <PaypalExpressBtn client={client} currency={'USD'} total={1.00} />
           </div>
@@ -113,8 +113,8 @@ class Profile extends Component {
             name='Boris Civcic'
             expiry='11/22'
             cvc='622'
-          // focused={state.focused}
-          />
+          focused={state.focused}
+          /> */}
         </Container>
       </div>
     )
