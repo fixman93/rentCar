@@ -12,7 +12,7 @@ import moment from 'moment'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import 'react-credit-cards/lib/styles.scss'
+// import 'react-credit-cards/lib/styles.scss'
 import './index.scss'
 class Profile extends Component {
 
