@@ -35,12 +35,8 @@ const options = [
   { value: 'Sunroof', label: 'Sunroof' }
 ];
 
-class createProjects extends Component {
+export class CreateProjects extends Component {
 
-
-  componentDidMount() {
-
-  }
   constructor(props) {
     super(props)
     this.state = {
@@ -154,8 +150,8 @@ class createProjects extends Component {
     const sectionStyle = {
       backgroundImage: `url(${bg_cars})`
     };
-    console.log('aaaaaaaaaaaaaa', this.state.transmision)
-    if (!this.props.auth.uid) {
+    console.log('aaaaaaaaaaaaaa', this.props)
+    if (this.props.auth && !this.props.auth.uid) {
       return <Redirect to='/' />
     }
     console.log('ELEMENTS', this.state.listElements)
@@ -173,7 +169,7 @@ class createProjects extends Component {
           <div className='box-position' style={sectionStyle}></div>
         </section>
         <Container className='add-new-car'>
-          <Form onSubmit={this.handleSubmit}>
+          <Form>
             <Row>
               <Col>
                 <Form.Group>
@@ -419,7 +415,7 @@ class createProjects extends Component {
 
 
             {/* {this.state.errorField ? <div className='errorField'>Please check your fields</div> : null} */}
-            <Button disabled={this.state.errorField ? true : false} type='submit' variant="primary">Submit</Button>
+            <Button disabled={this.state.errorField ? true : false} type='submit' variant="primary" onClick={this.handleSubmit}>Submit</Button>
           </Form>
           {this.state.pictureUrl ? <div className='previewImage'><img src={this.state.pictureUrl} alt='img' /></div> : null}
         </Container>
@@ -438,4 +434,4 @@ const mapDispatchToProps = (dispatch) => {
     createProject: (project) => dispatch(createProject(project))
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(createProjects)
+export default connect(mapStateToProps, mapDispatchToProps)(CreateProjects)
