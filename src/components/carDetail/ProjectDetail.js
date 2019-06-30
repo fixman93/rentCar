@@ -18,6 +18,7 @@ export class ProjectDetail extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      orderFinished: false
     }
     this.orderFinished = this.orderFinished.bind(this)
   }
