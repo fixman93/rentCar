@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet";
+import ReactPixel from 'react-facebook-pixel';
 
 import { firestoreConnect } from 'react-redux-firebase'
 import Form from 'react-bootstrap/Form'
@@ -29,6 +30,16 @@ export class Home extends Component {
   }
 
   render() {
+    const advancedMatching = { em: 'civcicboris93@gmail.com' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/pixel-with-ads/conversion-tracking#advanced_match
+    const options = {
+      autoConfig: true, 	// set pixel's autoConfig
+      debug: false, 		// enable logs
+    };
+    ReactPixel.init('698040607024049', advancedMatching, options);
+
+    ReactPixel.pageView(); 					// For tracking page view
+    // ReactPixel.track( event, data ) 		// For tracking default events, more info about events and data https://developers.facebook.com/docs/ads-for-websites/pixel-events/v2.9
+    // ReactPixel.trackCustom( event, data ) 	// For tracking custom events
     const { projects } = this.props
     const herobg = {
       backgroundImage: `url(${hero_bg})`
