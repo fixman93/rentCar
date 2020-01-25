@@ -64,7 +64,7 @@ export class Home extends Component {
       <div className='home-page'>
         <Helmet>
           <title>Homepage || take-vehicle</title>
-          <meta name="keywords" content="Car, Renta, Rentacar, Rent a car, find car" />
+          <meta name="keywords" content="Car, Renta, Rentacar, Rent a car, find car, Price" />
           <meta
             name="description"
             content="Rent a car to enjoy on your drive"
