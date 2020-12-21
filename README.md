@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+
+#### `Setup Proxy:`
+Before start local environment please go to `client -> setupProxy.js` and replace `http://server:5000/` with `https://admin.dev.swiftpass.io/`.
+NOTICE: Please don't commit this change
+
 #### `npm start`
 
 Runs the app in the development mode.<br>
