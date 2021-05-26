@@ -9,7 +9,7 @@ In the project directory, you can run:
 Before start local environment please go to `client -> setupProxy.js` and replace `http://server:5000/` with `https://admin.dev.swiftpass.io/`.
 NOTICE: Please don't commit this change
 
-#### `npm start`
+##### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
