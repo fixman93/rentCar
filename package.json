@@ -9,7 +9,7 @@
     "@wojtekmaj/react-datetimerange-picker": "^2.1.0",
     "firebase": "^5.10.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-country-region-selector": "^1.4.3",
